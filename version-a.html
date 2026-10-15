@@ -11,14 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/club/bolsa-hero.jpg">
+  <link rel="stylesheet" href="css/lace.css">
   <link rel="stylesheet" href="css/a.css">
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="mask" viewBox="0 0 120 56">
-      <path d="M60 18C49 8 25 5 8 13c-4 2-5 8-2 12 8 13 24 22 40 19 6-1 10-7 14-7s8 6 14 7c16 3 32-6 40-19 3-4 2-10-2-12C95 5 71 8 60 18Z"/>
-      <path d="M24 24c4-5 13-6 19-2-3 6-13 8-19 2Zm72 0c-4-5-13-6-19-2 3 6 13 8 19 2Z"/>
-      <path d="M60 18c-2-7-1-13 4-16M60 18c2-7 1-13-4-16M8 13C4 8 6 3 11 3m101 10c4-5 2-10-3-10M44 44c-2 5-7 8-12 8m44-8c2 5 7 8 12 8"/>
+    <symbol id="floron" viewBox="0 0 120 40">
+      <path d="M60 8l9 12-9 12-9-12Z"/>
+      <path d="M51 20C39 20 33 9 23 9c-8 0-12 7-8 12 3 4 10 3 9-2M69 20c12 0 18 11 28 11 8 0 12-7 8-12-3-4-10-3-9 2"/>
+      <path d="M51 20c-8 0-12 6-18 6M69 20c8 0 12-6 18-6M3 20h9M108 20h9"/>
+      <circle cx="60" cy="20" r="2.2"/>
     </symbol>
   </svg>
 
@@ -48,13 +50,13 @@
       </div>
     </section>
 
-    <section class="pact" aria-labelledby="pact-t">
+    <section class="pact lace-bg" aria-labelledby="pact-t">
       <p class="kicker kicker--center">Nuestro pacto</p>
       <h2 class="pact__t" id="pact-t">Porque todo lo bueno se comparte… <em>con quien sabe guardarlo.</em></h2>
-      <div class="ornament" aria-hidden="true"><span></span><svg><use href="#mask"/></svg><span></span></div>
+      <div class="ornament" aria-hidden="true"><span></span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span></span></div>
     </section>
 
-    <section class="lot" id="origen" aria-labelledby="lot-t">
+    <section class="lot lace-bg lace-bg--light lace-edge" id="origen" aria-labelledby="lot-t">
       <div class="wrap lot__inner">
         <div class="lot__copy">
           <p class="kicker kicker--dark">El lote de esta temporada</p>
@@ -81,16 +83,15 @@
 
     <div class="band" aria-hidden="true">
       <div class="band__track">
-        <span>Solo por invitación</span><svg><use href="#mask"/></svg><span>Lotes que no vuelven</span><svg><use href="#mask"/></svg><span>Lo que pasa en la mesa, se queda en la mesa</span><svg><use href="#mask"/></svg>
-        <span>Solo por invitación</span><svg><use href="#mask"/></svg><span>Lotes que no vuelven</span><svg><use href="#mask"/></svg><span>Lo que pasa en la mesa, se queda en la mesa</span><svg><use href="#mask"/></svg>
+        <span>Solo por invitación</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lotes que no vuelven</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lo que pasa en la mesa, se queda en la mesa</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg>
+        <span>Solo por invitación</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lotes que no vuelven</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lo que pasa en la mesa, se queda en la mesa</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg>
       </div>
     </div>
 
     <section class="origin" aria-labelledby="origin-t">
       <img class="origin__bg" src="assets/club/montana.jpg" alt="" loading="lazy">
       <div class="wrap origin__inner">
-        <img class="origin__mask" src="assets/club/mascara-blanca.jpg" alt="Máscara blanca suspendida en la niebla" loading="lazy">
-        <div class="glass">
+        <div class="glass lace-corners">
           <p class="kicker">De dónde viene</p>
           <h2 class="h2" id="origin-t">Historias que comienzan en <em>origen.</em></h2>
           <p>Trabajamos de la mano con productores que cuidan la tierra. Su nombre está en cada bolsa; el resto lo cuentan en la mesa.</p>
@@ -99,24 +100,24 @@
       </div>
     </section>
 
-    <section class="values" aria-label="Lo que nos define">
+    <section class="values lace-bg lace-edge" aria-label="Lo que nos define">
       <ul class="wrap values__list">
         <li><span class="dot dot--green"><svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="20" rx="9" ry="13" transform="rotate(30 20 20)"/><path d="M15 9c5 7 5 15 10 22"/></svg></span><b>Selección excepcional</b></li>
         <li class="low"><span class="dot dot--light"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6c6 7 9 12 9 17a9 9 0 0 1-18 0c0-4 3-8 5-10 1 4 3 5 4 5 0-4-1-8 0-12Z"/></svg></span><b>Tostado artesanal</b></li>
         <li><span class="dot dot--green"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 16h24l-2 18H10L8 16Z"/><path d="M14 16v-3a6 6 0 0 1 12 0v3M17 25h6"/></svg></span><b>Bolsas numeradas</b></li>
-        <li class="low"><span class="dot dot--light"><svg viewBox="0 0 120 56" aria-hidden="true"><use href="#mask"/></svg></span><b>Acceso por invitación</b></li>
+        <li class="low"><span class="dot dot--light"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="13" cy="20" r="6"/><path d="M19 20h16M30 20v5M35 20v4"/></svg></span><b>Acceso por invitación</b></li>
       </ul>
     </section>
 
-    <section class="society" id="sociedad" aria-labelledby="soc-t">
+    <section class="society lace-bg" id="sociedad" aria-labelledby="soc-t">
       <div class="wrap society__inner">
-        <figure class="society__portrait"><img src="assets/club/mascara-retrato.jpg" alt="Mujer con máscara dorada en penumbra" loading="lazy"></figure>
+        <figure class="society__portrait"><img src="assets/club/brindis.jpg" alt="Varias manos juntan vasos de café en un brindis" loading="lazy"></figure>
         <div class="society__copy">
           <p class="kicker">La sociedad</p>
-          <h2 class="h2" id="soc-t">Detrás de la máscara, <em>alguien que sabe de café.</em></h2>
+          <h2 class="h2" id="soc-t">Una mesa para quienes <em>saben de café.</em></h2>
           <p>Aquí nadie pregunta quién eres afuera. Te reconocemos por lo que sirves, por lo que compartes y por lo que guardas. Cada lote es una noche distinta; cada miembro, una silla en la mesa.</p>
           <div class="society__pair">
-            <figure><img src="assets/club/brindis.jpg" alt="Varias manos juntan tazas de café en un brindis" loading="lazy"></figure>
+            <figure><img src="assets/club/ventana.jpg" alt="Dos personas comparten café junto a una ventana" loading="lazy"></figure>
             <figure><img src="assets/club/conversacion.jpg" alt="Dos personas conversan con sus tazas de café sobre la mesa" loading="lazy"></figure>
           </div>
         </div>
@@ -133,7 +134,7 @@
       <figure class="sub__img"><img src="assets/club/bolsa-taza.jpg" alt="Bolsa de café due. junto a una taza de café negro y granos" loading="lazy"></figure>
     </section>
 
-    <section class="news" id="contacto" aria-labelledby="news-t">
+    <section class="news lace-bg" id="contacto" aria-labelledby="news-t">
       <p class="kicker kicker--center">Mantente cerca</p>
       <h2 class="h2 news__t" id="news-t">Recibe la contraseña</h2>
       <p class="news__p">El próximo lote llega primero a quien está en la lista.</p>
@@ -159,7 +160,7 @@
     </div>
     <div class="wrap foot__base">
       <p>© 2026 due. Contenido de ejemplo.</p>
-      <p class="foot__sign"><svg aria-hidden="true"><use href="#mask"/></svg> Lo que pasa en la mesa, se queda en la mesa</p>
+      <p class="foot__sign"><svg class="floron" viewBox="0 0 120 40" aria-hidden="true"><use href="#floron"/></svg> Lo que pasa en la mesa, se queda en la mesa</p>
     </div>
   </footer>
 

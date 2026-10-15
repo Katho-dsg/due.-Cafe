@@ -62,7 +62,7 @@
     }
     itemsEl.innerHTML = cart.map((item, idx) => `
       <div class="cart-item">
-        <div class="cart-item__thumb"><img src="${item.gift ? 'assets/club/mascara-mano.jpg' : 'assets/club/bolsa-taza.jpg'}" alt=""></div>
+        <div class="cart-item__thumb"><img src="${item.gift ? 'assets/club/manos-granos.jpg' : 'assets/club/bolsa-taza.jpg'}" alt=""></div>
         <div>
           <h3>${escapeHTML(item.name)}</h3>
           <p>${escapeHTML(item.detail)}</p>
