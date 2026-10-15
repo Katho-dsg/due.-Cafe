@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T00:29:28+00:00",
+  "title": "Design System: due.",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Bosque Profundo",
+        "canonical": "#0E2219",
+        "oklch": "oklch(23.2% 0.032 163.1)",
+        "tonalRamp": [
+          "#060D09",
+          "#1B2922",
+          "#33473D",
+          "#51675C",
+          "#72897D",
+          "#95ABA0",
+          "#BCCEC5",
+          "#E6F2EB"
+        ]
+      },
+      "emerald": {
+        "role": "primary",
+        "displayName": "Esmeralda",
+        "canonical": "#1F5641",
+        "oklch": "oklch(41.0% 0.068 165.0)",
+        "tonalRamp": [
+          "#000F08",
+          "#062D1F",
+          "#184D39",
+          "#386E57",
+          "#599078",
+          "#7EB29B",
+          "#ACD4C1",
+          "#DAF6E9"
+        ]
+      },
+      "olive": {
+        "role": "secondary",
+        "displayName": "Oliva del Logotipo",
+        "canonical": "#3F4720",
+        "oklch": "oklch(38.1% 0.060 118.9)",
+        "tonalRamp": [
+          "#0A0D01",
+          "#23280E",
+          "#3F4621",
+          "#5D663E",
+          "#7E885E",
+          "#A1AB82",
+          "#C6CEAE",
+          "#ECF2DB"
+        ]
+      },
+      "moss": {
+        "role": "secondary",
+        "displayName": "Musgo",
+        "canonical": "#75863A",
+        "oklch": "oklch(58.9% 0.104 120.2)",
+        "tonalRamp": [
+          "#090E00",
+          "#212A00",
+          "#3C4900",
+          "#5A691A",
+          "#7A8B3F",
+          "#9DAE66",
+          "#C2D19A",
+          "#E9F4CE"
+        ]
+      },
+      "pistachio": {
+        "role": "tertiary",
+        "displayName": "Pistacho",
+        "canonical": "#DCE4B4",
+        "oklch": "oklch(90.1% 0.064 115.4)",
+        "tonalRamp": [
+          "#0B0D01",
+          "#24280B",
+          "#41461D",
+          "#60663B",
+          "#80875B",
+          "#A3AA7E",
+          "#C7CDAB",
+          "#EDF2DA"
+        ]
+      },
+      "sage": {
+        "role": "tertiary",
+        "displayName": "Salvia",
+        "canonical": "#B9C6A6",
+        "oklch": "oklch(80.8% 0.046 125.4)",
+        "tonalRamp": [
+          "#090D04",
+          "#212816",
+          "#3C462C",
+          "#5B6649",
+          "#7C886A",
+          "#9EAA8D",
+          "#C4CDB6",
+          "#EBF2E1"
+        ]
+      },
+      "mint": {
+        "role": "neutral",
+        "displayName": "Suelo Menta",
+        "canonical": "#EFF2E8",
+        "oklch": "oklch(95.6% 0.014 120.3)",
+        "tonalRamp": [
+          "#0B0C08",
+          "#242620",
+          "#41433B",
+          "#60625A",
+          "#81847B",
+          "#A4A69D",
+          "#C8CAC3",
+          "#EEEFEA"
+        ]
+      },
+      "mint-2": {
+        "role": "neutral",
+        "displayName": "Menta Honda",
+        "canonical": "#E3E9DA",
+        "oklch": "oklch(92.5% 0.021 124.7)",
+        "tonalRamp": [
+          "#0A0C07",
+          "#23261E",
+          "#3F4438",
+          "#5E6357",
+          "#7F8577",
+          "#A2A79A",
+          "#C7CBC0",
+          "#EDF0E8"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel",
+        "canonical": "#FBFCF7",
+        "oklch": "oklch(98.9% 0.007 115.7)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252523",
+          "#42423F",
+          "#61625D",
+          "#82837E",
+          "#A5A5A1",
+          "#C9C9C6",
+          "#EEEFEC"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#14231B",
+        "oklch": "oklch(24.0% 0.026 160.3)",
+        "tonalRamp": [
+          "#070D09",
+          "#1D2822",
+          "#37463E",
+          "#55665C",
+          "#76877D",
+          "#98AAA0",
+          "#BFCDC5",
+          "#E8F1EB"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Tinta Suave",
+        "canonical": "#4A5A4D",
+        "oklch": "oklch(45.0% 0.029 150.6)",
+        "tonalRamp": [
+          "#070D08",
+          "#1E2820",
+          "#38463A",
+          "#566659",
+          "#76887A",
+          "#99AA9C",
+          "#C0CDC2",
+          "#E8F1EA"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Sobre Oscuro",
+        "canonical": "#F1F4EA",
+        "oklch": "oklch(96.2% 0.014 120.3)",
+        "tonalRamp": [
+          "#0B0C08",
+          "#242620",
+          "#41433B",
+          "#60625A",
+          "#81847B",
+          "#A4A69D",
+          "#C8CAC3",
+          "#EEEFEA"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Sobre Oscuro Suave",
+        "canonical": "#BFCBB6",
+        "oklch": "oklch(82.7% 0.032 131.6)",
+        "tonalRamp": [
+          "#090D06",
+          "#21271C",
+          "#3C4635",
+          "#5B6553",
+          "#7C8773",
+          "#9EA996",
+          "#C4CDBD",
+          "#EBF1E6"
+        ]
+      },
+      "error-blush": {
+        "role": "error",
+        "displayName": "Rubor de Error",
+        "canonical": "#F2C8B8",
+        "oklch": "oklch(86.5% 0.053 41.9)",
+        "tonalRamp": [
+          "#140704",
+          "#351F16",
+          "#59392C",
+          "#7B574A",
+          "#9E786A",
+          "#C29B8D",
+          "#E0C2B6",
+          "#FFE9E1"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Filete",
+        "canonical": "rgba(20, 35, 27, .14)"
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Filete Oscuro",
+        "canonical": "rgba(241, 244, 234, .2)"
+      }
+    },
+    "typographyMeta": {
+      "display-hero": {
+        "displayName": "Display hero",
+        "purpose": "Solo el titular del primer viewport, en líneas que suben al cargar."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Titulares de sección a ancho de campo, text-wrap: balance."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titulares que comparten columna con formulario o ficha."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Planes, pasos, orígenes, precios grandes y totales (1.6-2.2rem)."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Número del lote en las placas del archivo; cifras tabulares."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Párrafo de entrada bajo un display, máximo 33-36em."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido; 1rem bajo 600px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Leyendas y etiquetas de campos, en bosque, minúscula de frase."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Botones y enlaces de acción."
+      }
+    },
+    "shadows": [
+      {
+        "name": "flotante-sobre-foto",
+        "value": "0 30px 50px -18px rgba(14, 34, 25, .4)",
+        "purpose": "Tarjeta de regalo sobre la foto de la caja."
+      },
+      {
+        "name": "panel-lateral",
+        "value": "-30px 0 60px -30px rgba(14, 34, 25, .5)",
+        "purpose": "Carrito."
+      },
+      {
+        "name": "aviso",
+        "value": "0 18px 36px -12px rgba(14, 34, 25, .5)",
+        "purpose": "Toast."
+      },
+      {
+        "name": "persiana",
+        "value": "0 24px 40px -24px rgba(14, 34, 25, .4)",
+        "purpose": "Menú móvil desplegado."
+      },
+      {
+        "name": "filete-nav",
+        "value": "0 1px 0 rgba(20, 35, 27, .14)",
+        "purpose": "Nav sólida, con fondo rgba(239, 242, 232, .82) y backdrop-filter blur(18px) saturate(160%)."
+      },
+      {
+        "name": "halo-foco-campo",
+        "value": "0 0 0 3px rgba(31, 86, 65, .15)",
+        "purpose": "Foco de campos de formulario, con borde esmeralda."
+      },
+      {
+        "name": "anillo-foco",
+        "value": "outline: 2px solid #75863A; outline-offset: 3px",
+        "purpose": "Foco global de teclado."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Curva por defecto: presión, subrayados, entradas, cierre del cajón."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Recorte de revelado de fotos (1100ms)."
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(0.32, 0.72, 0, 1)",
+        "purpose": "Apertura del carrito (480ms)."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(.97) 160ms ease-out",
+        "purpose": "Presión de botones; 0.98 en segmentos, 0.94 en botones circulares."
+      },
+      {
+        "name": "color-state",
+        "value": "200ms ease",
+        "purpose": "Cambios de fondo, borde y color en hover y selección."
+      },
+      {
+        "name": "nav-state",
+        "value": "300ms ease",
+        "purpose": "Paso de nav transparente a sólida y cambio de logo."
+      },
+      {
+        "name": "hero-settle",
+        "value": "2200ms ease-out, scale 1.08 -> 1, brightness .7 -> 1",
+        "purpose": "Entrada de la foto del hero."
+      },
+      {
+        "name": "hero-rise",
+        "value": "1100ms ease-out, translateY 105% -> 0, 90ms de desfase por línea",
+        "purpose": "Líneas del titular del hero."
+      },
+      {
+        "name": "image-reveal",
+        "value": "clip-path inset(0 0 100% 0) -> inset(0) 1100ms ease-in-out; scale 1.06 -> 1 1600ms ease-out",
+        "purpose": "Fotos al entrar en pantalla."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "600px"
+      },
+      {
+        "name": "md",
+        "value": "960px"
+      },
+      {
+        "name": "lg",
+        "value": "1100px"
+      },
+      {
+        "name": "rail-align",
+        "value": "1400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón bosque",
+      "kind": "button",
+      "refersTo": "button-forest",
+      "description": "Acción principal sobre campos claros.",
+      "html": "<div class=\"ds-stage-light\"><button class=\"ds-btn ds-btn-forest\">Armar un regalo</button></div>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 30px;border:1px solid transparent;border-radius:999px;font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease,transform 160ms var(--ease-out);} .ds-btn:active{transform:scale(.97);} .ds-btn:focus-visible{outline:2px solid var(--moss);outline-offset:3px;} .ds-stage-light{padding:24px;background:var(--mint);} .ds-btn-forest{background:var(--forest);color:var(--on-dark);} .ds-btn-forest:hover{background:var(--emerald);}"
+    },
+    {
+      "name": "Botón claro",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Acción principal sobre foto o campo oscuro.",
+      "html": "<div class=\"ds-stage-dark\"><button class=\"ds-btn ds-btn-light\">Comprar el lote</button></div>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 30px;border:1px solid transparent;border-radius:999px;font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease,transform 160ms var(--ease-out);} .ds-btn:active{transform:scale(.97);} .ds-btn:focus-visible{outline:2px solid var(--moss);outline-offset:3px;} .ds-stage-dark{padding:24px;background:var(--forest);} .ds-btn-light{background:var(--on-dark);color:var(--forest);} .ds-btn-light:hover{background:var(--pistachio);}"
+    },
+    {
+      "name": "Botón filete claro",
+      "kind": "button",
+      "refersTo": "button-line-light",
+      "description": "Acción secundaria sobre oscuro.",
+      "html": "<div class=\"ds-stage-dark\"><button class=\"ds-btn ds-btn-line\">Regalar due.</button></div>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 30px;border:1px solid transparent;border-radius:999px;font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease,transform 160ms var(--ease-out);} .ds-btn:active{transform:scale(.97);} .ds-btn:focus-visible{outline:2px solid var(--moss);outline-offset:3px;} .ds-stage-dark{padding:24px;background:var(--forest);} .ds-btn-line{background:transparent;border-color:rgba(241,244,234,.5);color:var(--on-dark);} .ds-btn-line:hover{border-color:var(--on-dark);background:rgba(241,244,234,.08);}"
+    },
+    {
+      "name": "Segmentos",
+      "kind": "chip",
+      "refersTo": "segment",
+      "description": "Selector propio para molienda, presentación y regalo.",
+      "html": "<div class=\"ds-seg\"><label><input type=\"radio\" name=\"ds-g\" checked><span><b>Bolsa 250 g</b><small>$72.000</small></span></label><label><input type=\"radio\" name=\"ds-g\"><span><b>Caja regalo</b><small>$112.000</small></span></label></div>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-seg{display:flex;gap:8px;padding:24px;background:var(--mint);font-family:var(--sans);} .ds-seg label{position:relative;flex:1 1 auto;} .ds-seg input{position:absolute;opacity:0;} .ds-seg span{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:68px;padding:8px 16px;border:1px solid var(--line);border-radius:6px;background:rgba(255,255,255,.35);font-size:.95rem;color:var(--forest);cursor:pointer;transition:background-color 200ms ease,border-color 200ms ease,color 200ms ease,transform 160ms var(--ease-out);} .ds-seg span:hover{border-color:var(--moss);} .ds-seg span:active{transform:scale(.98);} .ds-seg b{font-weight:600;} .ds-seg small{font-size:.9rem;opacity:.75;font-variant-numeric:tabular-nums;} .ds-seg input:checked+span{background:var(--forest);border-color:var(--forest);color:var(--on-dark);} .ds-seg input:focus-visible+span{outline:2px solid var(--moss);outline-offset:2px;}"
+    },
+    {
+      "name": "Campo",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Campo de texto sobre papel con etiqueta encima.",
+      "html": "<label class=\"ds-field\"><span>Para</span><input type=\"text\" placeholder=\"Nombre de quien lo recibe\"></label>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-field{display:grid;gap:8px;padding:24px;background:var(--mint-2);font-family:var(--sans);} .ds-field>span{font-size:.88rem;font-weight:600;color:var(--forest);} .ds-field input{width:100%;padding:14px 16px;background:#FBFCF7;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:1rem;color:var(--ink);transition:border-color 200ms ease,box-shadow 200ms ease;} .ds-field input::placeholder{color:#66735F;} .ds-field input:focus{outline:none;border-color:var(--emerald);box-shadow:0 0 0 3px rgba(31,86,65,.15);}"
+    },
+    {
+      "name": "Navegación",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Nav fija en estado sólido: menta translúcida, enlaces con subrayado que crece.",
+      "html": "<header class=\"ds-nav\"><strong class=\"ds-logo\">due.</strong><nav class=\"ds-links\"><a href=\"#\">El lote</a><a href=\"#\">Regalar</a><a href=\"#\">El club</a></nav><button class=\"ds-cart\">Tu selección <span>0</span></button></header>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:76px;padding:0 32px;background:rgba(239,242,232,.82);backdrop-filter:blur(18px) saturate(160%);color:var(--forest);box-shadow:0 1px 0 var(--line);font-family:var(--sans);} .ds-logo{color:var(--olive);font-size:1.6rem;font-weight:800;} .ds-links{display:flex;gap:44px;font-size:.95rem;font-weight:500;} .ds-links a{position:relative;padding:6px 0;color:inherit;text-decoration:none;} .ds-links a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform 300ms var(--ease-out);} .ds-links a:hover::after{transform:scaleX(1);} .ds-cart{justify-self:end;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;transition:transform 160ms var(--ease-out);} .ds-cart:active{transform:scale(.97);} .ds-cart span{display:grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--pistachio);font-size:.75rem;font-weight:700;}"
+    },
+    {
+      "name": "Ficha del lote",
+      "kind": "card",
+      "refersTo": "lot-card",
+      "description": "Objeto posado sobre la foto del hero con origen, precio y acción.",
+      "html": "<div class=\"ds-stage-photo\"><aside class=\"ds-lotcard\"><p class=\"ds-o\">Pitalito, Huila</p><p class=\"ds-n\">Lote Nº 07 · Pink Bourbon lavado. Frambuesa, panela y jazmín.</p><div class=\"ds-r\"><p class=\"ds-p\">$72.000 <small>250 g</small></p><button class=\"ds-b\">Añadir</button></div></aside></div>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-stage-photo{padding:32px;background:linear-gradient(20deg,var(--forest),#2c4a33);} .ds-lotcard{max-width:340px;padding:26px 26px 22px;background:var(--mint);color:var(--ink);border-radius:6px;box-shadow:0 30px 60px -20px rgba(14,34,25,.45);font-family:var(--sans);} .ds-o{margin:0;font-family:var(--display);font-size:2rem;line-height:1.05;color:var(--forest);} .ds-n{margin:10px 0 18px;font-size:.95rem;color:var(--ink-soft);} .ds-r{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid var(--line);} .ds-p{margin:0;font-family:var(--display);font-size:1.6rem;color:var(--forest);font-variant-numeric:tabular-nums;} .ds-p small{font-family:var(--sans);font-size:.85rem;color:var(--ink-soft);} .ds-b{min-height:44px;padding:0 20px;border:0;border-radius:999px;background:var(--forest);color:var(--on-dark);font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;transition:background-color 200ms ease,transform 160ms var(--ease-out);} .ds-b:hover{background:var(--emerald);} .ds-b:active{transform:scale(.97);} .ds-b:focus-visible{outline:2px solid var(--moss);outline-offset:3px;}"
+    },
+    {
+      "name": "Placa del archivo",
+      "kind": "custom",
+      "refersTo": "plate",
+      "description": "Lote agotado en el carril del archivo: un verde por placa, numeral gigante en Gloock.",
+      "html": "<article class=\"ds-plate\"><span class=\"ds-tag\">Agotado</span><p class=\"ds-num\">Nº 06</p><h3>Sidama, Etiopía</h3><p class=\"ds-d\">Natural, heirloom. Arándano, bergamota, cacao.</p></article>",
+      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-plate{display:flex;flex-direction:column;width:300px;min-height:400px;padding:28px;border-radius:6px;background:var(--emerald);color:var(--on-dark);font-family:var(--sans);} .ds-tag{align-self:flex-start;margin-bottom:18px;padding:4px 12px;border:1px solid currentColor;border-radius:999px;font-size:.78rem;font-weight:600;} .ds-num{margin:0 0 auto;font-family:var(--display);font-size:5rem;line-height:.9;letter-spacing:-.03em;} .ds-plate h3{margin:0 0 6px;font-family:var(--display);font-weight:400;font-size:1.75rem;line-height:1.1;} .ds-d{margin:0;font-size:.95rem;color:rgba(241,244,234,.82);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La Casa Verde",
+    "overview": "due. es lujo clásico sin ironía: una casa de café que viste cada estancia de un verde distinto, cuelga fotografía grande en sus paredes y firma con una serif display imponente. La página no es una tienda con secciones, es un recorrido por campos de color a página completa (bosque, pistacho, menta, esmeralda, oliva) donde cada región pertenece a un solo verde. El listón es el de Hermès y Blue Bottle Coffee: pocas piezas, mucho aire, materiales precisos.\n\nLa densidad es baja y generosa: márgenes de sección de hasta 184px, columnas separadas por hasta 112px, titulares que ocupan cuatro o cinco palabras por línea. La estructura la dan filetes de 1px, no cajas; la profundidad aparece solo cuando un objeto flota sobre otro plano (la ficha del lote sobre la foto, la tarjeta de regalo sobre la caja, el carrito sobre la página). Las acciones son píldoras; lo seleccionable y lo que contiene datos tiene esquinas de 6px.\n\nLa fotografía es real y pasa siempre por una misma gradación verde, de modo que una cereza roja o una caja de cartón conviven con la paleta en lugar de pelear con ella. Se rechaza explícitamente la plantilla de cafetería: fondo crema, serif cursiva y rejilla de tarjetas.",
+    "keyCharacteristics": [
+      "Campos de color verdes a página completa; cada sección posee un solo verde.",
+      "Gloock en peso 400 con tracking negativo para todo lo que se lee como titular, precio o número.",
+      "Hanken Grotesk para texto e interfaz, en minúsculas de frase, sin versalitas espaciadas.",
+      "Filetes de 1px como estructura; sombras solo para objetos flotantes.",
+      "Fotografía grande con gradación verde común y velos en bosque.",
+      "Movimiento sobrio: curvas de salida largas, presión con escala 0.97, hover solo en punteros finos."
+    ],
+    "rules": [
+      {
+        "name": "La Regla del Campo Entero",
+        "body": "Cada sección pinta su fondo de borde a borde con un solo verde (o con una foto velada en bosque) y la siguiente cambia de campo. Nunca dos secciones contiguas comparten campo, y nunca se pinta una tarjeta de color dentro de un campo para simular una sección.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla Sin Negro",
+        "body": "No existe el negro ni el gris neutro. El texto oscuro es tinta verde (ink o forest), los velos y sombras se construyen sobre rgba(14, 34, 25, …), y los blancos son menta o papel.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Musgo Funcional",
+        "body": "El musgo marca estado (foco, hover, progreso) y suaviza una palabra de un titular; no rellena superficies grandes.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Peso Único",
+        "body": "Gloock se usa solo en 400, nunca en negrita ni cursiva (la cursiva del navegador en `em` se anula). La jerarquía la da el tamaño, no el peso.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla del Precio en Serif",
+        "body": "Precios, totales, cuentas atrás y números de lote van en Gloock con cifras tabulares; la unidad (250 g, por lote) baja a Hanken pequeña en tono suave.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla de la Minúscula de Frase",
+        "body": "Ningún texto va en mayúsculas con tracking abierto; etiquetas, leyendas y estados se escriben en minúscula de frase con peso 600.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla del Objeto Posado",
+        "body": "Solo flota lo que se puede tomar: una ficha, una tarjeta, un panel. Secciones, listas y placas son planas.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regla del Velo Bosque",
+        "body": "Toda foto que lleva texto encima se vela con degradados de rgba(14, 34, 25, …), nunca con negro.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do dar a cada sección un campo verde entero o una foto velada en bosque, alternando campos entre secciones contiguas.",
+      "Do pasar toda fotografía nueva por la gradación verde común (azules y turquesas hacia esmeralda, naranjas desaturados, sombras hacia bosque) y registrar su origen y retoque en el comentario `impeccable:prompt` del JPEG.",
+      "Do escribir titulares, precios y números en Gloock 400 con tracking negativo, y todo lo demás en Hanken Grotesk.",
+      "Do estructurar listas y fichas con filetes de 1px (line sobre claro, line-dark sobre oscuro).",
+      "Do usar píldoras para acciones y 6px para lo seleccionable o lo que contiene datos.",
+      "Do limitar el hover a `(hover: hover) and (pointer: fine)` y dar a cada control pulsable una presión de escala 0.97."
+    ],
+    "donts": [
+      "Don't construir la plantilla de cafetería: fondo crema, serif cursiva y rejilla de tarjetas.",
+      "Don't usar negro puro, gris neutro ni sombras negras; todo oscuro es verde bosque.",
+      "Don't poner Gloock en negrita o cursiva.",
+      "Don't escribir etiquetas en mayúsculas con tracking abierto ni añadir antetítulos sobre los titulares.",
+      "Don't dar sombra a secciones, filas o placas; solo flota lo que se posa sobre otro plano.",
+      "Don't usar fotografía sin gradar ni velar foto con texto encima con negro."
+    ]
+  }
+}
