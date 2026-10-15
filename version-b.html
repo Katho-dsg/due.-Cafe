@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>due. — El club detrás de la máscara</title>
+  <meta name="description" content="due. es un club de café de especialidad colombiano. Lotes que existen una sola temporada, para descubrir, compartir y regalar.">
+  <meta name="theme-color" content="#202909">
+  <link rel="icon" type="image/png" href="assets/logo-due-olive.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/club/bolsa-hero.jpg">
+  <link rel="stylesheet" href="css/b.css">
+</head>
+<body class="b">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="mask" viewBox="0 0 120 56">
+      <path d="M60 18C49 8 25 5 8 13c-4 2-5 8-2 12 8 13 24 22 40 19 6-1 10-7 14-7s8 6 14 7c16 3 32-6 40-19 3-4 2-10-2-12C95 5 71 8 60 18Z"/>
+      <path d="M24 24c4-5 13-6 19-2-3 6-13 8-19 2Zm72 0c-4-5-13-6-19-2 3 6 13 8 19 2Z"/>
+      <path d="M60 18c-2-7-1-13 4-16M60 18c2-7 1-13-4-16M8 13C4 8 6 3 11 3m101 10c4-5 2-10-3-10M44 44c-2 5-7 8-12 8m44-8c2 5 7 8 12 8"/>
+    </symbol>
+  </svg>
+  <a class="skip" href="#lote">Saltar al lote actual</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__bar">
+      <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil" data-menu-toggle><span></span><span></span></button>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#lote">El lote</a>
+        <a href="#regalar">Regalar</a>
+        <a href="#sociedad">La sociedad</a>
+        <a href="#club">El club</a>
+        <a href="#archivo">Archivo</a>
+      </nav>
+      <button class="cart-btn" type="button" data-open-cart aria-label="Abrir tu selección">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="cart-btn__count" data-cart-count>0</span>
+      </button>
+    </div>
+    <a href="#top" class="nav__logo" aria-label="due., volver al inicio"><img src="assets/logo-due-lima.png" alt="" width="110" height="48"></a>
+  </header>
+
+  <div class="mobile-menu" id="menu-movil" data-mobile-menu hidden>
+    <a href="#lote">El lote</a>
+    <a href="#regalar">Regalar</a>
+    <a href="#sociedad">La sociedad</a>
+    <a href="#club">El club</a>
+    <a href="#archivo">Archivo</a>
+  </div>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="hero__media"><img src="assets/club/bolsa-hero.jpg" alt="Bolsa de café due. sobre una bandeja con granos, en un salón oscuro" fetchpriority="high"></figure>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span>Una experiencia</span></span>
+            <span class="line"><span class="accent">fuera de lo común.</span></span>
+          </h1>
+          <p class="hero__lead">Un café de un único origen que existe solo esta temporada. Se descubre entre pocos, se comparte en voz baja y, cuando se acaba, no vuelve.</p>
+          <div class="hero__ctas">
+            <a href="#lote" class="btn btn--light">Comprar el lote</a>
+            <a href="#regalar" class="btn btn--line-light">Regalar una invitación</a>
+          </div>
+        </div>
+        <aside class="lotcard" aria-label="Lote de esta temporada">
+          <p class="lotcard__origin">Pitalito, Huila</p>
+          <p class="lotcard__notes">Lote Nº 07 · Pink Bourbon lavado. Frambuesa, panela y jazmín.</p>
+          <div class="lotcard__row">
+            <p class="lotcard__price"><span>$72.000</span> <small>250 g</small></p>
+            <button type="button" class="btn btn--forest btn--sm" data-quick-add>Añadir</button>
+          </div>
+          <p class="lotcard__left"><span data-bags-left>37</span> bolsas numeradas disponibles</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="xmas" aria-labelledby="xmas-title">
+      <div class="xmas__inner">
+        <div class="xmas__copy">
+          <h2 class="display" id="xmas-title">Llega diciembre. Y otra vez, no sabes qué regalar.</h2>
+          <p class="xmas__lead">Esta vez no regales un objeto. Regala una invitación: una bolsa numerada de un lote que no se repite, una tarjeta sellada con tu mensaje y la contraseña para la próxima cata del club.</p>
+          <a href="#regalar" class="btn btn--forest">Preparar una invitación</a>
+        </div>
+        <figure class="xmas__media reveal-img"><img src="assets/club/brindis.jpg" alt="Varias manos juntan vasos de café en un brindis" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="lot" id="lote" aria-labelledby="lot-title">
+      <figure class="lot__media reveal-img">
+        <img src="assets/club/bolsa-taza.jpg" alt="Bolsa de café due. junto a una taza de café negro" loading="lazy">
+        <figcaption>Así llega tu bolsa</figcaption>
+      </figure>
+      <div class="lot__info">
+        <h2 class="display display--md" id="lot-title">Lote Nº 07, <span class="soft">Finca La Esmeralda</span></h2>
+        <p class="lot__desc">Un Pink Bourbon cultivado en una ladera que mira al amanecer. En la taza se abre como mermelada de frambuesa, se asienta en dulzor de panela y termina con un recuerdo floral que permanece.</p>
+        <dl class="facts">
+          <div><dt>Productora</dt><dd>Marleny Ortiz</dd></div>
+          <div><dt>Altitud</dt><dd>1.850 m s. n. m.</dd></div>
+          <div><dt>Variedad</dt><dd>Pink Bourbon</dd></div>
+          <div><dt>Proceso</dt><dd>Lavado, 72 h de fermentación</dd></div>
+        </dl>
+        <p class="sample-note">Datos de ejemplo: productora, finca, precios y existencias se reemplazarán por los del lote real.</p>
+        <div class="profile" aria-label="Perfil de taza">
+          <div class="profile__row"><span>Acidez</span><div class="profile__bar"><i style="--v:.82"></i></div><em>Brillante</em></div>
+          <div class="profile__row"><span>Dulzor</span><div class="profile__bar"><i style="--v:.76"></i></div><em>Alto</em></div>
+          <div class="profile__row"><span>Cuerpo</span><div class="profile__bar"><i style="--v:.48"></i></div><em>Sedoso</em></div>
+        </div>
+        <form class="buy" data-buy-form>
+          <fieldset class="field-group">
+            <legend>Molienda</legend>
+            <div class="seg">
+              <label><input type="radio" name="grind" value="Grano entero" checked><span>Grano entero</span></label>
+              <label><input type="radio" name="grind" value="Filtro"><span>Filtro</span></label>
+              <label><input type="radio" name="grind" value="Espresso"><span>Espresso</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="field-group">
+            <legend>Presentación</legend>
+            <div class="seg seg--cards">
+              <label><input type="radio" name="format" value="Bolsa 250 g" data-price="72000" checked><span><b>Bolsa 250 g</b><small>$72.000</small></span></label>
+              <label><input type="radio" name="format" value="Caja de invitación 250 g" data-price="112000"><span><b>Caja de invitación</b><small>$112.000</small></span></label>
+            </div>
+          </fieldset>
+          <div class="buy__row">
+            <div class="qty">
+              <button type="button" data-qty="-1" aria-label="Quitar una bolsa">−</button>
+              <output name="qty" aria-live="polite">1</output>
+              <button type="button" data-qty="1" aria-label="Añadir una bolsa">+</button>
+            </div>
+            <button type="submit" class="btn btn--forest btn--grow">Añadir a mi selección · <span data-buy-price>$72.000</span></button>
+          </div>
+          <div class="stock">
+            <div class="stock__bar" role="progressbar" aria-label="Bolsas reservadas de esta temporada" aria-valuemin="0" aria-valuemax="100" aria-valuenow="63"><span data-stock-fill></span></div>
+            <p>Quedan <strong data-bags-left>37</strong> bolsas. Cuando se acaben, este lote no vuelve.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="ritual" aria-labelledby="ritual-title">
+      <figure class="ritual__media reveal-img"><img src="assets/club/vertido.jpg" alt="Café filtrado vertido en una taza negra" loading="lazy"></figure>
+      <div class="ritual__inner">
+        <h2 class="display display--light" id="ritual-title">Lo que pasa en la mesa, se queda en la mesa.</h2>
+        <ul class="ritual__list">
+          <li><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="6" width="22" height="28" rx="2"/><path d="M14 13h12M14 18h12M14 23h8"/></svg><div><h3>Ficha numerada</h3><p>Notas, receta y el número único de tu bolsa, para guardarla.</p></div></li>
+          <li><svg viewBox="0 0 120 56" aria-hidden="true" class="ico-mask"><use href="#mask"/></svg><div><h3>La contraseña</h3><p>Cada lote trae la clave de la próxima cata a puerta cerrada.</p></div></li>
+          <li><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="6"/><path d="M8 34c2-6 7-9 12-9s10 3 12 9"/></svg><div><h3>La voz del origen</h3><p>Un código abre la historia y el mensaje de la finca.</p></div></li>
+          <li><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="13" cy="28" r="4"/><circle cx="29" cy="25" r="4"/><path d="M17 28V10l16-3v18"/></svg><div><h3>Una banda sonora</h3><p>Música elegida para la primera taza de cada lote.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="society" id="sociedad" aria-labelledby="soc-title">
+      <figure class="society__band"><img src="assets/club/mascaras-fila.jpg" alt="Hilera de máscaras venecianas sobre fondo negro" loading="lazy"></figure>
+      <div class="society__inner">
+        <div class="society__copy">
+          <h2 class="display display--light" id="soc-title">Detrás de la máscara, alguien que sabe de café.</h2>
+          <p>Aquí nadie pregunta quién eres afuera. Te reconocemos por lo que sirves, por lo que compartes y por lo que guardas. Cada lote es una noche distinta; cada miembro, una silla en la mesa.</p>
+        </div>
+        <div class="society__pair">
+          <figure class="reveal-img"><img src="assets/club/tres-tazas.jpg" alt="Tres personas brindan con tazas de café" loading="lazy"></figure>
+          <figure class="reveal-img"><img src="assets/club/conversacion.jpg" alt="Dos personas conversan con sus tazas sobre la mesa" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="origin" aria-labelledby="origin-title">
+      <figure class="origin__media"><img src="assets/club/montana.jpg" alt="Montañas cubiertas de bosque y niebla" loading="lazy"></figure>
+      <div class="origin__inner">
+        <h2 class="display display--light" id="origin-title">Cada temporada, un lugar distinto.</h2>
+        <p class="origin__lead">Viajamos a una finca, elegimos un lote pequeño y lo tostamos por semanas. Cuando se termina, empieza otro viaje.</p>
+        <ol class="cycle">
+          <li><b>Se anuncia</b><span>El club recibe la contraseña antes que nadie.</span></li>
+          <li><b>Se descubre</b><span>Se abren las bolsas numeradas, con su historia.</span></li>
+          <li><b>Se agota</b><span>La última bolsa encuentra dueño y el lote pasa al archivo.</span></li>
+          <li><b>Llega otro</b><span>Otro origen, otro proceso, otra noche.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="gift" id="regalar" aria-labelledby="gift-title">
+      <div class="gift__inner">
+        <div class="gift__stage">
+          <figure class="gift__media reveal-img"><img src="assets/club/mascara-mano.jpg" alt="Una mano sostiene una máscara en la penumbra" loading="lazy"></figure>
+          <div class="giftcard" aria-live="polite">
+            <svg class="giftcard__seal" viewBox="0 0 120 56" aria-hidden="true"><use href="#mask"/></svg>
+            <p class="giftcard__to">Invitación para <span data-gift-preview-name>Lucía</span></p>
+            <p class="giftcard__msg" data-gift-preview-msg>Tienes un lugar en la mesa. La contraseña viene dentro.</p>
+            <p class="giftcard__from">Lote Nº 07 · Pitalito, Huila</p>
+          </div>
+        </div>
+        <div class="gift__copy">
+          <h2 class="display display--md" id="gift-title">Regala una invitación al club.</h2>
+          <p class="gift__lead">Elige qué regalar, cuándo debe llegar y qué quieres decir. Lo escribimos a mano y lo sellamos.</p>
+          <form class="gift__form" data-gift-form>
+            <fieldset class="field-group">
+              <legend>Qué regalas</legend>
+              <div class="seg seg--cards seg--three">
+                <label><input type="radio" name="gift" value="Invitación, Lote Nº 07" data-price="112000" checked><span><b>Una invitación</b><small>$112.000</small></span></label>
+                <label><input type="radio" name="gift" value="Club, 3 lotes" data-price="198000"><span><b>3 lotes del club</b><small>$198.000</small></span></label>
+                <label><input type="radio" name="gift" value="Club, 6 lotes" data-price="380000"><span><b>6 lotes del club</b><small>$380.000</small></span></label>
+              </div>
+            </fieldset>
+            <div class="field-row">
+              <label class="field"><span>Para</span><input type="text" name="to" placeholder="Nombre de quien la recibe" maxlength="24" autocomplete="off" data-gift-name></label>
+              <label class="field"><span>Que llegue el</span><input type="date" name="date" data-gift-date></label>
+            </div>
+            <label class="field"><span>Tu mensaje</span><textarea name="msg" rows="2" maxlength="140" placeholder="Tienes un lugar en la mesa. La contraseña viene dentro." data-gift-msg></textarea></label>
+            <button type="submit" class="btn btn--forest">Sellar la invitación · <span data-gift-price>$112.000</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="club" id="club" aria-labelledby="club-title">
+      <div class="club__inner">
+        <div class="club__head">
+          <h2 class="display display--light" id="club-title">Un club abierto a quien sepa guardar un secreto.</h2>
+          <p class="club__lead">No hace falta conocer a nadie. Basta con querer probar lo que pocos prueban y compartirlo con quien lo merece.</p>
+        </div>
+        <ul class="tiers">
+          <li class="tier"><h3>Iniciado</h3><p class="tier__what">Recibes la contraseña de cada nuevo origen y acceso un día antes que el público.</p><p class="tier__price">Gratis</p><a href="#unirse" class="btn btn--line-light btn--sm" data-plan="Iniciado">Unirme</a></li>
+          <li class="tier tier--featured"><h3>Miembro</h3><p class="tier__what">Tu bolsa de cada lote reservada, catas a puerta cerrada y envío gratis. Pausa cuando quieras.</p><p class="tier__price">$68.000 <small>por lote</small></p><a href="#unirse" class="btn btn--forest btn--sm" data-plan="Miembro">Hacerme miembro</a></li>
+          <li class="tier"><h3>Guardián</h3><p class="tier__what">Dos bolsas por lote, numeración del 001 al 010 y una invitación al año para quien elijas.</p><p class="tier__price">$165.000 <small>por lote</small></p><a href="#unirse" class="btn btn--line-light btn--sm" data-plan="Guardián">Ser guardián</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="archive" id="archivo" aria-labelledby="archive-title">
+      <div class="archive__head">
+        <h2 class="display display--md" id="archive-title">Lo que ya no vuelve.</h2>
+        <div class="archive__side">
+          <p>Cada lote agotado queda aquí como una noche que ya pasó. <span class="sample-inline">Lotes de ejemplo.</span></p>
+          <div class="rail-ctrl">
+            <button type="button" class="rail-btn" data-rail="-1" aria-label="Lotes anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button type="button" class="rail-btn" data-rail="1" aria-label="Lotes siguientes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="rail" data-rail-track tabindex="0" aria-label="Lotes anteriores y próximo lote">
+        <article class="plate plate--next"><span class="plate__tag">En camino</span><p class="plate__n">Nº 08</p><h3>Origen por revelar</h3><p>Un natural de altura. Fruta de hueso y flor de azahar.</p>
+          <div class="countdown" data-countdown="2026-11-20T10:00:00-05:00"><div><b data-cd="d">00</b><span>días</span></div><div><b data-cd="h">00</b><span>horas</span></div><div><b data-cd="m">00</b><span>min</span></div></div>
+          <a href="#unirse" class="link">Pedir la contraseña</a></article>
+        <article class="plate plate--g1"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 06</p><h3>Sidama, Etiopía</h3><p>Natural, heirloom. Arándano, bergamota, cacao.</p></article>
+        <article class="plate plate--g2"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 05</p><h3>Volcán Barú, Panamá</h3><p>Lavado, geisha. Jazmín, melocotón, miel.</p></article>
+        <article class="plate plate--g3"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 04</p><h3>Cajamarca, Perú</h3><p>Honey, caturra. Ciruela, caramelo, nuez.</p></article>
+        <article class="plate plate--g4"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 03</p><h3>Nariño, Colombia</h3><p>Lavado, castillo. Naranja, panela, cacao.</p></article>
+      </div>
+    </section>
+
+    <section class="join" id="unirse" aria-labelledby="join-title">
+      <figure class="join__media"><img src="assets/club/mascara-encaje.jpg" alt="" loading="lazy"></figure>
+      <div class="join__inner">
+        <svg class="join__mask" viewBox="0 0 120 56" aria-hidden="true"><use href="#mask"/></svg>
+        <h2 class="display display--light" id="join-title">Recibe la contraseña.</h2>
+        <p class="join__lead">El próximo origen llega primero a quien está en la lista. Un mensaje por lote, nada más.</p>
+        <form class="join__form" data-join-form novalidate>
+          <label class="sr-only" for="join-email">Tu correo electrónico</label>
+          <input id="join-email" type="email" name="email" placeholder="tu@correo.com" required autocomplete="email" inputmode="email">
+          <button type="submit" class="btn btn--light">Entrar a la lista</button>
+        </form>
+        <p class="join__msg" data-join-msg role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo-due-lima.png" alt="due." width="120" height="52">
+        <p>Café de especialidad para quienes saben guardar un secreto.</p>
+      </div>
+      <nav class="footer__cols" aria-label="Pie de página">
+        <div><h2>Café</h2><a href="#lote">El lote</a><a href="#regalar">Regalar</a><a href="#archivo">Archivo</a></div>
+        <div><h2>Sobre due.</h2><a href="#sociedad">La sociedad</a><a href="#club">El club</a></div>
+        <div><h2>Ayuda</h2><a href="#">Envíos en Colombia</a><a href="#">Preguntas frecuentes</a><a href="#">Contacto</a></div>
+      </nav>
+    </div>
+    <div class="footer__base">
+      <p>© 2026 due. Contenido, precios y lotes de ejemplo.</p>
+      <p class="footer__sign"><svg aria-hidden="true" viewBox="0 0 120 56"><use href="#mask"/></svg> Lo que pasa en la mesa, se queda en la mesa</p>
+    </div>
+  </footer>
+
+  <div class="scrim" data-close-cart hidden></div>
+  <aside class="drawer" aria-label="Tu selección" aria-hidden="true" data-drawer inert>
+    <header class="drawer__head">
+      <h2>Tu selección</h2>
+      <button type="button" class="drawer__close" data-close-cart aria-label="Cerrar"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </header>
+    <div class="drawer__items" data-cart-items></div>
+    <footer class="drawer__foot">
+      <div class="drawer__total"><span>Total</span><strong data-cart-total>$0</strong></div>
+      <p class="drawer__note" data-ship-note>Envío gratis en Colombia desde $150.000.</p>
+      <button type="button" class="btn btn--forest btn--block" data-checkout>Finalizar compra</button>
+    </footer>
+  </aside>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="js/b.js"></script>
+</body>
+</html>
