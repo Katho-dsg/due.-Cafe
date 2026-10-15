@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>due. — Una experiencia fuera de lo común</title>
+  <meta name="description" content="due. es café de especialidad colombiano en lotes que existen una sola temporada. Para descubrirlo, regalarlo y volver por el siguiente.">
+  <meta name="theme-color" content="#0E2219">
+  <meta property="og:title" content="due. — Una experiencia fuera de lo común">
+  <meta property="og:description" content="Café de especialidad en lotes que existen una sola temporada. Para servirte o para sorprender a alguien.">
+  <meta property="og:image" content="assets/img/hero-cerezas.jpg">
+  <link rel="icon" type="image/png" href="assets/logo-due-olive.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-cerezas.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#lote">Saltar al lote actual</a>
+
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__logo" aria-label="due., volver al inicio">
+      <img src="assets/logo-due-cream.png" alt="" class="nav__logo-light" width="88" height="38">
+      <img src="assets/logo-due-olive.png" alt="" class="nav__logo-dark" width="88" height="38">
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#lote">El lote</a>
+      <a href="#regalar">Regalar</a>
+      <a href="#club">El club</a>
+      <a href="#archivo">Archivo</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="cart-btn" type="button" data-open-cart aria-label="Abrir tu selección">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="cart-btn__label">Tu selección</span>
+        <span class="cart-btn__count" data-cart-count>0</span>
+      </button>
+      <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil" data-menu-toggle><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="menu-movil" data-mobile-menu hidden>
+    <a href="#lote">El lote</a>
+    <a href="#regalar">Regalar</a>
+    <a href="#club">El club</a>
+    <a href="#archivo">Archivo</a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="hero__media">
+        <img src="assets/img/hero-cerezas.jpg" alt="Rama de cafeto con cerezas rojas, naranjas y verdes" fetchpriority="high">
+      </figure>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span>Una experiencia</span></span>
+            <span class="line"><span>fuera de lo común.</span></span>
+          </h1>
+          <p class="hero__lead">
+            Café de especialidad de un único origen que existe solo esta temporada.
+            Para servírtelo despacio, o para sorprender a alguien que lo merece.
+          </p>
+          <div class="hero__ctas">
+            <a href="#lote" class="btn btn--light">Comprar el lote</a>
+            <a href="#regalar" class="btn btn--line-light">Regalar due.</a>
+          </div>
+        </div>
+
+        <aside class="lotcard" aria-label="Lote de esta temporada">
+          <p class="lotcard__origin">Pitalito, Huila</p>
+          <p class="lotcard__notes">Lote Nº 07 · Pink Bourbon lavado. Frambuesa, panela y jazmín.</p>
+          <div class="lotcard__row">
+            <p class="lotcard__price"><span data-money="72000">$72.000</span> <small>250 g</small></p>
+            <button type="button" class="btn btn--forest btn--sm" data-quick-add>Añadir</button>
+          </div>
+          <p class="lotcard__left"><span data-bags-left>37</span> bolsas disponibles de esta temporada</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- NAVIDAD -->
+    <section class="xmas" aria-labelledby="xmas-title">
+      <div class="xmas__inner">
+        <div class="xmas__copy">
+          <h2 class="display" id="xmas-title">Llega diciembre. Y otra vez, no sabes qué regalar.</h2>
+          <p class="xmas__lead">
+            Esta vez regala algo que no está en ninguna vitrina: un café que existe una sola vez,
+            con la historia de quien lo cultivó, una receta para prepararlo y una tarjeta escrita a mano con tus palabras.
+            No se regala un paquete. Se regala una mañana distinta.
+          </p>
+          <a href="#regalar" class="btn btn--forest">Armar un regalo</a>
+        </div>
+        <figure class="xmas__media reveal-img">
+          <img src="assets/img/regalo-mesa.jpg" alt="Regalo envuelto en papel verde con cordel, sobre una mesa de madera" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- LOTE / PRODUCTO -->
+    <section class="lot" id="lote" aria-labelledby="lot-title">
+      <figure class="lot__media reveal-img">
+        <img src="assets/img/mano-cerezas.jpg" alt="Mano sosteniendo cerezas de café recién cosechadas" loading="lazy">
+        <figcaption>Cosecha de junio, Pitalito</figcaption>
+      </figure>
+
+      <div class="lot__info">
+        <h2 class="display display--md" id="lot-title">Lote Nº 07, <span class="soft">Finca La Esmeralda</span></h2>
+        <p class="lot__desc">
+          Un Pink Bourbon cultivado en una ladera que mira al amanecer. En la taza se abre como mermelada de frambuesa,
+          se asienta en dulzor de panela y termina con un recuerdo floral que permanece. Brillante, limpio y elegante.
+        </p>
+
+        <dl class="facts">
+          <div><dt>Productora</dt><dd>Marleny Ortiz</dd></div>
+          <div><dt>Altitud</dt><dd>1.850 m s. n. m.</dd></div>
+          <div><dt>Variedad</dt><dd>Pink Bourbon</dd></div>
+          <div><dt>Proceso</dt><dd>Lavado, 72 h de fermentación</dd></div>
+        </dl>
+        <p class="sample-note">Datos de ejemplo: productora, finca, precios y existencias se reemplazarán por los del lote real.</p>
+
+        <div class="profile" aria-label="Perfil de taza">
+          <div class="profile__row"><span>Acidez</span><div class="profile__bar"><i style="--v:.82"></i></div><em>Brillante</em></div>
+          <div class="profile__row"><span>Dulzor</span><div class="profile__bar"><i style="--v:.76"></i></div><em>Alto</em></div>
+          <div class="profile__row"><span>Cuerpo</span><div class="profile__bar"><i style="--v:.48"></i></div><em>Sedoso</em></div>
+        </div>
+
+        <form class="buy" data-buy-form>
+          <fieldset class="field-group">
+            <legend>Molienda</legend>
+            <div class="seg">
+              <label><input type="radio" name="grind" value="Grano entero" checked><span>Grano entero</span></label>
+              <label><input type="radio" name="grind" value="Filtro"><span>Filtro</span></label>
+              <label><input type="radio" name="grind" value="Espresso"><span>Espresso</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="field-group">
+            <legend>Presentación</legend>
+            <div class="seg seg--cards">
+              <label><input type="radio" name="format" value="Bolsa 250 g" data-price="72000" checked><span><b>Bolsa 250 g</b><small data-money="72000">$72.000</small></span></label>
+              <label><input type="radio" name="format" value="Caja regalo 250 g" data-price="112000"><span><b>Caja regalo</b><small data-money="112000">$112.000</small></span></label>
+            </div>
+          </fieldset>
+          <div class="buy__row">
+            <div class="qty">
+              <button type="button" data-qty="-1" aria-label="Quitar una bolsa">−</button>
+              <output name="qty" aria-live="polite">1</output>
+              <button type="button" data-qty="1" aria-label="Añadir una bolsa">+</button>
+            </div>
+            <button type="submit" class="btn btn--forest btn--grow">Añadir a mi selección · <span data-buy-price>$72.000</span></button>
+          </div>
+          <div class="stock">
+            <div class="stock__bar" role="progressbar" aria-label="Bolsas vendidas de esta temporada" aria-valuemin="0" aria-valuemax="100" aria-valuenow="63"><span data-stock-fill></span></div>
+            <p>Quedan <strong data-bags-left>37</strong> bolsas. Cuando se acaben, este lote no vuelve.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="ritual" aria-labelledby="ritual-title">
+      <figure class="ritual__media reveal-img">
+        <img src="assets/img/ritual-barra.jpg" alt="Barra de café con filtros de vidrio y una tetera de cuello largo" loading="lazy">
+      </figure>
+      <div class="ritual__inner">
+        <h2 class="display display--light" id="ritual-title">No compras café. Abres una experiencia.</h2>
+        <ul class="ritual__list">
+          <li>
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="6" width="22" height="28" rx="2"/><path d="M14 13h12M14 18h12M14 23h8"/></svg>
+            <div><h3>Ficha de cata numerada</h3><p>Notas, temperatura ideal y el número único de tu bolsa, para guardarla.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="6"/><path d="M8 34c2-6 7-9 12-9s10 3 12 9"/></svg>
+            <div><h3>La voz de quien lo cultivó</h3><p>Un código abre la historia, las fotos y el mensaje de la finca de origen.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M10 14h18v8a9 9 0 0 1-18 0v-8Z"/><path d="M28 16h2a4 4 0 0 1 0 8h-2M15 6c0 2 2 2 2 4M21 6c0 2 2 2 2 4"/></svg>
+            <div><h3>Una receta de autor</h3><p>Nuestro tostador propone la extracción exacta para filtro y para espresso.</p></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="13" cy="28" r="4"/><circle cx="29" cy="25" r="4"/><path d="M17 28V10l16-3v18"/></svg>
+            <div><h3>Una banda sonora</h3><p>Una lista de canciones inspirada en el origen, para acompañar la primera taza.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ORIGEN / CICLO -->
+    <section class="origin" aria-labelledby="origin-title">
+      <figure class="origin__media">
+        <img src="assets/img/valle.jpg" alt="Valle verde entre montañas cubierto de cultivos" loading="lazy">
+      </figure>
+      <div class="origin__inner">
+        <h2 class="display display--light" id="origin-title">Cada temporada, un lugar distinto.</h2>
+        <p class="origin__lead">Viajamos a una finca, elegimos un lote pequeño y lo tostamos por semanas. Cuando se termina, empieza otro viaje.</p>
+        <ol class="cycle">
+          <li><b>Se anuncia</b><span>El club conoce el nuevo origen antes que nadie.</span></li>
+          <li><b>Se descubre</b><span>Se abren las bolsas numeradas, con su historia.</span></li>
+          <li><b>Se agota</b><span>La última bolsa encuentra dueño y el lote pasa al archivo.</span></li>
+          <li><b>Llega otro</b><span>Otro origen, otro proceso, otros sabores.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- REGALAR -->
+    <section class="gift" id="regalar" aria-labelledby="gift-title">
+      <div class="gift__inner">
+        <div class="gift__stage">
+          <figure class="gift__media reveal-img">
+            <img src="assets/img/regalo-caja.jpg" alt="Caja de regalo verde menta atada con cordel, junto a un florero" loading="lazy">
+          </figure>
+          <div class="giftcard" aria-live="polite">
+            <p class="giftcard__to">Para <span data-gift-preview-name>Lucía</span>,</p>
+            <p class="giftcard__msg" data-gift-preview-msg>Para que cada mañana de este año sepa a algo que no se repite.</p>
+            <p class="giftcard__from">Lote Nº 07 · Pitalito, Huila</p>
+          </div>
+        </div>
+
+        <div class="gift__copy">
+          <h2 class="display display--md" id="gift-title">Arma un regalo que no se olvida.</h2>
+          <p class="gift__lead">Elige qué regalar, cuándo debe llegar y qué quieres decir. Nosotros escribimos tu mensaje a mano y lo enviamos en nuestra caja.</p>
+
+          <form class="gift__form" data-gift-form>
+            <fieldset class="field-group">
+              <legend>Qué regalas</legend>
+              <div class="seg seg--cards seg--three">
+                <label><input type="radio" name="gift" value="Caja regalo, Lote Nº 07" data-price="112000" checked><span><b>Una caja</b><small data-money="112000">$112.000</small></span></label>
+                <label><input type="radio" name="gift" value="Club, 3 lotes" data-price="198000"><span><b>3 lotes del club</b><small data-money="198000">$198.000</small></span></label>
+                <label><input type="radio" name="gift" value="Club, 6 lotes" data-price="380000"><span><b>6 lotes del club</b><small data-money="380000">$380.000</small></span></label>
+              </div>
+            </fieldset>
+            <div class="field-row">
+              <label class="field"><span>Para</span><input type="text" name="to" placeholder="Nombre de quien lo recibe" maxlength="24" autocomplete="off" data-gift-name></label>
+              <label class="field"><span>Que llegue el</span><input type="date" name="date" data-gift-date></label>
+            </div>
+            <label class="field"><span>Tu mensaje</span><textarea name="msg" rows="2" maxlength="140" placeholder="Para que cada mañana de este año sepa a algo que no se repite." data-gift-msg></textarea></label>
+            <button type="submit" class="btn btn--forest">Preparar regalo · <span data-gift-price>$112.000</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLUB -->
+    <section class="club" id="club" aria-labelledby="club-title">
+      <div class="club__inner">
+        <div class="club__head">
+          <h2 class="display display--light" id="club-title">Un club abierto a cualquiera con curiosidad.</h2>
+          <p class="club__lead">Ser parte de due. es enterarte primero, tener tu bolsa asegurada y compartir la mesa con quienes esperan lo mismo que tú.</p>
+        </div>
+
+        <ul class="tiers">
+          <li class="tier">
+            <h3>Círculo</h3>
+            <p class="tier__what">Aviso de cada nuevo origen y acceso un día antes que el público.</p>
+            <p class="tier__price">Gratis</p>
+            <a href="#unirse" class="btn btn--line-light btn--sm" data-plan="Círculo">Unirme</a>
+          </li>
+          <li class="tier tier--featured">
+            <h3>Miembro</h3>
+            <p class="tier__what">Tu bolsa de cada lote reservada, catas en línea con el tostador y envío gratis. Pausa cuando quieras.</p>
+            <p class="tier__price"><span data-money="68000">$68.000</span> <small>por lote</small></p>
+            <a href="#unirse" class="btn btn--forest btn--sm" data-plan="Miembro">Hacerme miembro</a>
+          </li>
+          <li class="tier">
+            <h3>Mecenas</h3>
+            <p class="tier__what">Dos bolsas por lote, numeración del 001 al 010 y una caja de regalo al año para quien elijas.</p>
+            <p class="tier__price"><span data-money="165000">$165.000</span> <small>por lote</small></p>
+            <a href="#unirse" class="btn btn--line-light btn--sm" data-plan="Mecenas">Ser mecenas</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ARCHIVO -->
+    <section class="archive" id="archivo" aria-labelledby="archive-title">
+      <div class="archive__head">
+        <h2 class="display display--md" id="archive-title">Lo que ya no vuelve.</h2>
+        <div class="archive__side">
+          <p>Cada lote agotado queda aquí como una página de nuestra historia. El siguiente está en camino. <span class="sample-inline">Lotes de ejemplo.</span></p>
+          <div class="rail-ctrl">
+            <button type="button" class="rail-btn" data-rail="-1" aria-label="Lotes anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button type="button" class="rail-btn" data-rail="1" aria-label="Lotes siguientes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="rail" data-rail-track tabindex="0" aria-label="Lotes anteriores y próximo lote">
+        <article class="plate plate--next">
+          <span class="plate__tag">En camino</span>
+          <p class="plate__n">Nº 08</p>
+          <h3>Origen por revelar</h3>
+          <p>Un natural de altura. Fruta de hueso y flor de azahar.</p>
+          <div class="countdown" data-countdown="2026-11-20T10:00:00-05:00">
+            <div><b data-cd="d">00</b><span>días</span></div>
+            <div><b data-cd="h">00</b><span>horas</span></div>
+            <div><b data-cd="m">00</b><span>min</span></div>
+          </div>
+          <a href="#unirse" class="link">Avisarme primero</a>
+        </article>
+        <article class="plate plate--g1"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 06</p><h3>Sidama, Etiopía</h3><p>Natural, heirloom. Arándano, bergamota, cacao.</p></article>
+        <article class="plate plate--g2"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 05</p><h3>Volcán Barú, Panamá</h3><p>Lavado, geisha. Jazmín, melocotón, miel.</p></article>
+        <article class="plate plate--g3"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 04</p><h3>Cajamarca, Perú</h3><p>Honey, caturra. Ciruela, caramelo, nuez.</p></article>
+        <article class="plate plate--g4"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 03</p><h3>Nariño, Colombia</h3><p>Lavado, castillo. Naranja, panela, cacao.</p></article>
+      </div>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="join" id="unirse" aria-labelledby="join-title">
+      <figure class="join__media">
+        <img src="assets/img/cerezas-cosecha.jpg" alt="" loading="lazy">
+      </figure>
+      <div class="join__inner">
+        <img src="assets/logo-due-cream.png" alt="due." class="join__logo" width="132" height="57">
+        <h2 class="display display--light" id="join-title">El próximo origen ya viene en camino.</h2>
+        <p class="join__lead">Déjanos tu correo y entérate antes que nadie. Un mensaje por lote, nada más.</p>
+        <form class="join__form" data-join-form novalidate>
+          <label class="sr-only" for="join-email">Tu correo electrónico</label>
+          <input id="join-email" type="email" name="email" placeholder="tu@correo.com" required autocomplete="email" inputmode="email">
+          <button type="submit" class="btn btn--light">Quiero entrar</button>
+        </form>
+        <p class="join__msg" data-join-msg role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo-due-cream.png" alt="due." width="88" height="38">
+        <p>Café de especialidad colombiano en lotes que existen una sola temporada.</p>
+      </div>
+      <nav class="footer__cols" aria-label="Pie de página">
+        <div><h2>Tienda</h2><a href="#lote">El lote</a><a href="#regalar">Regalar</a><a href="#archivo">Archivo</a></div>
+        <div><h2>Club</h2><a href="#club">Membresías</a><a href="#unirse">Lista de espera</a></div>
+        <div><h2>Ayuda</h2><a href="#">Envíos en Colombia</a><a href="#">Preguntas frecuentes</a><a href="#">Contacto</a></div>
+      </nav>
+    </div>
+    <div class="footer__base">
+      <p>© 2026 due.</p>
+      <p>Contenido, precios y lotes de ejemplo. Fotografías: Unsplash.</p>
+    </div>
+  </footer>
+
+  <!-- Carrito -->
+  <div class="scrim" data-close-cart hidden></div>
+  <aside class="drawer" aria-label="Tu selección" aria-hidden="true" data-drawer inert>
+    <header class="drawer__head">
+      <h2>Tu selección</h2>
+      <button type="button" class="drawer__close" data-close-cart aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+    <div class="drawer__items" data-cart-items></div>
+    <footer class="drawer__foot">
+      <div class="drawer__total"><span>Total</span><strong data-cart-total>$0</strong></div>
+      <p class="drawer__note" data-ship-note>Envío gratis en Colombia desde $150.000.</p>
+      <button type="button" class="btn btn--forest btn--block" data-checkout>Finalizar compra</button>
+    </footer>
+  </aside>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
