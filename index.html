@@ -67,15 +67,14 @@
             Para servírtelo despacio, o para sorprender a alguien que lo merece.
           </p>
           <div class="hero__ctas">
-            <a href="#lote" class="btn btn--light">Descubrir el lote</a>
+            <a href="#lote" class="btn btn--light">Comprar el lote</a>
             <a href="#regalar" class="btn btn--line-light">Regalar due.</a>
           </div>
         </div>
 
         <aside class="lotcard" aria-label="Lote de esta temporada">
-          <p class="lotcard__name">Lote Nº 07</p>
           <p class="lotcard__origin">Pitalito, Huila</p>
-          <p class="lotcard__notes">Pink Bourbon lavado. Frambuesa, panela y jazmín.</p>
+          <p class="lotcard__notes">Lote Nº 07 · Pink Bourbon lavado. Frambuesa, panela y jazmín.</p>
           <div class="lotcard__row">
             <p class="lotcard__price"><span data-money="72000">$72.000</span> <small>250 g</small></p>
             <button type="button" class="btn btn--forest btn--sm" data-quick-add>Añadir</button>
@@ -123,6 +122,7 @@
           <div><dt>Variedad</dt><dd>Pink Bourbon</dd></div>
           <div><dt>Proceso</dt><dd>Lavado, 72 h de fermentación</dd></div>
         </dl>
+        <p class="sample-note">Datos de ejemplo: productora, finca, precios y existencias se reemplazarán por los del lote real.</p>
 
         <div class="profile" aria-label="Perfil de taza">
           <div class="profile__row"><span>Acidez</span><div class="profile__bar"><i style="--v:.82"></i></div><em>Brillante</em></div>
@@ -280,12 +280,19 @@
     <section class="archive" id="archivo" aria-labelledby="archive-title">
       <div class="archive__head">
         <h2 class="display display--md" id="archive-title">Lo que ya no vuelve.</h2>
-        <p>Cada lote agotado queda aquí como una página de nuestra historia. El siguiente está en camino.</p>
+        <div class="archive__side">
+          <p>Cada lote agotado queda aquí como una página de nuestra historia. El siguiente está en camino. <span class="sample-inline">Lotes de ejemplo.</span></p>
+          <div class="rail-ctrl">
+            <button type="button" class="rail-btn" data-rail="-1" aria-label="Lotes anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button type="button" class="rail-btn" data-rail="1" aria-label="Lotes siguientes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
       </div>
-      <div class="rail" tabindex="0" aria-label="Lotes anteriores y próximo lote">
+      <div class="rail" data-rail-track tabindex="0" aria-label="Lotes anteriores y próximo lote">
         <article class="plate plate--next">
+          <span class="plate__tag">En camino</span>
           <p class="plate__n">Nº 08</p>
-          <h3>Muy pronto</h3>
+          <h3>Origen por revelar</h3>
           <p>Un natural de altura. Fruta de hueso y flor de azahar.</p>
           <div class="countdown" data-countdown="2026-11-20T10:00:00-05:00">
             <div><b data-cd="d">00</b><span>días</span></div>
@@ -334,7 +341,7 @@
     </div>
     <div class="footer__base">
       <p>© 2026 due.</p>
-      <p>Fotografías: Unsplash.</p>
+      <p>Contenido, precios y lotes de ejemplo. Fotografías: Unsplash.</p>
     </div>
   </footer>
 

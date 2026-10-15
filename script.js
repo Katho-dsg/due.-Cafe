@@ -251,6 +251,21 @@
     setSolid();
   }));
 
+  /* ---------- Archivo: desplazamiento ---------- */
+  const track = $('[data-rail-track]');
+  const [prevBtn, nextBtn] = $$('[data-rail]');
+  const updateRail = () => {
+    prevBtn.disabled = track.scrollLeft <= 4;
+    nextBtn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+  };
+  [prevBtn, nextBtn].forEach((b) => b.addEventListener('click', () => {
+    const step = track.querySelector('.plate').getBoundingClientRect().width + 16;
+    track.scrollBy({ left: Number(b.dataset.rail) * step, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }));
+  track.addEventListener('scroll', updateRail, { passive: true });
+  window.addEventListener('resize', updateRail);
+  updateRail();
+
   /* ---------- Revelado de fotografías ---------- */
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
