@@ -364,7 +364,7 @@ button { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .archive { padding: var(--section) 0; }
 .archive__head { max-width: var(--wrap); margin: 0 auto 56px; padding: 0 var(--gutter); display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; }
 .archive__side { display: grid; gap: 20px; }
-.sample-inline { color: var(--emerald); font-weight: 600; }
+.sample-inline { font-style: italic; }
 .sample-note { margin: -16px 0 32px; font-size: .85rem; color: var(--ink-soft); }
 .rail-ctrl { display: flex; gap: 8px; }
 .rail-btn { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--forest); transition: background-color 200ms ease, color 200ms ease, transform 160ms var(--ease-out), opacity 200ms ease; }
@@ -387,7 +387,7 @@ button { cursor: pointer; -webkit-tap-highlight-color: transparent; }
   border-radius: 6px; color: var(--on-dark);
 }
 .plate .plate__n { margin: 0 0 auto; white-space: nowrap; font-family: var(--display); font-size: clamp(3.6rem, 5vw, 5.2rem); line-height: .9; letter-spacing: -.03em; }
-.plate h3 { margin: 0 0 6px; font-family: var(--display); font-weight: 400; font-size: 1.75rem; line-height: 1.1; }
+.plate h3 { margin: 20px 0 6px; font-family: var(--display); font-weight: 400; font-size: 1.75rem; line-height: 1.1; }
 .plate p { margin: 0; font-size: .95rem; }
 .plate__tag { align-self: flex-start; margin-bottom: 18px; padding: 4px 12px; border: 1px solid currentColor; border-radius: 999px; font-size: .78rem; font-weight: 600; }
 .plate--g1 { background: var(--emerald); }
