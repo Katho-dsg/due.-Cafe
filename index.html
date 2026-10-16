@@ -3,356 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>due. — El regalo que se sirve</title>
-  <meta name="description" content="due. es café de especialidad colombiano en ediciones numeradas de 100 piezas, presentado en estuche para regalar. Como un gran vino: origen, cosecha y una historia que se comparte.">
-  <meta name="theme-color" content="#161D10">
+  <title>due. — Todo empieza entre dos</title>
+  <meta name="description" content="due. significa dos. Café de especialidad colombiano en ediciones de 100 piezas numeradas, presentado en estuche con una carta escrita a mano, para comprar o regalar.">
+  <meta name="theme-color" content="#0E0E0C">
   <link rel="icon" href="assets/logo-due-olive.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=League+Spartan:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400;1,6..96,500&family=League+Spartan:wght@400;500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/due.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
 <a class="skip" href="#main">Saltar al contenido</a>
 
-<!-- ============ HEADER ============ -->
-<header class="nav" id="nav">
-  <div class="nav__in">
-    <nav class="nav__side" id="menu" aria-label="Principal">
-      <a href="#filosofia">Filosofía</a>
-      <a href="#edicion">La edición</a>
-      <a href="#estuche">El estuche</a>
-      <a href="#ocasiones">Ocasiones</a>
-      <a href="#empresas">Empresas</a>
-    </nav>
-    <a href="#inicio" class="nav__logo" aria-label="due. inicio">
-      <img src="assets/logo-due-lima.png" alt="due." width="88" height="38">
-    </a>
-    <div class="nav__actions">
-      <a href="#regalar" class="nav__cta">Regalar due.</a>
-      <button class="nav__bag" type="button" aria-label="Bolsa de compra, 0 productos" id="bagBtn">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
-        <span class="nav__count" id="bagCount">0</span>
-      </button>
-      <button class="nav__burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" id="burger"><span></span><span></span></button>
-    </div>
-  </div>
+<header class="bar" id="bar">
+  <a href="#inicio" class="bar__mark" aria-label="due., inicio">
+    <img src="assets/logo-due-lima.png" alt="due." width="84" height="36">
+  </a>
+  <nav class="bar__links" aria-label="Principal">
+    <a href="#edicion">La edición</a>
+    <a href="#carta">Regalar</a>
+    <a href="#empresas">Empresas</a>
+  </nav>
+  <button class="bar__bag" type="button" id="bagBtn" aria-label="Bolsa de compra, 0 productos">
+    Bolsa <span id="bagCount">0</span>
+  </button>
 </header>
 
 <main id="main">
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="inicio">
-  <div class="hero__media" aria-hidden="true">
-    <img src="assets/editorial/caballero.jpg" data-fallback="assets/club/vertido.jpg" alt="" width="1024" height="1536" fetchpriority="high">
-    <img src="assets/editorial/dama.jpg" data-fallback="assets/club/conversacion.jpg" alt="" width="1024" height="1536">
-  </div>
-  <div class="hero__copy">
-    <img class="hero__logo" src="assets/logo-due-lima.png" alt="" width="120" height="52">
-    <p class="kicker kicker--gold">Café de especialidad colombiano · Edición numerada</p>
-    <h1 class="hero__title">Hay regalos que se abren.<em>Este se sirve.</em></h1>
-    <div class="hero__ctas">
-      <a href="#regalar" class="btn btn--gold">Regalar due.</a>
-      <a href="#edicion" class="link-arrow">Descubrir la edición <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
-  <div class="hero__foot">
-    <span>Lote 07 — Pitalito, Huila</span>
-    <span class="hero__scroll" aria-hidden="true"></span>
-    <span>100 piezas numeradas</span>
-  </div>
-</section>
+<!-- Inicio: el objeto al centro, dos caminos a los lados -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <h1 id="hero-title" class="hero__title">Todo empieza<br>entre dos.</h1>
+  <p class="hero__name">due. — del italiano, dos</p>
 
-<!-- ============ FILOSOFÍA ============ -->
-<section class="philo" id="filosofia">
-  <div class="wrap philo__in">
-    <p class="kicker">Filosofía</p>
-    <h2 class="statement reveal">
-      Hay conexiones que valen<br>más que un diamante.
-      <em>Se sellan con una taza.</em>
-    </h2>
-    <p class="philo__text reveal">Como un gran vino, un gran café tiene origen, cosecha y un final que permanece. due. lo presenta en estuche, numerado y con su mensaje, para los momentos en que un regalo debe decir algo más.</p>
-
-    <ul class="pillars">
-      <li class="reveal"><span class="pillars__n">I</span><h3>Origen</h3><p>Una sola finca, un solo productor. Nunca mezclas anónimas.</p></li>
-      <li class="reveal"><span class="pillars__n">II</span><h3>Cosecha</h3><p>Cada edición corresponde a una cosecha concreta, como una añada.</p></li>
-      <li class="reveal"><span class="pillars__n">III</span><h3>Edición</h3><p>100 piezas numeradas a mano. Cuando se entregan, la edición se cierra.</p></li>
-      <li class="reveal"><span class="pillars__n">IV</span><h3>Cata</h3><p>Ficha de cata impresa, firmada por quien la seleccionó.</p></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ LA EDICIÓN ============ -->
-<section class="edition" id="edicion" aria-labelledby="ed-title">
-  <figure class="edition__stage">
-    <img src="assets/landing/due-bag.png" alt="Bolsa de café due., edición N.º 07" loading="lazy" width="650" height="1130">
-    <span class="edition__pedestal" aria-hidden="true"></span>
-    <figcaption>Edición N.º 07 · Pieza 064/100</figcaption>
+  <figure class="hero__object shutter">
+    <img src="assets/landing/due-bag.png" alt="Bolsa de café due., edición número 07" width="650" height="1130" fetchpriority="high">
   </figure>
-  <div class="edition__copy">
-    <p class="kicker">La edición actual</p>
-    <h2 id="ed-title" class="title">Lote 07<em>Ocaso</em></h2>
-    <p class="edition__notes">Panela · Mandarina · Cacao dulce</p>
-    <p class="edition__text">Un caturra lavado del sur del Huila, cultivado a 1.750 metros. Dulce, brillante y largo en boca.</p>
 
-    <dl class="specs">
-      <div><dt>Origen</dt><dd>Pitalito, Huila</dd></div>
-      <div><dt>Altitud</dt><dd>1.750 m s. n. m.</dd></div>
-      <div><dt>Variedad</dt><dd>Caturra</dd></div>
-      <div><dt>Proceso</dt><dd>Lavado</dd></div>
-      <div><dt>Puntaje SCA</dt><dd>86,5</dd></div>
-      <div><dt>Presentación</dt><dd>250 g · grano o molido</dd></div>
-    </dl>
-
-    <div class="edition__stock">
-      <div class="edition__bar" aria-hidden="true"><i style="--v:.63"></i></div>
-      <p><strong>63</strong> de 100 piezas ya tienen dueño</p>
-    </div>
-
-    <div class="edition__buy">
-      <p class="price">$68.000 <small>COP</small></p>
-      <a href="#regalar" class="btn btn--dark">Regalar esta edición</a>
-      <button type="button" class="link-arrow link-arrow--dark js-add" data-name="Lote 07 — Ocaso">Comprar para mí <span aria-hidden="true">→</span></button>
-    </div>
+  <div class="hero__side hero__side--left">
+    <h2 class="hero__who">Para usted</h2>
+    <p>Lote 07, Ocaso. Huila, lavado, 250 g.</p>
+    <p class="hero__price">$68.000 <span>COP</span></p>
+    <a class="btn" href="#edicion">Comprar la edición</a>
+  </div>
+  <div class="hero__side hero__side--right">
+    <h2 class="hero__who">Para alguien</h2>
+    <p>En estuche, con su carta escrita a mano.</p>
+    <p class="hero__price">desde $68.000 <span>COP</span></p>
+    <a class="btn" href="#carta">Regalar due.</a>
   </div>
 </section>
 
-<!-- ============ FUERA DEL MOLDE ============ -->
-<section class="manifesto" aria-labelledby="mani-title">
-  <div class="wrap manifesto__in">
-    <p class="kicker kicker--gold">Fuera del molde</p>
-    <h2 id="mani-title" class="manifesto__title reveal">Sin montañas.<br>Sin sacos de fique.<br><em>Sin postales de cosecha.</em></h2>
-    <p class="manifesto__text reveal">El café colombiano ya contó esa historia. due. se sirve en otro lugar: en la gala, en la mesa donde se cierra un acuerdo, en la noche en que alguien dice que sí.</p>
+<!-- Qué es: el nombre explica la marca -->
+<section class="intro" aria-labelledby="intro-title">
+  <div class="intro__in">
+    <h2 id="intro-title" class="intro__title rise">due. significa dos.</h2>
+    <p class="intro__statement rise">Un café de especialidad colombiano que nunca se toma a solas. Lo sirven dos: quien regala y quien recibe.</p>
+    <p class="intro__text rise">Sin montañas, sin sacos de fique, sin postales de cosecha. due. se sirve en la gala, en la mesa donde se cierra un acuerdo y en la noche en que alguien dice que sí.</p>
+    <figure class="chip chip--a rise">
+      <img src="assets/archivo/vernon-and-irene-castle2.jpg" alt="Vernon e Irene Castle bailando en traje de gala, hacia 1914" width="1600" height="1463" loading="lazy">
+    </figure>
+    <figure class="chip chip--b rise">
+      <img src="assets/archivo/espresso-cup-and-saucer-2011.jpg" alt="Una taza de café sobre su plato" width="1600" height="1199" loading="lazy">
+    </figure>
   </div>
 </section>
 
-<!-- ============ EL ESTUCHE ============ -->
-<section class="case" id="estuche" aria-labelledby="case-title">
-  <div class="wrap">
-    <header class="head head--center head--light">
-      <p class="kicker kicker--gold">El estuche</p>
-      <h2 id="case-title" class="title title--light">Todo lo que se abre<em>antes del primer sorbo.</em></h2>
-    </header>
-
-    <div class="case__grid">
-      <ol class="case__list case__list--left">
-        <li class="reveal"><span>01</span><h3>La pieza numerada</h3><p>Bolsa de 250 g con su número de edición, tostada la misma semana del envío.</p></li>
-        <li class="reveal"><span>02</span><h3>La ficha de cata</h3><p>Origen, productor, notas y cómo prepararlo, impresa en papel de algodón.</p></li>
-      </ol>
-
-      <div class="case__visual" aria-hidden="true">
-        <div class="gift gift--still">
-          <img class="gift__bag" src="assets/landing/due-bag.png" alt="" width="650" height="1130" loading="lazy">
-          <svg class="gift__tag" viewBox="0 0 170 250" aria-hidden="true">
-            <path class="gift__cord" d="M8 6 C 40 40, 70 50, 92 78"/>
-            <g transform="rotate(14 100 150)">
-              <rect x="45" y="80" width="110" height="160" rx="6" class="gift__card"/>
-              <rect x="52" y="87" width="96" height="146" rx="3" class="gift__frame"/>
-              <circle cx="100" cy="102" r="5" class="gift__hole"/>
-              <text x="100" y="146" class="gift__for">Para usted,</text>
-              <text x="100" y="172" class="gift__for gift__for--sm">con el mayor</text>
-              <text x="100" y="192" class="gift__for gift__for--sm">aprecio.</text>
-              <text x="100" y="222" class="gift__mark">due.</text>
-            </g>
-          </svg>
-          <span class="gift__back" aria-hidden="true"></span>
-          <div class="gift__box">
-            <span class="gift__ribbon"></span>
-            <span class="gift__logo">due.</span>
-            <span class="gift__ed">Hecho para regalar</span>
-          </div>
-          <span class="gift__floor"></span>
-        </div>
-      </div>
-
-      <ol class="case__list" start="3">
-        <li class="reveal"><span>03</span><h3>Su carta</h3><p>Su mensaje, escrito a mano con tinta en papel de algodón.</p></li>
-        <li class="reveal"><span>04</span><h3>El sello</h3><p>Estuche rígido verde bosque, cinta y sello dorado. Nadie lo abre antes que quien lo recibe.</p></li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- ============ REGALAR (CONFIGURADOR) ============ -->
-<section class="gifting" id="regalar" aria-labelledby="gift-title">
-  <div class="wrap">
-    <header class="head">
-      <div>
-        <p class="kicker">Regalar due.</p>
-        <h2 id="gift-title" class="title">Su regalo,<em>en tres decisiones.</em></h2>
-      </div>
-      <p class="head__aside">Elija el estuche, escriba su mensaje y la fecha de entrega. Del resto nos encargamos nosotros, en toda Colombia.</p>
-    </header>
-
-    <form class="gifting__grid" id="giftForm" novalidate>
-      <div class="gifting__steps">
-        <fieldset class="step">
-          <legend><span>1</span>El estuche</legend>
-          <div class="options">
-            <label class="option">
-              <input type="radio" name="box" value="esencial" data-price="68000" data-label="Estuche Esencial" checked>
-              <span class="option__in">
-                <b>Esencial</b>
-                <small>1 pieza de la edición actual</small>
-                <em>$68.000</em>
-              </span>
-            </label>
-            <label class="option">
-              <input type="radio" name="box" value="duo" data-price="139000" data-label="Estuche Dúo">
-              <span class="option__in">
-                <b>Dúo</b>
-                <small>2 piezas de ediciones distintas</small>
-                <em>$139.000</em>
-              </span>
-            </label>
-            <label class="option">
-              <input type="radio" name="box" value="coleccion" data-price="198000" data-label="Colección Trilogía">
-              <span class="option__in">
-                <b>Trilogía</b>
-                <small>3 ediciones + taza de porcelana</small>
-                <em>$198.000</em>
-              </span>
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="step">
-          <legend><span>2</span>El mensaje</legend>
-          <div class="fields">
-            <label class="field"><span>Para</span><input type="text" name="to" maxlength="28" placeholder="Nombre de quien lo recibe" autocomplete="off"></label>
-            <label class="field"><span>De</span><input type="text" name="from" maxlength="28" placeholder="Su nombre" autocomplete="name"></label>
-            <label class="field field--full"><span>Mensaje <i id="msgCount">0/160</i></span><textarea name="msg" rows="3" maxlength="160" placeholder="Lo escribiremos a mano, con tinta."></textarea></label>
-          </div>
-        </fieldset>
-
-        <fieldset class="step">
-          <legend><span>3</span>La entrega</legend>
-          <div class="fields">
-            <label class="field"><span>Fecha de entrega</span><input type="date" name="date" id="giftDate"></label>
-            <label class="field"><span>Ciudad</span>
-              <select name="city">
-                <option>Bogotá</option><option>Medellín</option><option>Cali</option><option>Barranquilla</option><option>Bucaramanga</option><option>Otra ciudad</option>
-              </select>
-            </label>
-          </div>
-        </fieldset>
-      </div>
-
-      <aside class="preview" aria-label="Vista previa de la tarjeta">
-        <div class="card">
-          <p class="card__ed">due. · Edición N.º 07</p>
-          <p class="card__to" id="pvTo">Para ti,</p>
-          <p class="card__msg" id="pvMsg">Hay momentos que merecen algo que no se repite.</p>
-          <p class="card__from" id="pvFrom">— Con aprecio</p>
-          <span class="card__seal" aria-hidden="true">d.</span>
-        </div>
-        <div class="summary">
-          <p><span id="pvBox">Estuche Esencial</span><strong id="pvPrice">$68.000</strong></p>
-          <p><span>Carta escrita a mano</span><span>Incluida</span></p>
-          <p><span>Envío asegurado</span><span>Incluido</span></p>
-          <button type="submit" class="btn btn--dark btn--block">Regalar ahora</button>
-          <p class="summary__note" id="giftMsg" role="status"></p>
-        </div>
-      </aside>
+<!-- La carta: lo que due. produce es una tarjeta escrita a mano -->
+<section class="letter" id="carta" aria-labelledby="letter-title">
+  <img class="letter__photo" src="assets/archivo/italian-cafe-nouvelle-athenes-cafe-nouvelle-athenes.jpg" alt="Dos personas conversando en una mesa del café Nouvelle Athènes de París, pintura de Federico Zandomeneghi" width="1241" height="1600" loading="lazy">
+  <div class="letter__copy">
+    <h2 id="letter-title" class="h2 rise">Su carta, a mano.</h2>
+    <p class="lead rise">Cada estuche lleva una tarjeta escrita con tinta. Usted pone las palabras; nosotros, el pulso. Escríbala aquí y véala tal como llegará.</p>
+    <form class="letter__form rise" id="cardForm" novalidate>
+      <label class="field"><span>Para</span><input id="to" name="to" type="text" maxlength="28" autocomplete="off" placeholder="¿Para quién?"></label>
+      <label class="field"><span>De</span><input id="from" name="from" type="text" maxlength="28" autocomplete="name" placeholder="Su nombre"></label>
+      <label class="field field--wide"><span>Mensaje <em id="msgCount">0/140</em></span><textarea id="msg" name="msg" rows="2" maxlength="140" placeholder="Lo escribiremos tal cual, con tinta."></textarea></label>
     </form>
   </div>
+  <ul class="slips" aria-label="Tarjetas de ejemplo">
+    <li class="slip slip--live" aria-live="polite">
+      <strong id="slipTo">Para usted</strong>
+      
+      <p id="slipMsg">Hay momentos que merecen algo que no se repite.</p>
+      <p class="slip__from" id="slipFrom">De quien lo sabe</p>
+    </li>
+    <li class="slip"><strong>Para Lucía</strong><p>¿Nos tomamos esta, y todas las que vienen?</p><p class="slip__from">De Andrés</p></li>
+    <li class="slip"><strong>Para Arango &amp; Cía.</strong><p>Por diez años de confianza. La próxima reunión, con este café.</p><p class="slip__from">De Marta Ruiz</p></li>
+    <li class="slip"><strong>Para mamá</strong><p>Para la taza de las seis, como siempre.</p><p class="slip__from">De Sofía</p></li>
+    <li class="slip"><strong>Para Daniel</strong><p>Gracias por la primera cita. Esta va por la segunda.</p><p class="slip__from">De Camila</p></li>
+    <li class="slip"><strong>Para don Hernán</strong><p>Bienvenido a la junta. El café corre por mi cuenta.</p><p class="slip__from">De Felipe</p></li>
+  </ul>
 </section>
 
-<!-- ============ CONEXIONES ============ -->
-<section class="occasions" id="ocasiones" aria-labelledby="occ-title">
-  <div class="wrap">
-    <header class="head head--center">
-      <p class="kicker">Conexiones</p>
-      <h2 id="occ-title" class="title">Para los momentos<em>que no admiten algo común.</em></h2>
-    </header>
-  </div>
-  <div class="occasions__row">
-    <figure class="occ reveal">
-      <img src="assets/editorial/pareja-gala.jpg" data-fallback="assets/club/brindis.jpg" alt="Pareja en traje de gala tomando café due. con París de noche al fondo" loading="lazy">
-      <figcaption><span>01</span><h3>La propuesta</h3><p>Antes del anillo, una taza que nadie más tendrá.</p></figcaption>
-    </figure>
-    <figure class="occ reveal">
-      <img src="assets/editorial/pareja-noche.jpg" data-fallback="assets/club/conversacion.jpg" alt="Pareja de etiqueta compartiendo café due. en un salón clásico" loading="lazy">
-      <figcaption><span>02</span><h3>El acuerdo</h3><p>Las relaciones que importan se cierran en persona.</p></figcaption>
-    </figure>
-    <figure class="occ reveal">
-      <img src="assets/editorial/dama.jpg" data-fallback="assets/club/ventana.jpg" alt="Mujer con antifaz y vestido negro tomando café due." loading="lazy">
-      <figcaption><span>03</span><h3>La conquista</h3><p>Una primera impresión que no se repite.</p></figcaption>
-    </figure>
-    <figure class="occ reveal">
-      <img src="assets/editorial/caballero.jpg" data-fallback="assets/club/vertido.jpg" alt="Hombre de esmoquin con antifaz sosteniendo una taza due." loading="lazy">
-      <figcaption><span>04</span><h3>El vínculo</h3><p>Para quien ya lo tiene todo, salvo esto.</p></figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ============ NÚMERO DE PIEZA ============ -->
-<section class="serial" aria-labelledby="serial-title">
-  <div class="wrap serial__in">
-    <p class="kicker kicker--gold">Exclusividad</p>
-    <p class="serial__num" aria-hidden="true"><span id="serialNum">064</span><small>/100</small></p>
-    <h2 id="serial-title" class="title title--light">Cada pieza lleva su número.<em>Cuando se entrega la última, la edición se cierra para siempre.</em></h2>
-    <p class="serial__text">Sin reediciones ni reposiciones. Quien recibe un due. recibe algo que no se puede volver a comprar.</p>
+<!-- Conexiones: cada momento con su estuche y su precio -->
+<section class="moments" aria-labelledby="moments-title">
+  <figure class="moments__preview" aria-hidden="true">
+    <img id="momentImg" src="assets/archivo/paris-tour-eiffel-wedding-proposal.jpg" alt="" width="1000" height="1250" loading="lazy">
+  </figure>
+  <div class="moments__body">
+  <h2 id="moments-title" class="h2 moments__title">Para cada conexión.</h2>
+  <table class="moments__table" aria-labelledby="moments-title">
+    <thead class="sr-only"><tr><th scope="col">Momento</th><th scope="col">Para quién</th><th scope="col">Estuche</th><th scope="col">Precio</th></tr></thead>
+    <tbody>
+      <tr data-img="assets/archivo/paris-tour-eiffel-wedding-proposal.jpg" tabindex="0"><th scope="row">La propuesta</th><td>Antes del anillo</td><td>Dúo</td><td>$139.000</td></tr>
+      <tr data-img="assets/archivo/two-men-shaking-hands.jpg" tabindex="0"><th scope="row">El acuerdo</th><td>Clientes y aliados</td><td>Esencial ×10</td><td>$680.000</td></tr>
+      <tr data-img="assets/archivo/vernon-and-irene-castle2.jpg" tabindex="0"><th scope="row">La conquista</th><td>La cita que importa</td><td>Esencial</td><td>$68.000</td></tr>
+      <tr data-img="assets/archivo/italian-cafe-nouvelle-athenes-cafe-nouvelle-athenes.jpg" tabindex="0"><th scope="row">El vínculo</th><td>Quien lo tiene todo</td><td>Trilogía</td><td>$198.000</td></tr>
+      <tr data-img="assets/archivo/espresso-cup-and-saucer-2011.jpg" tabindex="0"><th scope="row">La gratitud</th><td>Quien estuvo ahí</td><td>Esencial</td><td>$68.000</td></tr>
+      <tr data-img="assets/archivo/vernon-and-irene-castle2.jpg" tabindex="0"><th scope="row">La bienvenida</th><td>Una casa nueva</td><td>Dúo</td><td>$139.000</td></tr>
+    </tbody>
+  </table>
   </div>
 </section>
 
-<!-- ============ EMPRESAS ============ -->
-<section class="corp" id="empresas" aria-labelledby="corp-title">
-  <div class="wrap corp__grid">
-    <figure class="corp__media reveal">
-      <img src="assets/club/vertido.jpg" alt="Café filtrado cayendo sobre una taza negra" loading="lazy">
+<!-- El estuche: lo que se abre -->
+<section class="case" aria-labelledby="case-title">
+  <dl class="case__list">
+    <div class="case__row case__row--head"><dt id="case-title">En el estuche</dt><dd>Rígido, verde bosque, con cinta y sello. Nadie lo abre antes que quien lo recibe.</dd></div>
+    <div class="case__row rise"><dt>La pieza numerada</dt><dd>Bolsa de 250 g con su número de edición, tostada la semana del envío.</dd></div>
+    <div class="case__row rise"><dt>La carta a mano</dt><dd>Su mensaje, escrito con tinta en papel de algodón.</dd></div>
+    <div class="case__row rise"><dt>La ficha de cata</dt><dd>Origen, notas y cómo prepararlo, firmada por quien eligió el lote.</dd></div>
+    <div class="case__row rise"><dt>El sello</dt><dd>Lacre ámbar con la marca de due. Se rompe una sola vez.</dd></div>
+    <div class="case__row rise"><dt>La entrega</dt><dd>El día que usted elija, en cualquier ciudad de Colombia, asegurada.</dd></div>
+  </dl>
+</section>
+
+<!-- La edición: muchas muestras, un lote, cien piezas -->
+<section class="edition" id="edicion" aria-labelledby="ed-title">
+  <div class="edition__head">
+    <h2 id="ed-title" class="h2 rise">Cien piezas,<br>una cosecha.</h2>
+    <p class="lead rise">Catamos decenas de muestras para elegir un solo lote. De ese lote salen cien bolsas numeradas a mano. Cuando se entrega la última, la edición se cierra.</p>
+    <figure class="edition__clip rise">
+      <video src="assets/archivo/extraccion.webm" poster="assets/archivo/extraccion-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Extracción de un espresso vista desde abajo del portafiltro" width="960" height="540"></video>
     </figure>
-    <div class="corp__copy">
-      <p class="kicker">Regalos corporativos</p>
-      <h2 id="corp-title" class="title">Las relaciones importantes<em>se cultivan con gestos.</em></h2>
-      <p>Para clientes, aliados y equipos que merecen algo más que un detalle. Tarjeta con su marca y entrega coordinada en toda Colombia, desde 10 estuches.</p>
-      <ul class="corp__list">
-        <li>Mensaje de su marca en cada carta</li>
-        <li>Destinatarios y fechas a su medida</li>
-        <li>Un asesor dedicado de principio a fin</li>
-      </ul>
-      <a href="mailto:empresas@duecafe.co?subject=Regalos%20corporativos%20due." class="btn btn--dark">Solicitar propuesta</a>
+  </div>
+  <div class="edition__diagram rise"><svg class="edition__svg" viewBox="0 0 900 210" role="img" aria-label="Muchas muestras dispersas se reúnen en una franja y salen ordenadas en cien piezas; la 064 resaltada"><rect class="sq sq--p2" x="91" y="34" width="12" height="12"/><rect class="sq sq--p1" x="178" y="19" width="12" height="12"/><rect class="sq sq--p2" x="147" y="74" width="12" height="12"/><rect class="sq sq--p1" x="21" y="100" width="12" height="12"/><rect class="sq sq--p2" x="16" y="87" width="12" height="12"/><rect class="sq sq--p1" x="24" y="23" width="12" height="12"/><rect class="sq sq--p2" x="118" y="160" width="12" height="12"/><rect class="sq sq--p1" x="39" y="48" width="12" height="12"/><rect class="sq sq--p2" x="172" y="182" width="12" height="12"/><rect class="sq sq--p1" x="158" y="80" width="12" height="12"/><rect class="sq sq--p2" x="264" y="15" width="12" height="12"/><rect class="sq sq--p1" x="233" y="60" width="12" height="12"/><rect class="sq sq--p2" x="44" y="28" width="12" height="12"/><rect class="sq sq--p1" x="87" y="158" width="12" height="12"/><rect class="sq sq--p2" x="54" y="114" width="12" height="12"/><rect class="sq sq--p1" x="175" y="75" width="12" height="12"/><rect class="sq sq--p2" x="151" y="18" width="12" height="12"/><rect class="sq sq--p1" x="22" y="44" width="12" height="12"/><rect class="sq sq--p2" x="186" y="86" width="12" height="12"/><rect class="sq sq--p1" x="89" y="115" width="12" height="12"/><rect class="sq sq--p2" x="126" y="62" width="12" height="12"/><rect class="sq sq--p1" x="216" y="136" width="12" height="12"/><rect class="sq sq--p2" x="70" y="113" width="12" height="12"/><rect class="sq sq--p1" x="145" y="169" width="12" height="12"/><rect class="sq sq--p2" x="199" y="60" width="12" height="12"/><rect class="sq sq--p1" x="265" y="28" width="12" height="12"/><rect class="sq sq--p2" x="116" y="147" width="12" height="12"/><rect class="sq sq--p1" x="46" y="97" width="12" height="12"/><rect class="sq sq--p2" x="16" y="130" width="12" height="12"/><rect class="sq sq--p1" x="208" y="113" width="12" height="12"/><rect class="sq sq--p2" x="237" y="64" width="12" height="12"/><rect class="sq sq--p1" x="190" y="117" width="12" height="12"/><rect class="sq sq--p2" x="159" y="91" width="12" height="12"/><rect class="sq sq--p1" x="228" y="182" width="12" height="12"/><rect class="sq sq--p2" x="131" y="130" width="12" height="12"/><rect class="sq sq--p1" x="22" y="136" width="12" height="12"/><rect class="sq sq--p2" x="177" y="191" width="12" height="12"/><rect class="sq sq--p1" x="223" y="59" width="12" height="12"/><rect class="sq sq--p2" x="108" y="130" width="12" height="12"/><rect class="sq sq--p1" x="12" y="92" width="12" height="12"/><rect class="sq sq--p2" x="50" y="28" width="12" height="12"/><rect class="sq sq--p1" x="22" y="149" width="12" height="12"/><rect class="sq sq--p2" x="40" y="52" width="12" height="12"/><rect class="sq sq--p1" x="109" y="168" width="12" height="12"/><rect class="sq sq--p2" x="27" y="90" width="12" height="12"/><rect class="sq sq--p1" x="151" y="170" width="12" height="12"/><rect class="sq sq--p2" x="222" y="167" width="12" height="12"/><rect class="sq sq--p1" x="80" y="83" width="12" height="12"/><rect class="sq sq--p2" x="101" y="170" width="12" height="12"/><rect class="sq sq--p1" x="259" y="34" width="12" height="12"/><rect class="sq sq--p2" x="53" y="49" width="12" height="12"/><rect class="sq sq--p1" x="68" y="96" width="12" height="12"/><rect class="sq sq--p2" x="162" y="55" width="12" height="12"/><rect class="sq sq--p1" x="7" y="84" width="12" height="12"/><rect class="sq sq--p2" x="103" y="111" width="12" height="12"/><rect class="sq sq--p1" x="258" y="134" width="12" height="12"/><rect class="sq sq--p2" x="142" y="121" width="12" height="12"/><rect class="sq sq--p1" x="185" y="16" width="12" height="12"/><rect class="sq sq--p2" x="243" y="151" width="12" height="12"/><rect class="sq sq--p1" x="237" y="154" width="12" height="12"/><rect class="sq sq--p2" x="110" y="80" width="12" height="12"/><rect class="sq sq--p1" x="33" y="124" width="12" height="12"/><rect class="sq sq--p2" x="22" y="19" width="12" height="12"/><rect class="sq sq--p1" x="61" y="36" width="12" height="12"/><rect class="sq sq--p1" x="310" y="83" width="12" height="12"/><rect class="sq sq--p1" x="310" y="99" width="12" height="12"/><rect class="sq sq--p1" x="310" y="115" width="12" height="12"/><rect class="sq sq--p1" x="327" y="83" width="12" height="12"/><rect class="sq sq--p1" x="327" y="99" width="12" height="12"/><rect class="sq sq--p1" x="327" y="115" width="12" height="12"/><rect class="sq sq--p1" x="344" y="83" width="12" height="12"/><rect class="sq sq--p1" x="344" y="99" width="12" height="12"/><rect class="sq sq--p1" x="344" y="115" width="12" height="12"/><rect class="sq sq--p1" x="361" y="83" width="12" height="12"/><rect class="sq sq--p1" x="361" y="99" width="12" height="12"/><rect class="sq sq--p1" x="361" y="115" width="12" height="12"/><rect class="sq sq--p1" x="378" y="83" width="12" height="12"/><rect class="sq sq--p1" x="378" y="99" width="12" height="12"/><rect class="sq sq--p1" x="378" y="115" width="12" height="12"/><rect class="sq sq--p1" x="395" y="83" width="12" height="12"/><rect class="sq sq--p1" x="395" y="99" width="12" height="12"/><rect class="sq sq--p1" x="395" y="115" width="12" height="12"/><rect class="sq sq--p1" x="412" y="83" width="12" height="12"/><rect class="sq sq--p1" x="412" y="99" width="12" height="12"/><rect class="sq sq--p1" x="412" y="115" width="12" height="12"/><rect class="sq sq--p1" x="429" y="83" width="12" height="12"/><rect class="sq sq--p1" x="429" y="99" width="12" height="12"/><rect class="sq sq--p1" x="429" y="115" width="12" height="12"/><rect class="sq sq--p1" x="446" y="83" width="12" height="12"/><rect class="sq sq--p1" x="446" y="99" width="12" height="12"/><rect class="sq sq--p1" x="446" y="115" width="12" height="12"/><rect class="sq sq--p1" x="463" y="83" width="12" height="12"/><rect class="sq sq--p1" x="463" y="99" width="12" height="12"/><rect class="sq sq--p1" x="463" y="115" width="12" height="12"/><rect class="sq sq--p1" x="480" y="83" width="12" height="12"/><rect class="sq sq--p1" x="480" y="99" width="12" height="12"/><rect class="sq sq--p1" x="480" y="115" width="12" height="12"/><rect class="sq sq--p1" x="497" y="83" width="12" height="12"/><rect class="sq sq--p1" x="497" y="99" width="12" height="12"/><rect class="sq sq--p1" x="497" y="115" width="12" height="12"/><rect class="sq sq--p1" x="514" y="83" width="12" height="12"/><rect class="sq sq--p1" x="514" y="99" width="12" height="12"/><rect class="sq sq--p1" x="514" y="115" width="12" height="12"/><rect class="sq sq--p1" x="531" y="83" width="12" height="12"/><rect class="sq sq--p1" x="531" y="99" width="12" height="12"/><rect class="sq sq--p1" x="531" y="115" width="12" height="12"/><rect class="sq sq--p1" x="548" y="83" width="12" height="12"/><rect class="sq sq--p1" x="548" y="99" width="12" height="12"/><rect class="sq sq--p1" x="548" y="115" width="12" height="12"/><rect class="sq sq--a" x="640" y="8" width="12" height="12"/><rect class="sq sq--a" x="660" y="8" width="12" height="12"/><rect class="sq sq--a" x="680" y="8" width="12" height="12"/><rect class="sq sq--a" x="700" y="8" width="12" height="12"/><rect class="sq sq--a" x="720" y="8" width="12" height="12"/><rect class="sq sq--a" x="740" y="8" width="12" height="12"/><rect class="sq sq--a" x="760" y="8" width="12" height="12"/><rect class="sq sq--a" x="780" y="8" width="12" height="12"/><rect class="sq sq--a" x="800" y="8" width="12" height="12"/><rect class="sq sq--a" x="820" y="8" width="12" height="12"/><rect class="sq sq--a" x="640" y="28" width="12" height="12"/><rect class="sq sq--a" x="660" y="28" width="12" height="12"/><rect class="sq sq--a" x="680" y="28" width="12" height="12"/><rect class="sq sq--a" x="700" y="28" width="12" height="12"/><rect class="sq sq--a" x="720" y="28" width="12" height="12"/><rect class="sq sq--a" x="740" y="28" width="12" height="12"/><rect class="sq sq--a" x="760" y="28" width="12" height="12"/><rect class="sq sq--a" x="780" y="28" width="12" height="12"/><rect class="sq sq--a" x="800" y="28" width="12" height="12"/><rect class="sq sq--a" x="820" y="28" width="12" height="12"/><rect class="sq sq--a" x="640" y="48" width="12" height="12"/><rect class="sq sq--a" x="660" y="48" width="12" height="12"/><rect class="sq sq--a" x="680" y="48" width="12" height="12"/><rect class="sq sq--a" x="700" y="48" width="12" height="12"/><rect class="sq sq--a" x="720" y="48" width="12" height="12"/><rect class="sq sq--a" x="740" y="48" width="12" height="12"/><rect class="sq sq--a" x="760" y="48" width="12" height="12"/><rect class="sq sq--a" x="780" y="48" width="12" height="12"/><rect class="sq sq--a" x="800" y="48" width="12" height="12"/><rect class="sq sq--a" x="820" y="48" width="12" height="12"/><rect class="sq sq--a" x="640" y="68" width="12" height="12"/><rect class="sq sq--a" x="660" y="68" width="12" height="12"/><rect class="sq sq--a" x="680" y="68" width="12" height="12"/><rect class="sq sq--a" x="700" y="68" width="12" height="12"/><rect class="sq sq--a" x="720" y="68" width="12" height="12"/><rect class="sq sq--a" x="740" y="68" width="12" height="12"/><rect class="sq sq--a" x="760" y="68" width="12" height="12"/><rect class="sq sq--a" x="780" y="68" width="12" height="12"/><rect class="sq sq--a" x="800" y="68" width="12" height="12"/><rect class="sq sq--a" x="820" y="68" width="12" height="12"/><rect class="sq sq--a" x="640" y="88" width="12" height="12"/><rect class="sq sq--a" x="660" y="88" width="12" height="12"/><rect class="sq sq--a" x="680" y="88" width="12" height="12"/><rect class="sq sq--a" x="700" y="88" width="12" height="12"/><rect class="sq sq--a" x="720" y="88" width="12" height="12"/><rect class="sq sq--a" x="740" y="88" width="12" height="12"/><rect class="sq sq--a" x="760" y="88" width="12" height="12"/><rect class="sq sq--a" x="780" y="88" width="12" height="12"/><rect class="sq sq--a" x="800" y="88" width="12" height="12"/><rect class="sq sq--a" x="820" y="88" width="12" height="12"/><rect class="sq sq--a" x="640" y="108" width="12" height="12"/><rect class="sq sq--a" x="660" y="108" width="12" height="12"/><rect class="sq sq--a" x="680" y="108" width="12" height="12"/><rect class="sq sq--a" x="700" y="108" width="12" height="12"/><rect class="sq sq--a" x="720" y="108" width="12" height="12"/><rect class="sq sq--a" x="740" y="108" width="12" height="12"/><rect class="sq sq--a" x="760" y="108" width="12" height="12"/><rect class="sq sq--a" x="780" y="108" width="12" height="12"/><rect class="sq sq--a" x="800" y="108" width="12" height="12"/><rect class="sq sq--a" x="820" y="108" width="12" height="12"/><rect class="sq sq--a" x="640" y="128" width="12" height="12"/><rect class="sq sq--a" x="660" y="128" width="12" height="12"/><rect class="sq sq--a" x="680" y="128" width="12" height="12"/><rect class="sq sq--hit" x="700" y="128" width="12" height="12"/><rect class="sq sq--a" x="720" y="128" width="12" height="12"/><rect class="sq sq--a" x="740" y="128" width="12" height="12"/><rect class="sq sq--a" x="760" y="128" width="12" height="12"/><rect class="sq sq--a" x="780" y="128" width="12" height="12"/><rect class="sq sq--a" x="800" y="128" width="12" height="12"/><rect class="sq sq--a" x="820" y="128" width="12" height="12"/><rect class="sq sq--a" x="640" y="148" width="12" height="12"/><rect class="sq sq--a" x="660" y="148" width="12" height="12"/><rect class="sq sq--a" x="680" y="148" width="12" height="12"/><rect class="sq sq--a" x="700" y="148" width="12" height="12"/><rect class="sq sq--a" x="720" y="148" width="12" height="12"/><rect class="sq sq--a" x="740" y="148" width="12" height="12"/><rect class="sq sq--a" x="760" y="148" width="12" height="12"/><rect class="sq sq--a" x="780" y="148" width="12" height="12"/><rect class="sq sq--a" x="800" y="148" width="12" height="12"/><rect class="sq sq--a" x="820" y="148" width="12" height="12"/><rect class="sq sq--a" x="640" y="168" width="12" height="12"/><rect class="sq sq--a" x="660" y="168" width="12" height="12"/><rect class="sq sq--a" x="680" y="168" width="12" height="12"/><rect class="sq sq--a" x="700" y="168" width="12" height="12"/><rect class="sq sq--a" x="720" y="168" width="12" height="12"/><rect class="sq sq--a" x="740" y="168" width="12" height="12"/><rect class="sq sq--a" x="760" y="168" width="12" height="12"/><rect class="sq sq--a" x="780" y="168" width="12" height="12"/><rect class="sq sq--a" x="800" y="168" width="12" height="12"/><rect class="sq sq--a" x="820" y="168" width="12" height="12"/><rect class="sq sq--a" x="640" y="188" width="12" height="12"/><rect class="sq sq--a" x="660" y="188" width="12" height="12"/><rect class="sq sq--a" x="680" y="188" width="12" height="12"/><rect class="sq sq--a" x="700" y="188" width="12" height="12"/><rect class="sq sq--a" x="720" y="188" width="12" height="12"/><rect class="sq sq--a" x="740" y="188" width="12" height="12"/><rect class="sq sq--a" x="760" y="188" width="12" height="12"/><rect class="sq sq--a" x="780" y="188" width="12" height="12"/><rect class="sq sq--a" x="800" y="188" width="12" height="12"/><rect class="sq sq--a" x="820" y="188" width="12" height="12"/></svg></div>
+  <ol class="edition__steps">
+    <li class="rise"><strong>Catamos</strong><p>Decenas de muestras de productores colombianos, a ciegas.</p></li>
+    <li class="rise"><strong>Elegimos</strong><p>Un solo lote. Esta vez, un caturra lavado de Pitalito, Huila.</p></li>
+    <li class="rise"><strong>Numeramos</strong><p>Cien piezas. La 064 sigue disponible; la 101 no existe.</p></li>
+  </ol>
+</section>
+
+
+<!-- Empresas -->
+<section class="contact" id="empresas" aria-label="Regalos corporativos">
+  <p class="contact__row">Regalos corporativos</p>
+  <p class="contact__row"><a href="mailto:empresas@duecafe.co?subject=Regalos%20corporativos%20due.">empresas@duecafe.co</a></p>
+  <p class="contact__row">Bogotá, Medellín y Cali</p>
+  <p class="contact__row">Desde 10 estuches</p>
+  <p class="contact__row">Lunes a viernes, 9 a 18 h</p>
+  <p class="contact__row contact__row--go">Hablemos
+    <a class="round" href="mailto:empresas@duecafe.co?subject=Regalos%20corporativos%20due." aria-label="Escribir a empresas@duecafe.co">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </p>
+</section>
+
+<!-- Cierre: el objeto vuelve -->
+<section class="close" aria-labelledby="close-title">
+  <figure class="close__object" aria-hidden="true">
+    <img src="assets/landing/due-bag.png" alt="" width="650" height="1130" loading="lazy">
+  </figure>
+  <form class="close__copy" id="buyForm" novalidate>
+    <h2 id="close-title" class="close__title rise">Dos tazas.<br>Una edición.</h2>
+    <p class="rise">Elija el estuche. La carta que escribió arriba viaja con él.</p>
+    <p class="close__price rise"><span id="boxPrice">$68.000</span> COP, envío incluido</p>
+    <fieldset class="boxes rise">
+      <legend class="sr-only">Estuche</legend>
+      <label class="box"><input type="radio" name="box" value="Esencial" data-price="68000" checked><span><b>Esencial</b> una pieza</span><em>$68.000</em></label>
+      <label class="box"><input type="radio" name="box" value="Dúo" data-price="139000"><span><b>Dúo</b> dos ediciones</span><em>$139.000</em></label>
+      <label class="box"><input type="radio" name="box" value="Trilogía" data-price="198000"><span><b>Trilogía</b> tres ediciones y taza</span><em>$198.000</em></label>
+    </fieldset>
+    <div class="close__actions rise">
+      <button class="btn" type="submit" value="gift">Regalar due.</button>
+      <button class="btn btn--quiet" type="submit" value="self">Comprar para mí</button>
     </div>
-  </div>
-</section>
-
-<!-- ============ AVISO PRÓXIMO LOTE ============ -->
-<section class="aviso" id="aviso" aria-labelledby="aviso-title">
-  <div class="wrap aviso__in">
-    <p class="kicker kicker--gold">Lote N.º 08 en camino</p>
-    <h2 id="aviso-title" class="title title--light">Avísenme del<em>próximo lote.</em></h2>
-    <p>Un solo correo por lanzamiento, el día que salga. Las ediciones se agotan antes de anunciarse dos veces.</p>
-    <form class="aviso__form" id="avisoForm" novalidate>
-      <label for="email" class="sr-only">Correo electrónico</label>
-      <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
-      <button class="btn btn--gold" type="submit">Avisarme</button>
-    </form>
-    <p class="aviso__msg" id="avisoMsg" role="status"></p>
-  </div>
+    <p class="close__msg" id="buyMsg" role="status"></p>
+  </form>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
 <footer class="foot">
-  <div class="wrap foot__grid">
-    <div class="foot__brand">
-      <img src="assets/logo-due-lima.png" alt="due." width="110" height="47" loading="lazy">
-      <p>El regalo que se sirve. Café de especialidad colombiano en ediciones numeradas.</p>
-    </div>
-    <nav aria-label="Pie de página">
-      <h4>Explora</h4>
-      <a href="#edicion">La edición</a><a href="#estuche">El estuche</a><a href="#regalar">Regalar</a><a href="#empresas">Empresas</a>
+  <div class="foot__mark" aria-hidden="true">
+    <span class="blk blk--1">d</span><span class="blk blk--2">u</span><span class="blk blk--3">e</span><span class="blk blk--4">.</span>
+  </div>
+  <div class="foot__grid">
+    <nav class="foot__col" aria-label="Pie de página">
+      <a href="#edicion">La edición</a>
+      <a href="#carta">Regalar</a>
+      <a href="#empresas">Empresas</a>
     </nav>
-    <div>
-      <h4>Contacto</h4>
-      <a href="mailto:hola@duecafe.co">hola@duecafe.co</a>
-      <a href="#">Instagram</a>
+    <div class="foot__col">
+      <p>hola@duecafe.co</p>
       <p>Envíos a toda Colombia</p>
     </div>
+    <form class="foot__notify" id="avisoForm" novalidate>
+      <label for="email">Avísenme del próximo lote</label>
+      <div class="foot__field">
+        <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
+        <button class="btn btn--small" type="submit">Avisarme</button>
+      </div>
+      <p class="foot__msg" id="avisoMsg" role="status"></p>
+    </form>
   </div>
-  <p class="foot__base wrap"><span>© 2026 due. — Hecho en Colombia</span><span>Precios, lotes y piezas de ejemplo.</span></p>
+  <p class="foot__credits">Fotografías de archivo, con tono modificado: «Vernon and Irene Castle», Frances Benjamin Johnston, dominio público; «Cafè Nouvelle Athènes», Federico Zandomeneghi, dominio público; «Two men shaking hands», sin restricciones conocidas; «Paris - Tour Eiffel - Wedding Proposal», Rafa Esteve, CC BY-SA 4.0; «Espresso cup and saucer, 2011», studio tdes, CC BY 2.0. Video: «Macro Espresso Process», Scott Schiller, CC BY 2.0, recortado. Todo vía Wikimedia Commons. Precios, lotes, tarjetas, datos de contacto, ciudades, horarios y condiciones de envío son de ejemplo y deben confirmarse.</p>
+  <div class="foot__base">
+    <p>© 2026 due. Hecho en Colombia.</p>
+    <a class="btn btn--small" href="#inicio">Volver arriba</a>
+  </div>
 </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>

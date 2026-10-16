@@ -2,3 +2,11 @@
 .impeccable/build/
 .impeccable/mocks/
 .impeccable/config.local.json
+
+# Skills instaladas por el script de configuración del entorno
+.claude/skills/
+.claude/agents/
+skills-lock.json
+.taste-skill/inspect/
+.impeccable/hook.cache.json
+.claude/settings.local.json

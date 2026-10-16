@@ -12,50 +12,50 @@ static HTML/CSS (sin dependencias), publicable en GitHub Pages.
 
 ## Users
 
-- Amantes del café de especialidad en Colombia que buscan algo distinto a lo habitual y disfrutan descubrir perfiles de sabor nuevos.
-- Personas que buscan un regalo con significado (Navidad, cumpleaños, agradecimientos) y no saben qué dar: quieren regalar una experiencia, no un objeto más.
+- Personas en Colombia que buscan un regalo a la altura de un momento importante: una propuesta, un acuerdo de negocios, una conquista, un vínculo que quieren cuidar.
+- Empresas que regalan a clientes, aliados y equipos (desde 10 estuches).
+- Quien compra la edición para sí: amantes del café de especialidad que valoran lo exclusivo.
 
 ## Product Purpose
 
-due. es una tienda online y un club de café de especialidad. Cada compra se plantea como una experiencia, no como un producto: el cliente descubre un lote, lo recibe como un ritual y queda invitado a volver por el siguiente. El éxito es que la gente regrese a cada lanzamiento y que regale due.
+due. vende café de especialidad colombiano como un objeto de lujo para regalar o para uno mismo. Cada edición es un lote único de 100 piezas numeradas, presentado en estuche con una carta escrita a mano. El éxito es que la gente regale due. en sus momentos importantes y vuelva por cada edición.
 
 ## Positioning
 
-due. no vende siempre el mismo café. Trabaja con lotes limitados y ediciones temporales (por ejemplo, 100 bolsas de un lote específico); al agotarse, llega un lote nuevo con otro origen y otro perfil. Cada lanzamiento es único y esperado. La pertenencia a un club abierto a cualquiera es parte de la propuesta.
+due. significa «dos» en italiano: un café que nunca se toma a solas. Se comunica como una casa de lujo (referente de la cliente: Rolex), no como una tienda de café: nada de fincas, granos, plantas ni postales de cosecha. Ediciones limitadas y numeradas; agotado es agotado.
 
 ## Operating Context
 
-- Compra directa en la web (bolsa del lote actual, caja regalo, membresía del club).
-- Regalo: elegir formato, mensaje y fecha de entrega para otra persona.
-- Club: aviso anticipado de lanzamientos y reserva de lotes.
-- Archivo de lotes agotados como memoria de la marca.
+- Dos acciones con el mismo peso: comprar la edición y regalar due.
+- Regalo: elegir estuche (Esencial, Dúo, Trilogía), escribir la carta (para, de, mensaje) y la fecha de entrega.
+- Regalos corporativos por correo.
+- Aviso por correo del próximo lote.
 
 ## Capabilities and Constraints
 
 - Mercado: Colombia. Precios en pesos colombianos (COP).
 - Pago, inventario real y registro de correos aún no están conectados (simulados en la web).
-- Datos de lotes, productores, precios y testimonios: **todavía no existen datos reales**. Se usan ejemplos verosímiles marcados como tales; deben sustituirse antes de publicar.
+- Datos de lotes, precios y tarjetas: **todavía no existen datos reales**. Se usan ejemplos marcados como tales; deben sustituirse antes de publicar.
 
 ## Brand Commitments
 
-- Nombre: **due.** (minúsculas, con punto).
-- Logotipo: wordmark sans‑serif bold en verde oliva (`assets/logo-due-olive.png`, versión crema `assets/logo-due-cream.png`).
-- Percepción buscada: prémium, elegante, exclusiva.
-- El usuario pidió explícitamente: paleta sofisticada de verdes con el oliva como base y más tonos verdes complementarios; tipografía más imponente y llamativa sin perder elegancia.
-- Voz: comunicar experiencia (sorprender, regalar, algo fuera de lo común), no la cantidad de bolsas como mensaje principal.
+- Nombre: **due.** (minúsculas, con punto). Significa «dos» en italiano y es la idea central de la marca (confirmado).
+- Logotipo: wordmark sans-serif bold en verde oliva (`assets/logo-due-olive.png`, versión lima `assets/logo-due-lima.png`).
+- Comunicación (brief de la cliente): elegante, sofisticada, contemporánea, exclusiva, costosa, segura, persuasiva y no condescendiente. Trato de «usted».
+- Paleta fijada por la cliente: negro, blanco, verde #161D10 y #799733, beige y ámbar, sobrios.
+- Tipografía fijada: League Spartan y Montserrat, más una serif elegante (Bodoni Moda).
+- Personas reales y elegantes, sin antifaz (confirmado). Nada de naturaleza.
+- Referente visual: rolex.com.
 
 ## Evidence on Hand
 
-- Logo de la marca (assets/).
-- No hay fotografías, testimonios, prensa ni datos de lotes reales. No inventar clientes ni cifras presentándolas como reales.
+- Logo y fotografía de producto de la bolsa (assets/landing/due-bag.png, recortada de la foto de la marca).
+- Fotografía de archivo de dominio público o con licencia libre, acreditada en la página (assets/archivo/, assets/credits.json).
+- No hay testimonios, prensa ni datos de lotes reales. No inventar clientes ni cifras presentándolas como reales.
 
 ## Product Principles
 
-1. Cada lote es un acontecimiento: temporalidad y exclusividad visibles, sin agobiar.
-2. Regalar due. es regalar una experiencia fuera de lo común.
-3. Pertenecer: el club está abierto a cualquiera con curiosidad.
-4. Comprar debe ser intuitivo; la emoción no puede estorbar la compra.
-
-## Brand Commitments (adicional)
-
-- Dirección visual elegida por el usuario: lujo clásico, al nivel de **Hermès** y **Blue Bottle Coffee**.
+1. Todo empieza entre dos: cada decisión de la página se organiza en pares.
+2. Cada edición es un acontecimiento: exclusividad visible, sin agobiar.
+3. Regalar due. es regalar algo que no se puede volver a comprar.
+4. Comprar debe ser claro: la elegancia no puede estorbar la compra.

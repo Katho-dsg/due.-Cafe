@@ -9,14 +9,14 @@ related_targets: []
 
 Scope: landing page y tienda única de due. Modo: Persuade. Ruta code-led (sin generación de imágenes en este entorno).
 
-Audiencia: amantes del café de especialidad en Colombia y personas buscando un regalo con significado (Navidad). Acción: comprar el lote actual, armar un regalo, unirse al club. Prueba: el lote actual con ficha de origen, fotografía real de café, archivo de lotes. Precios en COP (de ejemplo, a sustituir).
+Audiencia: personas en Colombia que regalan para momentos importantes (propuestas, acuerdos, conquistas, vínculos) y quien compra para sí. Acciones con el mismo peso: comprar la edición y regalar due. Prueba: la edición numerada (Lote 07, pieza 064/100), el estuche y la carta escrita a mano. Precios en COP (de ejemplo, a sustituir).
 
-Referentes elegidos por el usuario (canon "lujo clásico"): Hermès y Blue Bottle Coffee. Su nivel es el listón.
+Referente de la cliente: rolex.com. Brief fijado por la cliente: negro, blanco, verde #161D10/#799733, beige, ámbar; League Spartan + Montserrat + una serif elegante; nada de naturaleza (ni plantas, ni granos, ni fincas); personas reales y elegantes, sin antifaz; due = «dos» en italiano como idea central (confirmado por el usuario).
 
 ## Direction contract
-THESIS: Lujo clásico ejecutado sin ironía: fotografía grande, campos de color verde a página completa, serif display imponente. La página vende una experiencia fuera de lo común y un regalo, no "100 bolsas"; rechaza la plantilla de tienda de café (crema + serif cursiva + tarjetas).
-OWN-WORLD: Familia de verdes que posee regiones enteras: bosque profundo #0E2219, esmeralda #1F5641, oliva del logo #3F4720, musgo #75863A, salvia #B9C6A6, pistacho #DCE4B4, suelo menta pálido #EFF2E8; latón #C4A25C solo para el lazo de regalo. Display Gloock grande y de tracking negativo; texto Hanken Grotesk. Botones píldora, filetes de 1px.
-STORY: El visitante entiende en una frase que due. es una experiencia de café que existe una sola temporada, cree que es un regalo distinto para Navidad, y compra el lote o arma un regalo.
-FIRST VIEWPORT: Foto a sangre de cerezas de café; titular gigante abajo a la izquierda "Una experiencia fuera de lo común."; dos acciones (Comprar el lote / Regalar due.); ficha flotante del lote actual con precio y botón añadir a la derecha; nav translúcida encima.
-FORM: canon (lujo clásico), elegido por el usuario fuera de la lista propia; seed key 88cf5c10.
+THESIS: due. vestido con los modales de una casa relojera: el objeto al centro sobre negro, cifras grandes, pocas palabras; el nombre («dos») ordena la página en pares. Rechaza la plantilla de tienda de café (crema, serif cursiva, granos, cafetales, tarjetas).
+OWN-WORLD: Campos planos que cambian por capítulo: negro #0E0E0C, beige #E6DAC3, verde #161D10, blanco; ámbar #C08A3E solo en acciones y cifras; oliva #799733 en una pieza. League Spartan 700 para titulares y cifras, Montserrat para texto, Bodoni Moda cursiva solo para la línea del nombre y la letra de las tarjetas. Botones píldora ámbar. Fotografía de archivo en duotono negro–hueso. Sin líneas, degradados ni sombras en reposo.
+STORY: El visitante entiende que due. significa dos y es un café para servir entre dos, cree que es un regalo a la altura de un gran momento, y compra la edición o escribe su carta y regala.
+FIRST VIEWPORT: Negro. Titular centrado «Todo empieza entre dos.» a 8vw en dos líneas; debajo, en serif cursiva pequeña, «due. — del italiano, dos»; la bolsa al centro cortada por el borde inferior; a su izquierda «Para usted» con precio y «Comprar la edición»; a su derecha «Para alguien» con «Regalar due.». Barra simple arriba.
+FORM: borrowed-category (dressed as a watch house), taste-skill direction elegida entre 3 repartidas (taste seed 1365380860). Impeccable concept-seed no se ejecutó: la dirección la fijó el brief de la cliente (Rolex, paleta, tipografías, sin naturaleza), que según new-work prevalece sobre la tirada. Signature interaction: la carta se escribe y aparece al instante en la primera tarjeta; la imagen del objeto se abre con un obturador.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

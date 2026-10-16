@@ -6,126 +6,107 @@
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
   var cop = function (n) { return "$" + n.toLocaleString("es-CO"); };
 
-  /* ---------- Imágenes editoriales: provisional si aún no se han subido ---------- */
-  $$("img[data-fallback]").forEach(function (img) {
-    var swap = function () { img.onerror = null; img.src = img.dataset.fallback; };
-    if (img.complete && !img.naturalWidth) swap(); else img.onerror = swap;
-  });
+  /* ---------- Barra: fondo sólido al bajar ---------- */
+  var bar = $("#bar"), hero = $(".hero");
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (e) { bar.classList.toggle("is-solid", !e[0].isIntersecting); }, { rootMargin: "-80px 0px 0px 0px" }).observe(hero);
+  }
 
-  /* ---------- Header ---------- */
-  var nav = $("#nav");
-  var onScroll = function () { nav.classList.toggle("is-scrolled", window.scrollY > 40); };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  /* ---------- Entrada del inicio y obturador del objeto ---------- */
+  requestAnimationFrame(function () { requestAnimationFrame(function () { hero.classList.add("is-in"); }); });
 
-  var burger = $("#burger"), menu = $("#menu");
-  var setMenu = function (open) {
-    burger.setAttribute("aria-expanded", String(open));
-    burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
-    menu.classList.toggle("is-open", open);
-    document.body.style.overflow = open ? "hidden" : "";
-  };
-  burger.addEventListener("click", function () { setMenu(burger.getAttribute("aria-expanded") !== "true"); });
-  $$("a", menu).forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
-
-  /* ---------- Toast y bolsa (simulada) ---------- */
-  var toast = $("#toast"), toastT;
+  /* ---------- Bolsa (simulada) y aviso ---------- */
+  var toast = $("#toast"), toastT, count = 0, countEl = $("#bagCount"), bagBtn = $("#bagBtn");
   function notify(msg) {
     toast.textContent = msg;
     toast.classList.add("is-on");
     clearTimeout(toastT);
     toastT = setTimeout(function () { toast.classList.remove("is-on"); }, 2800);
   }
-  var count = 0, countEl = $("#bagCount"), bagBtn = $("#bagBtn");
-  function addToBag(name) {
+  function addToBag(text) {
     count++;
     countEl.textContent = count;
     bagBtn.setAttribute("aria-label", "Bolsa de compra, " + count + (count === 1 ? " producto" : " productos"));
     countEl.classList.remove("bump"); void countEl.offsetWidth; countEl.classList.add("bump");
-    notify(name + " está en tu bolsa");
+    notify(text);
   }
-  $$(".js-add").forEach(function (b) {
-    b.addEventListener("click", function () { addToBag(b.dataset.name); });
+  bagBtn.addEventListener("click", function () {
+    notify(count ? "Tiene " + count + (count === 1 ? " producto" : " productos") + " en la bolsa." : "Su bolsa está vacía.");
   });
 
-  /* ---------- Configurador de regalo ---------- */
-  var form = $("#giftForm");
-  var pv = { to: $("#pvTo"), msg: $("#pvMsg"), from: $("#pvFrom"), box: $("#pvBox"), price: $("#pvPrice") };
-  var defaults = { to: pv.to.textContent, msg: pv.msg.textContent, from: pv.from.textContent };
-  var msgCount = $("#msgCount"), giftMsg = $("#giftMsg");
-
-  function render() {
-    var to = form.to.value.trim(), from = form.from.value.trim(), msg = form.msg.value.trim();
-    pv.to.textContent = to ? "Para " + to + "," : defaults.to;
-    pv.msg.textContent = msg || defaults.msg;
-    pv.from.textContent = from ? "— " + from : defaults.from;
-    msgCount.textContent = form.msg.value.length + "/160";
-    var box = $('input[name="box"]:checked', form);
-    pv.box.textContent = box.dataset.label;
-    pv.price.textContent = cop(+box.dataset.price);
+  /* ---------- La carta: se escribe y se ve al instante ---------- */
+  var to = $("#to"), from = $("#from"), msg = $("#msg");
+  var slip = { to: $("#slipTo"), msg: $("#slipMsg"), from: $("#slipFrom") };
+  var defaults = { to: slip.to.textContent, msg: slip.msg.textContent, from: slip.from.textContent };
+  function renderCard() {
+    slip.to.textContent = to.value.trim() ? "Para " + to.value.trim() : defaults.to;
+    slip.msg.textContent = msg.value.trim() || defaults.msg;
+    slip.from.textContent = from.value.trim() ? "De " + from.value.trim() : defaults.from;
+    $("#msgCount").textContent = msg.value.length + "/140";
   }
-  form.addEventListener("input", render);
-  form.addEventListener("change", render);
+  $("#cardForm").addEventListener("input", renderCard);
+  $("#cardForm").addEventListener("submit", function (e) { e.preventDefault(); });
 
-  // Fecha mínima: pasado mañana (tiempo de tueste y envío)
-  var date = $("#giftDate"), min = new Date(Date.now() + 2 * 864e5);
-  date.min = min.toISOString().slice(0, 10);
-
-  form.addEventListener("submit", function (e) {
+  /* ---------- Cierre: estuche, precio y las dos acciones ---------- */
+  var buy = $("#buyForm"), buyMsg = $("#buyMsg");
+  function chosen() { return $('input[name="box"]:checked', buy); }
+  buy.addEventListener("change", function () { $("#boxPrice").textContent = cop(+chosen().dataset.price); });
+  buy.addEventListener("submit", function (e) {
     e.preventDefault();
-    if (!form.to.value.trim()) {
-      giftMsg.classList.add("is-error");
-      giftMsg.textContent = "Dinos para quién es el regalo.";
-      form.to.focus();
+    var box = chosen().value, gift = e.submitter && e.submitter.value === "gift";
+    if (gift && !to.value.trim()) {
+      buyMsg.textContent = "Escriba primero para quién es la carta.";
+      $("#carta").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      setTimeout(function () { to.focus({ preventScroll: true }); }, 600);
       return;
     }
-    giftMsg.classList.remove("is-error");
-    giftMsg.textContent = "";
-    addToBag($('input[name="box"]:checked', form).dataset.label + " para " + form.to.value.trim());
+    buyMsg.textContent = "";
+    addToBag(gift ? "Estuche " + box + " para " + to.value.trim() + ", en su bolsa." : "Estuche " + box + " para usted, en su bolsa.");
   });
-  render();
+
+  /* ---------- Conexiones: cada fila muestra su imagen ---------- */
+  var rows = $$(".moments__table tbody tr"), img = $("#momentImg"), swapT;
+  function activate(row) {
+    if (row.classList.contains("is-active")) return;
+    rows.forEach(function (r) { r.classList.toggle("is-active", r === row); });
+    var src = row.dataset.img;
+    if (img.getAttribute("src") === src) return;
+    img.classList.add("is-swapping");
+    clearTimeout(swapT);
+    swapT = setTimeout(function () { img.src = src; img.classList.remove("is-swapping"); }, 200);
+  }
+  rows[0].classList.add("is-active");
+  rows.forEach(function (r) {
+    r.addEventListener("mouseenter", function () { activate(r); });
+    r.addEventListener("focus", function () { activate(r); });
+    r.addEventListener("click", function () { activate(r); });
+  });
+  // Precarga para que el cambio sea inmediato
+  rows.forEach(function (r) { var i = new Image(); i.src = r.dataset.img; });
 
   /* ---------- Aviso del próximo lote ---------- */
   var aviso = $("#avisoForm"), avisoMsg = $("#avisoMsg");
   aviso.addEventListener("submit", function (e) {
     e.preventDefault();
     var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(aviso.email.value.trim());
-    avisoMsg.classList.toggle("is-error", !ok);
-    avisoMsg.textContent = ok ? "Listo. Te escribiremos el día que salga el próximo lote." : "Revisa tu correo, parece incompleto.";
+    avisoMsg.textContent = ok ? "Listo. Le escribiremos el día que salga el próximo lote." : "Revise el correo: parece incompleto.";
     if (ok) aviso.reset();
   });
 
-  /* ---------- Número de pieza: cuenta hasta 064 al aparecer ---------- */
-  var serial = $("#serialNum"), counted = false;
-  function countUp() {
-    if (counted) return; counted = true;
-    var end = 64, t0 = performance.now(), dur = 1600;
-    (function step(t) {
-      var p = Math.min(1, (t - t0) / dur), v = Math.round(end * (1 - Math.pow(1 - p, 3)));
-      serial.textContent = ("00" + v).slice(-3);
-      if (p < 1) requestAnimationFrame(step);
-    })(t0);
-  }
-
-  /* ---------- Revelado al hacer scroll ---------- */
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var targets = $$(".reveal, .edition, .serial");
-  if ("IntersectionObserver" in window && !reduce) {
-    serial.textContent = "000";
+  /* ---------- Entradas por sección, escalonadas ---------- */
+  var items = $$(".rise");
+  if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
-        var t = en.target;
-        t.classList.add("is-in"); io.unobserve(t);
-        if (t.classList.contains("serial")) countUp();
-        setTimeout(function () { t.style.transitionDelay = ""; }, 1500);
+        var el = en.target, sib = $$(".rise", el.closest("section, footer") || document.body);
+        el.style.transitionDelay = Math.max(0, sib.indexOf(el)) * 70 + "ms";
+        el.classList.add("is-in");
+        io.unobserve(el);
       });
-    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
-    targets.forEach(function (t, i) {
-      if (t.classList.contains("reveal")) t.style.transitionDelay = (i % 4) * 100 + "ms";
-      io.observe(t);
-    });
-  } else {
-    targets.forEach(function (t) { t.classList.add("is-in"); });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    items.forEach(function (el) { io.observe(el); });
   }
+  // Nada queda oculto si algo falla
+  setTimeout(function () { items.forEach(function (el) { el.classList.add("is-in"); }); hero.classList.add("is-in"); }, 4000);
 })();

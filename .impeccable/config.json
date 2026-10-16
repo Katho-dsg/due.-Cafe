@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "league spartan",
+        "createdAt": "2026-10-16T22:41:20.593Z",
+        "reason": "user confirmed: brief pins League Spartan and Montserrat"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "montserrat",
+        "createdAt": "2026-10-16T22:41:20.601Z",
+        "reason": "user confirmed: brief pins League Spartan and Montserrat"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "bodoni moda",
+        "createdAt": "2026-10-16T22:41:20.609Z",
+        "reason": "user asked for a third elegant face to pair with League Spartan and Montserrat; DESIGN.md is rewritten at finish"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-16T22:56:12.614Z",
+        "reason": "static detector cannot resolve clamp() section padding; 1440/768/390 renders show 16–32px insets on every section (taste inspector, finish-review screenshots)"
+      }
+    ]
+  }
+}
