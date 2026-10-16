@@ -1,310 +1,297 @@
 ---
 name: due.
-description: Café de especialidad en lotes de una sola temporada; lujo clásico en una familia de verdes.
+description: Café de especialidad colombiano en ediciones de cien piezas, vestido con los modales de una casa relojera.
 colors:
-  forest: "#0E2219"
-  emerald: "#1F5641"
-  olive: "#3F4720"
-  moss: "#75863A"
-  sage: "#B9C6A6"
-  pistachio: "#DCE4B4"
-  mint: "#EFF2E8"
-  mint-2: "#E3E9DA"
-  paper: "#FBFCF7"
-  ink: "#14231B"
-  ink-soft: "#4A5A4D"
-  on-dark: "#F1F4EA"
-  on-dark-soft: "#BFCBB6"
-  line: "rgba(20, 35, 27, .14)"
-  line-dark: "rgba(241, 244, 234, .2)"
-  error-blush: "#F2C8B8"
+  amber: "#C08A3E"
+  amber-bright: "#D49B4A"
+  olive: "#799733"
+  black: "#0E0E0C"
+  green: "#161D10"
+  green-2: "#1D2715"
+  beige: "#E6DAC3"
+  paper: "#ECE8E1"
+  bone: "#F3EEE4"
+  white: "#FFFFFF"
+  muted-on-dark: "#B8AE9C"
+  muted-on-light: "#4F4A40"
+  placeholder-on-dark: "#8C8476"
 typography:
-  display-hero:
-    fontFamily: "Gloock, Bodoni 72, Didot, Georgia, serif"
-    fontSize: "clamp(3rem, 7.2vw, 6rem)"
-    fontWeight: 400
+  display:
+    fontFamily: "League Spartan, Montserrat, system-ui, sans-serif"
+    fontSize: "clamp(3.25rem, 8.2vw, 8.5rem)"
+    fontWeight: 700
+    lineHeight: 0.88
+    letterSpacing: "-0.04em"
+  headline:
+    fontFamily: "League Spartan, Montserrat, system-ui, sans-serif"
+    fontSize: "clamp(2.25rem, 4.6vw, 4.75rem)"
+    fontWeight: 700
     lineHeight: 0.95
     letterSpacing: "-0.03em"
-  display:
-    fontFamily: "Gloock, Bodoni 72, Didot, Georgia, serif"
-    fontSize: "clamp(2.6rem, 6.2vw, 5.6rem)"
-    fontWeight: 400
-    lineHeight: 0.98
-    letterSpacing: "-0.025em"
-  headline:
-    fontFamily: "Gloock, Bodoni 72, Didot, Georgia, serif"
-    fontSize: "clamp(2.3rem, 4.6vw, 4.2rem)"
-    fontWeight: 400
-    lineHeight: 1.02
-    letterSpacing: "-0.025em"
   title:
-    fontFamily: "Gloock, Bodoni 72, Didot, Georgia, serif"
-    fontSize: "1.75rem"
-    fontWeight: 400
+    fontFamily: "League Spartan, Montserrat, system-ui, sans-serif"
+    fontSize: "clamp(1.375rem, 2.1vw, 2rem)"
+    fontWeight: 700
+    lineHeight: 1
+    letterSpacing: "-0.02em"
+  figure:
+    fontFamily: "League Spartan, Montserrat, system-ui, sans-serif"
+    fontSize: "clamp(1.375rem, 2.1vw, 2rem)"
+    fontWeight: 500
     lineHeight: 1.1
-  numeral:
-    fontFamily: "Gloock, Bodoni 72, Didot, Georgia, serif"
-    fontSize: "clamp(3.6rem, 5vw, 5.2rem)"
-    fontWeight: 400
-    lineHeight: 0.9
-    letterSpacing: "-0.03em"
     fontFeature: "tnum"
+  index:
+    fontFamily: "League Spartan, Montserrat, system-ui, sans-serif"
+    fontSize: "clamp(1.375rem, 2.1vw, 2rem)"
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: "-0.01em"
+  statement:
+    fontFamily: "Montserrat, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "clamp(1.375rem, 2.1vw, 2rem)"
+    fontWeight: 500
+    lineHeight: 1.25
   lead:
-    fontFamily: "Hanken Grotesk, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "1.15rem"
+    fontFamily: "Montserrat, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "1.1875rem"
     fontWeight: 400
-    lineHeight: 1.6
+    lineHeight: 1.55
   body:
-    fontFamily: "Hanken Grotesk, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "1.0625rem"
+    fontFamily: "Montserrat, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.6
+    lineHeight: 1.55
   label:
-    fontFamily: "Hanken Grotesk, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "0.88rem"
+    fontFamily: "Montserrat, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "1rem"
     fontWeight: 600
-    lineHeight: 1.6
-  button:
-    fontFamily: "Hanken Grotesk, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "0.95rem"
-    fontWeight: 600
-    letterSpacing: "0.01em"
+    lineHeight: 1
+  name-line:
+    fontFamily: "Bodoni Moda, Didot, Bodoni 72, Georgia, serif"
+    fontSize: "1.1875rem"
+    fontWeight: 400
+    lineHeight: 1.3
+  handwriting:
+    fontFamily: "Bodoni Moda, Didot, Bodoni 72, Georgia, serif"
+    fontSize: "1.1875rem"
+    fontWeight: 400
+    lineHeight: 1.4
 rounded:
-  hairline: "3px"
-  photo: "4px"
-  card: "6px"
+  none: "0"
+  focus: "2px"
   pill: "999px"
-  round: "50%"
 spacing:
-  gutter: "clamp(16px, 4.2vw, 64px)"
-  section: "clamp(96px, 13vw, 184px)"
-  column-gap: "clamp(40px, 7vw, 112px)"
-  wrap: "1320px"
+  margin: "clamp(16px, 2.2vw, 32px)"
+  gutter: "24px"
+  section: "clamp(120px, 14vw, 200px)"
 components:
-  button-forest:
-    backgroundColor: "{colors.forest}"
-    textColor: "{colors.on-dark}"
-    typography: "{typography.button}"
+  button-primary:
+    backgroundColor: "{colors.amber}"
+    textColor: "{colors.black}"
+    typography: "{typography.label}"
     rounded: "{rounded.pill}"
-    padding: "0 30px"
-    height: "54px"
-  button-forest-hover:
-    backgroundColor: "{colors.emerald}"
-  button-light:
-    backgroundColor: "{colors.on-dark}"
-    textColor: "{colors.forest}"
-    typography: "{typography.button}"
+    padding: "0 28px"
+    height: "52px"
+  button-primary-hover:
+    backgroundColor: "{colors.amber-bright}"
+  button-quiet:
+    backgroundColor: "{colors.black}"
+    textColor: "{colors.bone}"
+    typography: "{typography.label}"
     rounded: "{rounded.pill}"
-    padding: "0 30px"
-    height: "54px"
-  button-light-hover:
-    backgroundColor: "{colors.pistachio}"
-  button-line-light:
-    textColor: "{colors.on-dark}"
-    typography: "{typography.button}"
-    rounded: "{rounded.pill}"
-    padding: "0 30px"
-    height: "54px"
-  button-sm:
+    padding: "0 28px"
+    height: "52px"
+  button-quiet-hover:
+    backgroundColor: "{colors.green}"
+  button-small:
+    backgroundColor: "{colors.amber}"
+    textColor: "{colors.black}"
     rounded: "{rounded.pill}"
     padding: "0 20px"
     height: "44px"
-  segment:
-    textColor: "{colors.forest}"
-    rounded: "{rounded.card}"
-    padding: "8px 16px"
-    height: "48px"
-  segment-selected:
-    backgroundColor: "{colors.forest}"
-    textColor: "{colors.on-dark}"
-  field:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.card}"
-    padding: "14px 16px"
-  status-tag:
+  bag-pill:
+    backgroundColor: "{colors.green}"
+    textColor: "{colors.bone}"
     rounded: "{rounded.pill}"
-    padding: "4px 12px"
-  lot-card:
-    backgroundColor: "{colors.mint}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.card}"
-    padding: "26px 26px 22px"
-  plate:
-    backgroundColor: "{colors.emerald}"
-    textColor: "{colors.on-dark}"
-    rounded: "{rounded.card}"
-    padding: "28px"
+    padding: "0 6px 0 18px"
+    height: "44px"
+  input-underline:
+    textColor: "{colors.bone}"
+    rounded: "{rounded.none}"
+    padding: "8px 0"
+  choice-row:
+    textColor: "{colors.black}"
+    rounded: "{rounded.pill}"
+    padding: "16px 18px"
+  choice-row-selected:
+    backgroundColor: "{colors.paper}"
+  letter-slip:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.black}"
+    typography: "{typography.handwriting}"
+    rounded: "{rounded.none}"
+    padding: "22px 20px 40px"
+  letter-slip-live:
+    backgroundColor: "{colors.white}"
+  contact-row:
+    backgroundColor: "{colors.green}"
+    textColor: "{colors.bone}"
+    typography: "{typography.headline}"
+    padding: "0 20px 26px"
+    height: "150px"
 ---
 
 # Design System: due.
 
 ## Overview
 
-**Creative North Star: "La Casa Verde"**
+**Creative North Star: "La casa relojera"**
 
-due. es lujo clásico sin ironía: una casa de café que viste cada estancia de un verde distinto, cuelga fotografía grande en sus paredes y firma con una serif display imponente. La página no es una tienda con secciones, es un recorrido por campos de color a página completa (bosque, pistacho, menta, esmeralda, oliva) donde cada región pertenece a un solo verde. El listón es el de Hermès y Blue Bottle Coffee: pocas piezas, mucho aire, materiales precisos.
+due. se presenta como una casa relojera presenta una pieza: el objeto al centro sobre negro, cifras grandes, muy pocas palabras. La página no es una tienda de café; es una secuencia de capítulos, y cada capítulo es un campo de color plano (negro, beige, verde bosque, blanco) que cambia de golpe, sin degradado ni línea que lo anuncie. El nombre, «dos» en italiano, ordena la composición en pares: dos caminos a los lados del objeto, «Para» y «De» en la carta, dos acciones con el mismo peso al cierre.
 
-La densidad es baja y generosa: márgenes de sección de hasta 184px, columnas separadas por hasta 112px, titulares que ocupan cuatro o cinco palabras por línea. La estructura la dan filetes de 1px, no cajas; la profundidad aparece solo cuando un objeto flota sobre otro plano (la ficha del lote sobre la foto, la tarjeta de regalo sobre la caja, el carrito sobre la página). Las acciones son píldoras; lo seleccionable y lo que contiene datos tiene esquinas de 6px.
+La densidad es baja y el ritmo es lento: secciones altas, márgenes generosos, titulares enormes y apretados en League Spartan, texto corto en Montserrat. El ámbar es el único color que se mueve: marca lo que se puede pulsar y lo que cuesta. La fotografía es de archivo y llega en duotono negro–hueso, nunca a color; la única pieza a todo color es el objeto mismo.
 
-La fotografía es real y pasa siempre por una misma gradación verde, de modo que una cereza roja o una caja de cartón conviven con la paleta en lugar de pelear con ella. Se rechaza explícitamente la plantilla de cafetería: fondo crema, serif cursiva y rejilla de tarjetas.
+Lo que esta casa rechaza, por compromiso de marca: la plantilla de cafetería (lienzo crema de punta a punta, serif cursiva en titulares, granos, fincas, plantas, postales de cosecha) y las tarjetas con borde y sombra.
 
 **Key Characteristics:**
-- Campos de color verdes a página completa; cada sección posee un solo verde.
-- Gloock en peso 400 con tracking negativo para todo lo que se lee como titular, precio o número.
-- Hanken Grotesk para texto e interfaz, en minúsculas de frase, sin versalitas espaciadas.
-- Filetes de 1px como estructura; sombras solo para objetos flotantes.
-- Fotografía grande con gradación verde común y velos en bosque.
-- Movimiento sobrio: curvas de salida largas, presión con escala 0.97, hover solo en punteros finos.
+- Campos planos de color por capítulo; sin degradados, sin sombras en reposo.
+- Titulares y cifras en League Spartan 700, interlineado por debajo de 1 y tracking negativo.
+- Ámbar solo para acciones, precios y las piezas de la edición.
+- Una sola forma interactiva: la píldora completa.
+- Fotografía de archivo en duotono negro–hueso; el objeto es la única imagen a color.
+- Composición en pares, siguiendo el nombre.
 
 ## Colors
 
-Una familia de verdes de bosque a menta, sin un solo neutro gris ni negro puro: hasta el texto y las sombras son verdes.
+Una paleta sobria de campos oscuros y claros cálidos, con un solo acento metálico (ámbar) y un verde oliva que vive en la marca.
 
 ### Primary
-- **Bosque Profundo** (forest): el verde casi negro. Fondo del hero, de la experiencia, del cierre y del pie; botón principal sobre fondos claros; color de los titulares sobre fondos claros; base de todos los velos y sombras (en rgba de 14, 34, 25).
-- **Esmeralda** (emerald): campo de la sección de origen, hover del botón bosque, borde de foco de los campos, cifras de existencias y énfasis cálido dentro de la tarjeta de regalo.
-
-### Secondary
-- **Oliva del Logotipo** (olive): el verde del wordmark. Campo completo del club y una de las placas del archivo. Es la base de la marca; no se usa como color de texto sobre claro.
-- **Musgo** (moss): acento funcional. Anillo de foco global, hover de borde en segmentos, relleno de la barra de existencias, palabra suavizada dentro de un titular (`.soft`) y barra de desplazamiento.
+- **Ámbar de lacre** (amber): botones primarios, el contador de la bolsa, el foco de teclado, la selección de texto, las cien piezas del diagrama de la edición y el punto del wordmark construido en el pie. Es el color del dinero y de la acción.
+- **Ámbar encendido** (amber-bright): solo como estado hover del ámbar; nunca en reposo.
 
 ### Tertiary
-- **Pistacho** (pistachio): campo luminoso de la sección de Navidad y del plan destacado del club; contador del carrito, iconos de línea y puntos del ciclo sobre fondo oscuro; hover del botón claro; color de selección de texto.
-- **Salvia** (sage): placa clara del archivo e inicio del degradado de las barras de perfil de taza.
+- **Oliva de la marca** (olive): el color del logotipo y de la bolsa. Vive en las piezas raster de la marca (logo, fotografía del objeto); no se usa como relleno de interfaz.
 
 ### Neutral
-- **Suelo Menta** (mint): el fondo de página por defecto, del menú móvil, del carrito y de la ficha flotante del lote.
-- **Menta Honda** (mint-2): campo de la sección de regalo, pie del carrito y pista vacía de las barras.
-- **Papel** (paper): fondo de los campos de formulario y de la tarjeta de regalo; el único blanco del sistema, siempre tintado.
-- **Tinta** (ink): texto corrido sobre claros. **Tinta Suave** (ink-soft): descripciones, notas y metadatos.
-- **Sobre Oscuro** (on-dark) y **Sobre Oscuro Suave** (on-dark-soft): texto y texto secundario sobre campos oscuros; sobre fotos se usa on-dark al 78-86% de opacidad.
-- **Filete** (line) y **Filete Oscuro** (line-dark): las líneas de 1px que estructuran listas, fichas y bordes de controles.
-- **Rubor de Error** (error-blush): único color fuera de la familia, reservado al mensaje de error del formulario de correo sobre fondo oscuro (el borde de error usa un tono vecino, #E8B4A0).
+- **Negro de estuche** (black): campo del inicio, la edición, el pie y la barra al bajar; también el texto sobre campos claros y sobre ámbar.
+- **Verde bosque** (green): campo de «Para cada conexión» y de Empresas; fondo de la píldora de la bolsa y hover del botón silencioso.
+- **Verde bosque alterno** (green-2): franjas pares en las filas de Empresas, para separar sin líneas.
+- **Beige de papel fino** (beige): campo de la introducción y del cierre; bloques del wordmark del pie.
+- **Papel de algodón** (paper): las tarjetas escritas y la opción de estuche seleccionada.
+- **Hueso** (bone): el «blanco» del texto sobre oscuro; nunca se usa blanco puro para texto.
+- **Blanco** (white): el campo del estuche y la tarjeta viva que el visitante escribe.
+- **Gris cálido sobre oscuro** (muted-on-dark): texto secundario, etiquetas de campo, subrayado de inputs, filas inactivas de la tabla (8.8:1 sobre negro).
+- **Gris cálido sobre claro** (muted-on-light): firmas de las tarjetas, mensajes de estado, filas atenuadas del estuche (6.4:1 sobre beige).
+- **Marcador** (placeholder-on-dark): solo para placeholders de los campos sobre oscuro (5.2:1 sobre negro).
 
 ### Named Rules
-**La Regla del Campo Entero.** Cada sección pinta su fondo de borde a borde con un solo verde (o con una foto velada en bosque) y la siguiente cambia de campo. Nunca dos secciones contiguas comparten campo, y nunca se pinta una tarjeta de color dentro de un campo para simular una sección.
+**The Chapter Field Rule.** Cada sección es un solo campo plano de black, beige, green o white. El cambio de capítulo es el cambio de color; no hay degradados, bordes ni divisores entre secciones.
 
-**La Regla Sin Negro.** No existe el negro ni el gris neutro. El texto oscuro es tinta verde (ink o forest), los velos y sombras se construyen sobre rgba(14, 34, 25, …), y los blancos son menta o papel.
+**The Amber Is Money Rule.** El ámbar marca solo lo que se pulsa, lo que cuesta y las piezas de la edición. Si un ámbar no se puede pulsar ni contar, sobra (la única excepción es el punto del wordmark construido).
 
-**La Regla del Musgo Funcional.** El musgo marca estado (foco, hover, progreso) y suaviza una palabra de un titular; no rellena superficies grandes.
+**The Olive In The Mark Rule.** El oliva pertenece al logotipo y al objeto. No se usa en fondos, botones ni texto de interfaz.
 
 ## Typography
 
-**Display Font:** Gloock (con Bodoni 72, Didot, Georgia, serif)
-**Body Font:** Hanken Grotesk (con system-ui, -apple-system, Segoe UI, sans-serif)
+**Display Font:** League Spartan (con Montserrat, system-ui)
+**Body Font:** Montserrat (con system-ui, -apple-system, Segoe UI)
+**Serif Font:** Bodoni Moda cursiva (con Didot, Bodoni 72, Georgia)
 
-**Character:** Una didona de alto contraste, grande y de tracking negativo, que da la voz de lujo; frente a ella, una grotesca limpia y amable que hace que comprar sea obvio. La serif habla, la sans atiende.
+**Character:** Una sans geométrica pesada y comprimida para lo que se lee desde lejos (titulares, cifras, la lista de momentos), una sans neutra para explicar, y una Didona cursiva reservada a dos voces humanas: el significado del nombre y la letra escrita a mano.
 
 ### Hierarchy
-- **Display hero** (400, clamp(3rem, 7.2vw, 6rem), 0.95, -0.03em): solo el titular del primer viewport, partido en líneas que suben al cargar.
-- **Display** (400, clamp(2.6rem, 6.2vw, 5.6rem), 0.98, -0.025em): titulares de sección a ancho de campo, con `text-wrap: balance`.
-- **Headline** (400, clamp(2.3rem, 4.6vw, 4.2rem), 1.02): titulares de sección que comparten columna con un formulario o una ficha (lote, regalo, archivo).
-- **Title** (Gloock 400, 1.6-2.2rem, 1-1.1): nombres de planes, pasos del ritual, orígenes de placas, encabezado del carrito, precios grandes y totales.
-- **Numeral** (Gloock 400, clamp(3.6rem, 5vw, 5.2rem), 0.9, -0.03em, cifras tabulares): número del lote en las placas del archivo; la cuenta atrás usa Gloock a 2.2rem.
-- **Lead** (400, 1.15rem, 1.6): párrafo de entrada bajo un display, máximo 33-36em.
-- **Body** (400, 1.0625rem; 1rem bajo 600px; 1.6): texto corrido; descripciones de producto a 1.1rem en tinta suave.
-- **Label** (600, 0.88rem): leyendas de grupos y etiquetas de campos, en bosque, en minúscula de frase.
-- **Button** (600, 0.95rem, 0.01em): todos los botones y enlaces de acción.
+- **Display** (700, clamp(3.25rem, 8.2vw, 8.5rem), 0.88): el titular del inicio y el de la introducción. Una o dos líneas, centrado o alineado al margen.
+- **Headline** (700, clamp(2.25rem, 4.6vw, 4.75rem), 0.95): titulares de capítulo, los nombres de lo que trae el estuche y las filas de Empresas.
+- **Title** (700, clamp(1.375rem, 2.1vw, 2rem), 1): «Para usted», «Para alguien»; los pasos de la edición en su tamaño menor (1.1875rem).
+- **Figure** (500, clamp(1.375rem, 2.1vw, 2rem), 1.1, cifras tabulares): precios. La moneda «COP» baja a Montserrat 500 de cuerpo y gris.
+- **Index** (400, clamp(1.375rem, 2.1vw, 2rem), 1.5): la tabla de momentos, donde la fila activa sube a hueso y las demás quedan en gris.
+- **Statement** (Montserrat 500, clamp(1.375rem, 2.1vw, 2rem), 1.25, máx. 30ch): la frase que explica la marca.
+- **Lead** (Montserrat 400, 1.1875rem, 1.55, máx. 44ch): párrafos de apertura de capítulo.
+- **Body** (Montserrat 400, 1rem, 1.55): texto corriente, descripciones de estuche, pie.
+- **Label** (Montserrat 600, 1rem, 1): botones y nombres de estuche.
+- **Name line** (Bodoni Moda cursiva 400, 1.1875rem, 1.3): «due. — del italiano, dos».
+- **Handwriting** (Bodoni Moda cursiva 400, 1.1875rem, 1.4): el mensaje de cada tarjeta.
 
 ### Named Rules
-**La Regla del Peso Único.** Gloock se usa solo en 400, nunca en negrita ni cursiva (la cursiva del navegador en `em` se anula). La jerarquía la da el tamaño, no el peso.
+**The Three Voices Rule.** League Spartan habla en titulares y cifras, Montserrat explica, Bodoni Moda cursiva solo dice el nombre y escribe las cartas. La serif nunca titula.
 
-**La Regla del Precio en Serif.** Precios, totales, cuentas atrás y números de lote van en Gloock con cifras tabulares; la unidad (250 g, por lote) baja a Hanken pequeña en tono suave.
-
-**La Regla de la Minúscula de Frase.** Ningún texto va en mayúsculas con tracking abierto; etiquetas, leyendas y estados se escriben en minúscula de frase con peso 600.
+**The Tight Display Rule.** Todo texto en League Spartan 700 a tamaño de titular lleva interlineado por debajo de 1 (0.88 a 0.95) y tracking negativo (-0.02em a -0.04em).
 
 ## Layout
 
-Un contenedor de 1320px centrado con margen lateral fluido (gutter) y ritmo vertical de sección fluido (section) de 96 a 184px. Las secciones son bandas a sangre: el fondo llega a los bordes y el contenido se recoge en el contenedor.
+Rejilla de 12 columnas con gutter de 24px y margen lateral fluido (clamp(16px, 2.2vw, 32px)). Las secciones respiran con un relleno vertical de clamp(120px, 14vw, 200px) y suelen ocupar casi toda la pantalla (90svh a 100svh). El texto se ancla a la izquierda en columnas de 5 a 8; la otra mitad la ocupan objeto, foto o aire.
 
-La composición dominante es de dos columnas con un hueco amplio (column-gap): foto y texto, o titular y lista. Variantes observadas: 1.15fr/.85fr en Navidad, 1fr/1fr en lote, ritual y regalo, 1.2fr/.8fr en la cabecera del club. La foto del lote es pegajosa (sticky a 100px) mientras se recorre la ficha de compra. El hero alinea el contenido abajo, con la ficha del lote en una columna fija de 340px a la derecha.
+El inicio es un tríptico: dos columnas laterales iguales y el objeto en el centro (minmax(220px, 21vw)), cortado por el borde inferior. Por debajo de 760px el tríptico se desarma: el objeto pasa a ocupar el 62% del ancho centrado y los dos caminos quedan lado a lado debajo, en dos columnas, con botones a todo el ancho. Por debajo de 1000px la tarjeta de la carta se pega al margen y se ocultan las tarjetas quinta y sexta.
 
-Las listas son filas separadas por filetes de 1px (planes del club, pasos del ritual, ciclo, datos del lote), no tarjetas. El archivo es un carril horizontal con snap, columnas de clamp(260px, 26vw, 330px) y separación de 16px, alineado al contenedor desde 1400px.
-
-Puntos de quiebre: 1100px (los planes del club pasan a dos columnas), 960px (todo a una columna, nav a botón de menú), 600px (botones a ancho completo, formularios apilados, campos a 16px de fuente para evitar zoom en iOS).
+**The Pairs Rule.** Cuando una decisión admite dos caminos, se presentan juntos y con el mismo peso: dos lados del objeto, «Para» y «De», «Regalar due.» y «Comprar para mí».
 
 ## Elevation & Depth
 
-Sistema plano con objetos flotantes. Las superficies de sección no tienen sombra; la estructura se dibuja con filetes de 1px y con el cambio de campo. La sombra aparece solo cuando un objeto se posa sobre otro plano, y siempre es larga, difusa y con desplazamiento vertical negativo en el spread, tintada en bosque. La nav fija se vuelve translúcida con desenfoque al desplazarse.
+El sistema es plano. La profundidad viene del cambio de campo de color y del recorte: el objeto se sale por el borde inferior del inicio y del cierre, las tarjetas sobresalen por debajo de la foto de la carta. La única pieza que flota, el aviso (toast), proyecta sombra porque está por encima de la página. Sobre la pintura de la carta, el texto se apoya en un velo negro al 84% (rgba(14, 14, 12, 0.84)) sin borde ni sombra.
 
 ### Shadow Vocabulary
-- **Flotante sobre foto** (`box-shadow: 0 30px 50px -18px rgba(14, 34, 25, .4)`): tarjeta de regalo inclinada sobre la foto de la caja.
-- **Panel lateral** (`box-shadow: -30px 0 60px -30px rgba(14, 34, 25, .5)`): carrito.
-- **Aviso** (`box-shadow: 0 18px 36px -12px rgba(14, 34, 25, .5)`): toast.
-- **Persiana** (`box-shadow: 0 24px 40px -24px rgba(14, 34, 25, .4)`): menú móvil desplegado.
-- **Filete de nav** (`box-shadow: 0 1px 0` en filete): nav sólida, sobre `rgba(239, 242, 232, .82)` con `blur(18px) saturate(160%)`.
+- **Aviso flotante** (`box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35)`): solo el toast que confirma una acción.
 
 ### Named Rules
-**La Regla del Objeto Posado.** Solo flota lo que se puede tomar: una ficha, una tarjeta, un panel. Secciones, listas y placas son planas.
-
-**La Regla del Velo Bosque.** Toda foto que lleva texto encima se vela con degradados de rgba(14, 34, 25, …), nunca con negro.
+**The Flat At Rest Rule.** Nada proyecta sombra en reposo. La sombra pertenece solo a lo que flota sobre la página.
 
 ## Shapes
 
-Tres familias de forma con funciones fijas. La **píldora** (999px) es para todo lo que actúa: botones, carrito, selector de cantidad, formulario de correo, etiquetas de estado, pie de foto. La **esquina de 6px** es para lo que se elige o contiene datos: segmentos, campos, ficha del lote, placas del archivo, plan destacado. La **esquina de 4px** enmarca fotografía (y miniaturas del carrito); la tarjeta de regalo y las barras usan 3px. Los botones solo de icono son círculos de 44-48px con filete de 1px.
+Dos geometrías, sin término medio. Todo lo que se pulsa es una píldora completa (999px): botones, la bolsa, su contador, las opciones de estuche, el enlace del pie, el círculo de la flecha en Empresas. Todo lo demás es rectángulo de esquina viva (0): fotografías, tarjetas escritas, el clip de video, los bloques del wordmark. Las tarjetas se inclinan levemente (entre -1.5deg y 1.2deg) y varían de altura, como papeles dejados sobre una mesa. Las únicas líneas del sistema son el subrayado de 1px de los campos de escritura, porque ahí se escribe sobre un renglón.
 
-Iconografía de línea propia en SVG, trazo 1.3-1.6, extremos redondeados, en currentColor o pistacho sobre oscuro. La tarjeta de regalo es el único elemento girado (-2.5deg). El ciclo usa puntos de 11px en pistacho sobre un filete.
+**The Pill Or Square Rule.** Si se pulsa, es píldora (o círculo); si se mira, es rectángulo. No hay radios intermedios.
 
 ## Components
 
 ### Buttons
-Píldoras firmes y silenciosas: color plano, sin sombra, sin icono decorativo.
-- **Shape:** píldora completa (999px), alto mínimo 54px, 44px en la variante pequeña.
-- **Bosque:** fondo bosque, texto on-dark, padding horizontal de 30px. Acción principal sobre campos claros.
-- **Claro:** fondo on-dark, texto bosque. Acción principal sobre foto o campo oscuro.
-- **Filete claro:** transparente con borde on-dark al 50%. Acción secundaria sobre oscuro.
-- **Hover / Focus:** solo en punteros finos; bosque pasa a esmeralda, claro a pistacho, filete claro a borde pleno y fondo on-dark al 8%. Transición de color 200ms ease. Presión con `scale(.97)` en 160ms. Foco con anillo musgo de 2px y desplazamiento de 3px.
-- **Enlace:** texto 600 subrayado de 1px con desplazamiento de 6px, para acciones terciarias dentro de placas.
-
-### Chips
-- **Etiqueta de estado:** píldora con filete de 1px en currentColor, 0.78rem 600, en minúscula de frase ("Agotado", "En camino"). Hereda el color del campo; no tiene relleno.
-- **Contador del carrito:** píldora pistacho de 22px con cifra tabular en bosque, que pulsa a escala 1.25 al añadir.
-
-### Segmented Choices
-El selector propio de la casa para molienda, presentación y regalo.
-- **Style:** esquina de 6px, filete de 1px, fondo blanco al 35%, alto 48px (68px en la variante de tarjeta con nombre y precio).
-- **State:** hover con borde musgo; seleccionado con fondo y borde bosque y texto on-dark; foco con anillo musgo de 2px. Presión a 0.98.
-
-### Cards / Containers
-- **Ficha del lote:** fondo menta, esquina de 6px, padding 26px, flota sobre la foto del hero; origen en Gloock 2rem, precio en Gloock 1.6rem, fila de precio separada por filete.
-- **Tarjeta de regalo:** papel, esquina de 3px, girada -2.5deg, montada sobre la foto; escribe en Gloock la vista previa del mensaje en vivo.
-- **Placas del archivo:** esquina de 6px, padding 28px, alto mínimo 400px, cada una en un verde distinto (esmeralda, oliva, salvia, bosque para el próximo lote), numeral gigante arriba y origen abajo.
-- **Plan destacado del club:** fila pintada en pistacho con esquina de 6px dentro de la lista de filetes.
+Sólidos, sin borde, con presión física.
+- **Shape:** píldora completa (999px), alto 52px.
+- **Primary:** ámbar con texto negro, Montserrat 600, relleno lateral 28px.
+- **Hover / Focus:** hover a ámbar encendido en 180ms; al pulsar escala a 0.97 en 140ms; foco con contorno ámbar de 2px separado 3px.
+- **Quiet:** negro con texto hueso; hover a verde bosque. Acompaña al primario cuando hay dos acciones.
+- **Small:** 44px de alto y 20px de relleno, para el pie y el aviso del próximo lote.
 
 ### Inputs / Fields
-- **Style:** fondo papel, filete de 1px, esquina de 6px, padding 14px 16px, etiqueta en label encima. Placeholder en #66735F.
-- **Focus:** borde esmeralda con halo `0 0 0 3px rgba(31, 86, 65, .15)`, sin outline.
-- **Formulario de correo (oscuro):** píldora con borde on-dark al 40% y fondo bosque al 40%; al foco el borde pasa a pistacho; en error a rubor.
+- **Style:** sin caja: solo un subrayado de 1px en gris cálido, fondo transparente, texto hueso a 1.1875rem, esquina viva. Etiqueta encima en gris cálido, con contador tabular a la derecha cuando hay límite.
+- **Focus:** el subrayado cambia a ámbar; no hay contorno.
+
+### Choice rows (estuche)
+- **Style:** filas píldora con un radio propio de 18px (borde negro de 1.5px, punto interior que aparece escalando), nombre en Montserrat 600 y precio en League Spartan 500 tabular.
+- **State:** la fila seleccionada toma fondo papel; las demás quedan sin fondo.
 
 ### Navigation
-- **Style:** fija, 76px de alto, rejilla de tres columnas (logo, enlaces centrados, carrito). Transparente con texto on-dark sobre el hero; al desplazarse, menta translúcida con desenfoque, texto bosque y el logo cambia de crema a oliva con fundido de 300ms.
-- **Enlaces:** Hanken 500 a 0.95rem, separados 44px; subrayado de 1px que crece desde la izquierda en 300ms.
-- **Mobile:** bajo 960px, botón de dos trazos que se cruzan en X; menú en persiana menta con enlaces en Gloock 2rem separados por filetes.
+- **Style:** barra fija de tres columnas: logotipo a la izquierda, tres enlaces centrados en Montserrat 500, píldora de la bolsa a la derecha. Transparente sobre el inicio, negra al bajar (300ms).
+- **States:** los enlaces revelan su subrayado en hover. El contador de la bolsa salta (escala 1.25) al añadir.
+- **Mobile:** desaparece el primer enlace y la palabra «Bolsa»; queda solo el contador.
 
-### Cart Drawer
-Panel lateral de hasta 440px en menta, con encabezado y total en Gloock 2rem, filas separadas por filetes y pie en menta honda. Abre en 480ms con la curva de cajón y cierra más rápido, en 260ms con la curva de salida, sobre un velo bosque al 50%.
+### Letter slip (signature)
+La tarjeta escrita: papel de algodón, esquina viva, nombre del destinatario en Montserrat 600, mensaje en Bodoni cursiva, firma al pie en gris. La primera tarjeta es blanca y se reescribe al instante mientras el visitante teclea en el formulario.
 
-### Motion
-- **Curvas:** salida `cubic-bezier(0.23, 1, 0.32, 1)` para casi todo; entrada-salida `cubic-bezier(0.77, 0, 0.175, 1)` para el revelado de imágenes; cajón `cubic-bezier(0.32, 0.72, 0, 1)`.
-- **Entrada del hero:** la foto se asienta de escala 1.08 y brillo 0.7 en 2200ms; cada línea del titular sube desde debajo de su máscara en 1100ms con 90ms de desfase; el resto aparece con fundido y 10px de subida.
-- **Revelado de fotos:** al entrar en pantalla, recorte de abajo hacia arriba en 1100ms y escala de 1.06 a 1 en 1600ms.
-- **Reduced motion:** sin animaciones de entrada ni revelados; el cajón solo funde en 200ms.
+### Moments index (signature)
+Una tabla tipográfica en League Spartan 400 sin líneas: cada fila es un momento con su estuche y su precio alineado a la derecha. La fila activa sube a hueso y cambia la foto fija de la izquierda con un fundido de 260ms.
+
+### Contact rows
+Filas de 150px de alto en League Spartan 700 a tamaño headline, alineadas abajo, alternando verde y verde alterno en lugar de usar divisores. La última termina en un círculo ámbar con flecha; en móvil la fila entera se vuelve ámbar.
+
+### Built wordmark
+En el pie, «due.» se construye en bloques de altura desigual (beige, hueso, beige y un punto ámbar más estrecho) con las letras en negro, cortadas por el borde del bloque.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** dar a cada sección un campo verde entero o una foto velada en bosque, alternando campos entre secciones contiguas.
-- **Do** pasar toda fotografía nueva por la gradación verde común (azules y turquesas hacia esmeralda, naranjas desaturados, sombras hacia bosque) y registrar su origen y retoque en el comentario `impeccable:prompt` del JPEG.
-- **Do** escribir titulares, precios y números en Gloock 400 con tracking negativo, y todo lo demás en Hanken Grotesk.
-- **Do** estructurar listas y fichas con filetes de 1px (line sobre claro, line-dark sobre oscuro).
-- **Do** usar píldoras para acciones y 6px para lo seleccionable o lo que contiene datos.
-- **Do** limitar el hover a `(hover: hover) and (pointer: fine)` y dar a cada control pulsable una presión de escala 0.97.
+- **Do** cambiar de capítulo cambiando de campo de color plano (black, beige, green, white).
+- **Do** reservar el ámbar para botones, precios, el contador y las piezas de la edición.
+- **Do** componer los titulares en League Spartan 700 con interlineado entre 0.88 y 0.95 y tracking negativo.
+- **Do** usar Bodoni Moda cursiva solo para la línea del nombre y el texto de las cartas.
+- **Do** hacer píldora (999px) todo lo pulsable y de esquina viva todo lo demás.
+- **Do** tratar la fotografía de archivo en duotono negro–hueso y acreditarla en el pie.
+- **Do** presentar las dos acciones (regalar y comprar) juntas y con el mismo peso.
+- **Do** escribir precios con cifras tabulares y la moneda «COP» en tamaño menor.
 
 ### Don't:
-- **Don't** construir la plantilla de cafetería: fondo crema, serif cursiva y rejilla de tarjetas.
-- **Don't** usar negro puro, gris neutro ni sombras negras; todo oscuro es verde bosque.
-- **Don't** poner Gloock en negrita o cursiva.
-- **Don't** escribir etiquetas en mayúsculas con tracking abierto ni añadir antetítulos sobre los titulares.
-- **Don't** dar sombra a secciones, filas o placas; solo flota lo que se posa sobre otro plano.
-- **Don't** usar fotografía sin gradar ni velar foto con texto encima con negro.
+- **Don't** usar imágenes de naturaleza: granos, plantas, cafetales, fincas ni cosechas.
+- **Don't** usar la plantilla de cafetería: titulares en serif cursiva, tarjetas con borde y sombra, o el beige como lienzo de toda la página (el beige es un capítulo entre campos oscuros).
+- **Don't** poner sombras, degradados ni divisores en elementos en reposo.
+- **Don't** usar el oliva como color de interfaz; pertenece al logotipo.
+- **Don't** usar radios intermedios (8px, 12px, 16px); solo píldora, círculo o esquina viva.
+- **Don't** usar blanco puro para texto sobre oscuro; el texto claro es hueso.

@@ -1,519 +1,454 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-15T00:29:28+00:00",
+  "generatedAt": "2026-10-16T22:59:26+00:00",
   "title": "Design System: due.",
   "extensions": {
     "colorMeta": {
-      "forest": {
+      "amber": {
         "role": "primary",
-        "displayName": "Bosque Profundo",
-        "canonical": "#0E2219",
-        "oklch": "oklch(23.2% 0.032 163.1)",
+        "displayName": "Ámbar de lacre",
+        "canonical": "#C08A3E",
         "tonalRamp": [
-          "#060D09",
-          "#1B2922",
-          "#33473D",
-          "#51675C",
-          "#72897D",
-          "#95ABA0",
-          "#BCCEC5",
-          "#E6F2EB"
+          "oklch(15% 0.113 73)",
+          "oklch(25% 0.113 73)",
+          "oklch(37% 0.113 73)",
+          "oklch(50% 0.113 73)",
+          "oklch(62% 0.113 73)",
+          "oklch(74% 0.113 73)",
+          "oklch(85% 0.113 73)",
+          "oklch(95% 0.113 73)"
         ]
       },
-      "emerald": {
+      "amber-bright": {
         "role": "primary",
-        "displayName": "Esmeralda",
-        "canonical": "#1F5641",
-        "oklch": "oklch(41.0% 0.068 165.0)",
+        "displayName": "Ámbar encendido",
+        "canonical": "#D49B4A",
         "tonalRamp": [
-          "#000F08",
-          "#062D1F",
-          "#184D39",
-          "#386E57",
-          "#599078",
-          "#7EB29B",
-          "#ACD4C1",
-          "#DAF6E9"
+          "oklch(15% 0.119 73)",
+          "oklch(25% 0.119 73)",
+          "oklch(37% 0.119 73)",
+          "oklch(50% 0.119 73)",
+          "oklch(62% 0.119 73)",
+          "oklch(74% 0.119 73)",
+          "oklch(85% 0.119 73)",
+          "oklch(95% 0.119 73)"
         ]
       },
       "olive": {
-        "role": "secondary",
-        "displayName": "Oliva del Logotipo",
-        "canonical": "#3F4720",
-        "oklch": "oklch(38.1% 0.060 118.9)",
-        "tonalRamp": [
-          "#0A0D01",
-          "#23280E",
-          "#3F4621",
-          "#5D663E",
-          "#7E885E",
-          "#A1AB82",
-          "#C6CEAE",
-          "#ECF2DB"
-        ]
-      },
-      "moss": {
-        "role": "secondary",
-        "displayName": "Musgo",
-        "canonical": "#75863A",
-        "oklch": "oklch(58.9% 0.104 120.2)",
-        "tonalRamp": [
-          "#090E00",
-          "#212A00",
-          "#3C4900",
-          "#5A691A",
-          "#7A8B3F",
-          "#9DAE66",
-          "#C2D19A",
-          "#E9F4CE"
-        ]
-      },
-      "pistachio": {
         "role": "tertiary",
-        "displayName": "Pistacho",
-        "canonical": "#DCE4B4",
-        "oklch": "oklch(90.1% 0.064 115.4)",
+        "displayName": "Oliva de la marca",
+        "canonical": "#799733",
         "tonalRamp": [
-          "#0B0D01",
-          "#24280B",
-          "#41461D",
-          "#60663B",
-          "#80875B",
-          "#A3AA7E",
-          "#C7CDAB",
-          "#EDF2DA"
+          "oklch(15% 0.131 124)",
+          "oklch(25% 0.131 124)",
+          "oklch(37% 0.131 124)",
+          "oklch(50% 0.131 124)",
+          "oklch(62% 0.131 124)",
+          "oklch(74% 0.131 124)",
+          "oklch(85% 0.131 124)",
+          "oklch(95% 0.131 124)"
         ]
       },
-      "sage": {
-        "role": "tertiary",
-        "displayName": "Salvia",
-        "canonical": "#B9C6A6",
-        "oklch": "oklch(80.8% 0.046 125.4)",
-        "tonalRamp": [
-          "#090D04",
-          "#212816",
-          "#3C462C",
-          "#5B6649",
-          "#7C886A",
-          "#9EAA8D",
-          "#C4CDB6",
-          "#EBF2E1"
-        ]
-      },
-      "mint": {
+      "black": {
         "role": "neutral",
-        "displayName": "Suelo Menta",
-        "canonical": "#EFF2E8",
-        "oklch": "oklch(95.6% 0.014 120.3)",
+        "displayName": "Negro de estuche",
+        "canonical": "#0E0E0C",
         "tonalRamp": [
-          "#0B0C08",
-          "#242620",
-          "#41433B",
-          "#60625A",
-          "#81847B",
-          "#A4A69D",
-          "#C8CAC3",
-          "#EEEFEA"
+          "oklch(15% 0.004 107)",
+          "oklch(25% 0.004 107)",
+          "oklch(37% 0.004 107)",
+          "oklch(50% 0.004 107)",
+          "oklch(62% 0.004 107)",
+          "oklch(74% 0.004 107)",
+          "oklch(85% 0.004 107)",
+          "oklch(95% 0.004 107)"
         ]
       },
-      "mint-2": {
+      "green": {
         "role": "neutral",
-        "displayName": "Menta Honda",
-        "canonical": "#E3E9DA",
-        "oklch": "oklch(92.5% 0.021 124.7)",
+        "displayName": "Verde bosque",
+        "canonical": "#161D10",
         "tonalRamp": [
-          "#0A0C07",
-          "#23261E",
-          "#3F4438",
-          "#5E6357",
-          "#7F8577",
-          "#A2A79A",
-          "#C7CBC0",
-          "#EDF0E8"
+          "oklch(15% 0.026 131)",
+          "oklch(25% 0.026 131)",
+          "oklch(37% 0.026 131)",
+          "oklch(50% 0.026 131)",
+          "oklch(62% 0.026 131)",
+          "oklch(74% 0.026 131)",
+          "oklch(85% 0.026 131)",
+          "oklch(95% 0.026 131)"
+        ]
+      },
+      "green-2": {
+        "role": "neutral",
+        "displayName": "Verde bosque alterno",
+        "canonical": "#1D2715",
+        "tonalRamp": [
+          "oklch(15% 0.035 132)",
+          "oklch(25% 0.035 132)",
+          "oklch(37% 0.035 132)",
+          "oklch(50% 0.035 132)",
+          "oklch(62% 0.035 132)",
+          "oklch(74% 0.035 132)",
+          "oklch(85% 0.035 132)",
+          "oklch(95% 0.035 132)"
+        ]
+      },
+      "beige": {
+        "role": "neutral",
+        "displayName": "Beige de papel fino",
+        "canonical": "#E6DAC3",
+        "tonalRamp": [
+          "oklch(15% 0.033 84)",
+          "oklch(25% 0.033 84)",
+          "oklch(37% 0.033 84)",
+          "oklch(50% 0.033 84)",
+          "oklch(62% 0.033 84)",
+          "oklch(74% 0.033 84)",
+          "oklch(85% 0.033 84)",
+          "oklch(95% 0.033 84)"
         ]
       },
       "paper": {
         "role": "neutral",
-        "displayName": "Papel",
-        "canonical": "#FBFCF7",
-        "oklch": "oklch(98.9% 0.007 115.7)",
+        "displayName": "Papel de algodón",
+        "canonical": "#ECE8E1",
         "tonalRamp": [
-          "#0B0B0A",
-          "#252523",
-          "#42423F",
-          "#61625D",
-          "#82837E",
-          "#A5A5A1",
-          "#C9C9C6",
-          "#EEEFEC"
+          "oklch(15% 0.010 82)",
+          "oklch(25% 0.010 82)",
+          "oklch(37% 0.010 82)",
+          "oklch(50% 0.010 82)",
+          "oklch(62% 0.010 82)",
+          "oklch(74% 0.010 82)",
+          "oklch(85% 0.010 82)",
+          "oklch(95% 0.010 82)"
         ]
       },
-      "ink": {
+      "bone": {
         "role": "neutral",
-        "displayName": "Tinta",
-        "canonical": "#14231B",
-        "oklch": "oklch(24.0% 0.026 160.3)",
+        "displayName": "Hueso",
+        "canonical": "#F3EEE4",
         "tonalRamp": [
-          "#070D09",
-          "#1D2822",
-          "#37463E",
-          "#55665C",
-          "#76877D",
-          "#98AAA0",
-          "#BFCDC5",
-          "#E8F1EB"
+          "oklch(15% 0.014 85)",
+          "oklch(25% 0.014 85)",
+          "oklch(37% 0.014 85)",
+          "oklch(50% 0.014 85)",
+          "oklch(62% 0.014 85)",
+          "oklch(74% 0.014 85)",
+          "oklch(85% 0.014 85)",
+          "oklch(95% 0.014 85)"
         ]
       },
-      "ink-soft": {
+      "white": {
         "role": "neutral",
-        "displayName": "Tinta Suave",
-        "canonical": "#4A5A4D",
-        "oklch": "oklch(45.0% 0.029 150.6)",
+        "displayName": "Blanco",
+        "canonical": "#FFFFFF",
         "tonalRamp": [
-          "#070D08",
-          "#1E2820",
-          "#38463A",
-          "#566659",
-          "#76887A",
-          "#99AA9C",
-          "#C0CDC2",
-          "#E8F1EA"
+          "oklch(15% 0.000 90)",
+          "oklch(25% 0.000 90)",
+          "oklch(37% 0.000 90)",
+          "oklch(50% 0.000 90)",
+          "oklch(62% 0.000 90)",
+          "oklch(74% 0.000 90)",
+          "oklch(85% 0.000 90)",
+          "oklch(95% 0.000 90)"
         ]
       },
-      "on-dark": {
+      "muted-on-dark": {
         "role": "neutral",
-        "displayName": "Sobre Oscuro",
-        "canonical": "#F1F4EA",
-        "oklch": "oklch(96.2% 0.014 120.3)",
+        "displayName": "Gris cálido sobre oscuro",
+        "canonical": "#B8AE9C",
         "tonalRamp": [
-          "#0B0C08",
-          "#242620",
-          "#41433B",
-          "#60625A",
-          "#81847B",
-          "#A4A69D",
-          "#C8CAC3",
-          "#EEEFEA"
+          "oklch(15% 0.028 82)",
+          "oklch(25% 0.028 82)",
+          "oklch(37% 0.028 82)",
+          "oklch(50% 0.028 82)",
+          "oklch(62% 0.028 82)",
+          "oklch(74% 0.028 82)",
+          "oklch(85% 0.028 82)",
+          "oklch(95% 0.028 82)"
         ]
       },
-      "on-dark-soft": {
+      "muted-on-light": {
         "role": "neutral",
-        "displayName": "Sobre Oscuro Suave",
-        "canonical": "#BFCBB6",
-        "oklch": "oklch(82.7% 0.032 131.6)",
+        "displayName": "Gris cálido sobre claro",
+        "canonical": "#4F4A40",
         "tonalRamp": [
-          "#090D06",
-          "#21271C",
-          "#3C4635",
-          "#5B6553",
-          "#7C8773",
-          "#9EA996",
-          "#C4CDBD",
-          "#EBF1E6"
+          "oklch(15% 0.017 85)",
+          "oklch(25% 0.017 85)",
+          "oklch(37% 0.017 85)",
+          "oklch(50% 0.017 85)",
+          "oklch(62% 0.017 85)",
+          "oklch(74% 0.017 85)",
+          "oklch(85% 0.017 85)",
+          "oklch(95% 0.017 85)"
         ]
       },
-      "error-blush": {
-        "role": "error",
-        "displayName": "Rubor de Error",
-        "canonical": "#F2C8B8",
-        "oklch": "oklch(86.5% 0.053 41.9)",
+      "placeholder-on-dark": {
+        "role": "neutral",
+        "displayName": "Marcador",
+        "canonical": "#8C8476",
         "tonalRamp": [
-          "#140704",
-          "#351F16",
-          "#59392C",
-          "#7B574A",
-          "#9E786A",
-          "#C29B8D",
-          "#E0C2B6",
-          "#FFE9E1"
+          "oklch(15% 0.023 82)",
+          "oklch(25% 0.023 82)",
+          "oklch(37% 0.023 82)",
+          "oklch(50% 0.023 82)",
+          "oklch(62% 0.023 82)",
+          "oklch(74% 0.023 82)",
+          "oklch(85% 0.023 82)",
+          "oklch(95% 0.023 82)"
         ]
-      },
-      "line": {
-        "role": "neutral",
-        "displayName": "Filete",
-        "canonical": "rgba(20, 35, 27, .14)"
-      },
-      "line-dark": {
-        "role": "neutral",
-        "displayName": "Filete Oscuro",
-        "canonical": "rgba(241, 244, 234, .2)"
       }
     },
     "typographyMeta": {
-      "display-hero": {
-        "displayName": "Display hero",
-        "purpose": "Solo el titular del primer viewport, en líneas que suben al cargar."
-      },
       "display": {
         "displayName": "Display",
-        "purpose": "Titulares de sección a ancho de campo, text-wrap: balance."
+        "purpose": "Titular del inicio y de la introducción."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Titulares que comparten columna con formulario o ficha."
+        "purpose": "Titulares de capítulo, nombres del estuche, filas de Empresas."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Planes, pasos, orígenes, precios grandes y totales (1.6-2.2rem)."
+        "purpose": "«Para usted», «Para alguien», pasos de la edición."
       },
-      "numeral": {
-        "displayName": "Numeral",
-        "purpose": "Número del lote en las placas del archivo; cifras tabulares."
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Precios, con cifras tabulares."
+      },
+      "index": {
+        "displayName": "Index",
+        "purpose": "La tabla de momentos."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "La frase que explica la marca."
       },
       "lead": {
         "displayName": "Lead",
-        "purpose": "Párrafo de entrada bajo un display, máximo 33-36em."
+        "purpose": "Párrafos de apertura de capítulo."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Texto corrido; 1rem bajo 600px."
+        "purpose": "Texto corriente."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Leyendas y etiquetas de campos, en bosque, minúscula de frase."
+        "purpose": "Botones y nombres de estuche."
       },
-      "button": {
-        "displayName": "Button",
-        "purpose": "Botones y enlaces de acción."
+      "name-line": {
+        "displayName": "Name line",
+        "purpose": "«due. — del italiano, dos»; solo esa línea."
+      },
+      "handwriting": {
+        "displayName": "Handwriting",
+        "purpose": "El mensaje de cada tarjeta escrita."
       }
     },
     "shadows": [
       {
-        "name": "flotante-sobre-foto",
-        "value": "0 30px 50px -18px rgba(14, 34, 25, .4)",
-        "purpose": "Tarjeta de regalo sobre la foto de la caja."
-      },
+        "name": "toast-float",
+        "value": "0 12px 30px rgba(0, 0, 0, 0.35)",
+        "purpose": "Solo el aviso flotante; nada proyecta sombra en reposo."
+      }
+    ],
+    "scrims": [
       {
-        "name": "panel-lateral",
-        "value": "-30px 0 60px -30px rgba(14, 34, 25, .5)",
-        "purpose": "Carrito."
-      },
-      {
-        "name": "aviso",
-        "value": "0 18px 36px -12px rgba(14, 34, 25, .5)",
-        "purpose": "Toast."
-      },
-      {
-        "name": "persiana",
-        "value": "0 24px 40px -24px rgba(14, 34, 25, .4)",
-        "purpose": "Menú móvil desplegado."
-      },
-      {
-        "name": "filete-nav",
-        "value": "0 1px 0 rgba(20, 35, 27, .14)",
-        "purpose": "Nav sólida, con fondo rgba(239, 242, 232, .82) y backdrop-filter blur(18px) saturate(160%)."
-      },
-      {
-        "name": "halo-foco-campo",
-        "value": "0 0 0 3px rgba(31, 86, 65, .15)",
-        "purpose": "Foco de campos de formulario, con borde esmeralda."
-      },
-      {
-        "name": "anillo-foco",
-        "value": "outline: 2px solid #75863A; outline-offset: 3px",
-        "purpose": "Foco global de teclado."
+        "name": "letter-veil",
+        "value": "rgba(14, 14, 12, 0.84)",
+        "purpose": "Velo plano bajo el texto de la carta sobre la pintura."
       }
     ],
     "motion": [
       {
         "name": "ease-out",
-        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
-        "purpose": "Curva por defecto: presión, subrayados, entradas, cierre del cajón."
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Presión, entradas y cambios de estado."
       },
       {
         "name": "ease-in-out",
-        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
-        "purpose": "Recorte de revelado de fotos (1100ms)."
+        "value": "cubic-bezier(0.76, 0, 0.24, 1)",
+        "purpose": "El obturador del objeto y la deriva lenta de la foto de la carta."
       },
       {
-        "name": "ease-drawer",
-        "value": "cubic-bezier(0.32, 0.72, 0, 1)",
-        "purpose": "Apertura del carrito (480ms)."
+        "name": "ease-soft",
+        "value": "cubic-bezier(0.33, 1, 0.68, 1)",
+        "purpose": "El asentamiento de escala de la imagen dentro del obturador."
       },
       {
         "name": "press",
-        "value": "transform: scale(.97) 160ms ease-out",
-        "purpose": "Presión de botones; 0.98 en segmentos, 0.94 en botones circulares."
+        "value": "140ms",
+        "purpose": "Escala 0.97 al pulsar botones y la bolsa."
       },
       {
-        "name": "color-state",
-        "value": "200ms ease",
-        "purpose": "Cambios de fondo, borde y color en hover y selección."
+        "name": "hover",
+        "value": "180ms",
+        "purpose": "Cambios de color y de subrayado."
       },
       {
-        "name": "nav-state",
-        "value": "300ms ease",
-        "purpose": "Paso de nav transparente a sólida y cambio de logo."
+        "name": "reveal",
+        "value": "800ms",
+        "purpose": "Entrada de bloques (subida de 24px y fundido), escalonada 70ms por hermano."
       },
       {
-        "name": "hero-settle",
-        "value": "2200ms ease-out, scale 1.08 -> 1, brightness .7 -> 1",
-        "purpose": "Entrada de la foto del hero."
+        "name": "shutter",
+        "value": "clip-path inset(100% 0 0 0) a inset(-20% -20% 0 -20%), 1100ms ease-in-out, 200ms de retraso",
+        "purpose": "El objeto del inicio se abre de abajo arriba mientras su imagen baja de escala 1.12 a 1 en 1500ms."
       },
       {
-        "name": "hero-rise",
-        "value": "1100ms ease-out, translateY 105% -> 0, 90ms de desfase por línea",
-        "purpose": "Líneas del titular del hero."
-      },
-      {
-        "name": "image-reveal",
-        "value": "clip-path inset(0 0 100% 0) -> inset(0) 1100ms ease-in-out; scale 1.06 -> 1 1600ms ease-out",
-        "purpose": "Fotos al entrar en pantalla."
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Sin entradas, obturador ni deriva; todo visible desde el principio."
       }
     ],
     "breakpoints": [
       {
-        "name": "sm",
-        "value": "600px"
+        "name": "tablet",
+        "value": "1000px"
       },
       {
-        "name": "md",
-        "value": "960px"
-      },
-      {
-        "name": "lg",
-        "value": "1100px"
-      },
-      {
-        "name": "rail-align",
-        "value": "1400px"
+        "name": "phone",
+        "value": "760px"
       }
     ]
   },
   "components": [
     {
-      "name": "Botón bosque",
+      "name": "Primary Button",
       "kind": "button",
-      "refersTo": "button-forest",
-      "description": "Acción principal sobre campos claros.",
-      "html": "<div class=\"ds-stage-light\"><button class=\"ds-btn ds-btn-forest\">Armar un regalo</button></div>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 30px;border:1px solid transparent;border-radius:999px;font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease,transform 160ms var(--ease-out);} .ds-btn:active{transform:scale(.97);} .ds-btn:focus-visible{outline:2px solid var(--moss);outline-offset:3px;} .ds-stage-light{padding:24px;background:var(--mint);} .ds-btn-forest{background:var(--forest);color:var(--on-dark);} .ds-btn-forest:hover{background:var(--emerald);}"
+      "refersTo": "button-primary",
+      "description": "La acción principal: comprar o regalar. Píldora ámbar.",
+      "html": "<button class=\"ds-btn\">Regalar due.</button>",
+      "css": ".ds-btn { display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding:0 28px; border:0; border-radius:999px; background:var(--amber,#C08A3E); color:var(--black,#0E0E0C); font:600 1rem/1 Montserrat, system-ui, sans-serif; cursor:pointer; transition:transform 140ms cubic-bezier(0.22,1,0.36,1), background-color 180ms ease; } .ds-btn:hover { background:var(--amber-2,#D49B4A); } .ds-btn:active { transform:scale(0.97); } .ds-btn:focus-visible { outline:2px solid var(--amber,#C08A3E); outline-offset:3px; }"
     },
     {
-      "name": "Botón claro",
+      "name": "Quiet Button",
       "kind": "button",
-      "refersTo": "button-light",
-      "description": "Acción principal sobre foto o campo oscuro.",
-      "html": "<div class=\"ds-stage-dark\"><button class=\"ds-btn ds-btn-light\">Comprar el lote</button></div>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 30px;border:1px solid transparent;border-radius:999px;font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease,transform 160ms var(--ease-out);} .ds-btn:active{transform:scale(.97);} .ds-btn:focus-visible{outline:2px solid var(--moss);outline-offset:3px;} .ds-stage-dark{padding:24px;background:var(--forest);} .ds-btn-light{background:var(--on-dark);color:var(--forest);} .ds-btn-light:hover{background:var(--pistachio);}"
+      "refersTo": "button-quiet",
+      "description": "La segunda acción de un par, con el mismo tamaño que la primaria.",
+      "html": "<button class=\"ds-btn-quiet\">Comprar para mí</button>",
+      "css": ".ds-btn-quiet { display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding:0 28px; border:0; border-radius:999px; background:var(--black,#0E0E0C); color:var(--bone,#F3EEE4); font:600 1rem/1 Montserrat, system-ui, sans-serif; cursor:pointer; transition:transform 140ms cubic-bezier(0.22,1,0.36,1), background-color 180ms ease; } .ds-btn-quiet:hover { background:var(--green,#161D10); } .ds-btn-quiet:active { transform:scale(0.97); } .ds-btn-quiet:focus-visible { outline:2px solid var(--amber,#C08A3E); outline-offset:3px; }"
     },
     {
-      "name": "Botón filete claro",
-      "kind": "button",
-      "refersTo": "button-line-light",
-      "description": "Acción secundaria sobre oscuro.",
-      "html": "<div class=\"ds-stage-dark\"><button class=\"ds-btn ds-btn-line\">Regalar due.</button></div>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 30px;border:1px solid transparent;border-radius:999px;font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease,transform 160ms var(--ease-out);} .ds-btn:active{transform:scale(.97);} .ds-btn:focus-visible{outline:2px solid var(--moss);outline-offset:3px;} .ds-stage-dark{padding:24px;background:var(--forest);} .ds-btn-line{background:transparent;border-color:rgba(241,244,234,.5);color:var(--on-dark);} .ds-btn-line:hover{border-color:var(--on-dark);background:rgba(241,244,234,.08);}"
-    },
-    {
-      "name": "Segmentos",
-      "kind": "chip",
-      "refersTo": "segment",
-      "description": "Selector propio para molienda, presentación y regalo.",
-      "html": "<div class=\"ds-seg\"><label><input type=\"radio\" name=\"ds-g\" checked><span><b>Bolsa 250 g</b><small>$72.000</small></span></label><label><input type=\"radio\" name=\"ds-g\"><span><b>Caja regalo</b><small>$112.000</small></span></label></div>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-seg{display:flex;gap:8px;padding:24px;background:var(--mint);font-family:var(--sans);} .ds-seg label{position:relative;flex:1 1 auto;} .ds-seg input{position:absolute;opacity:0;} .ds-seg span{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:68px;padding:8px 16px;border:1px solid var(--line);border-radius:6px;background:rgba(255,255,255,.35);font-size:.95rem;color:var(--forest);cursor:pointer;transition:background-color 200ms ease,border-color 200ms ease,color 200ms ease,transform 160ms var(--ease-out);} .ds-seg span:hover{border-color:var(--moss);} .ds-seg span:active{transform:scale(.98);} .ds-seg b{font-weight:600;} .ds-seg small{font-size:.9rem;opacity:.75;font-variant-numeric:tabular-nums;} .ds-seg input:checked+span{background:var(--forest);border-color:var(--forest);color:var(--on-dark);} .ds-seg input:focus-visible+span{outline:2px solid var(--moss);outline-offset:2px;}"
-    },
-    {
-      "name": "Campo",
+      "name": "Underline Field",
       "kind": "input",
-      "refersTo": "field",
-      "description": "Campo de texto sobre papel con etiqueta encima.",
-      "html": "<label class=\"ds-field\"><span>Para</span><input type=\"text\" placeholder=\"Nombre de quien lo recibe\"></label>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-field{display:grid;gap:8px;padding:24px;background:var(--mint-2);font-family:var(--sans);} .ds-field>span{font-size:.88rem;font-weight:600;color:var(--forest);} .ds-field input{width:100%;padding:14px 16px;background:#FBFCF7;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:1rem;color:var(--ink);transition:border-color 200ms ease,box-shadow 200ms ease;} .ds-field input::placeholder{color:#66735F;} .ds-field input:focus{outline:none;border-color:var(--emerald);box-shadow:0 0 0 3px rgba(31,86,65,.15);}"
+      "refersTo": "input-underline",
+      "description": "Campo de escritura sobre oscuro: solo un renglón de 1px que se vuelve ámbar al enfocar.",
+      "html": "<label class=\"ds-field\"><span>Para</span><input type=\"text\" placeholder=\"¿Para quién?\"></label>",
+      "css": ".ds-field { display:grid; gap:6px; padding:24px; background:#0E0E0C; font:500 1rem Montserrat, system-ui, sans-serif; } .ds-field span { color:#B8AE9C; } .ds-field input { border:0; border-bottom:1px solid #B8AE9C; background:transparent; padding:8px 0; font:inherit; font-size:1.1875rem; color:#F3EEE4; border-radius:0; } .ds-field input::placeholder { color:#8C8476; } .ds-field input:focus { outline:none; border-bottom-color:#C08A3E; }"
     },
     {
-      "name": "Navegación",
+      "name": "Bar",
       "kind": "nav",
-      "refersTo": "nav",
-      "description": "Nav fija en estado sólido: menta translúcida, enlaces con subrayado que crece.",
-      "html": "<header class=\"ds-nav\"><strong class=\"ds-logo\">due.</strong><nav class=\"ds-links\"><a href=\"#\">El lote</a><a href=\"#\">Regalar</a><a href=\"#\">El club</a></nav><button class=\"ds-cart\">Tu selección <span>0</span></button></header>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:76px;padding:0 32px;background:rgba(239,242,232,.82);backdrop-filter:blur(18px) saturate(160%);color:var(--forest);box-shadow:0 1px 0 var(--line);font-family:var(--sans);} .ds-logo{color:var(--olive);font-size:1.6rem;font-weight:800;} .ds-links{display:flex;gap:44px;font-size:.95rem;font-weight:500;} .ds-links a{position:relative;padding:6px 0;color:inherit;text-decoration:none;} .ds-links a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform 300ms var(--ease-out);} .ds-links a:hover::after{transform:scaleX(1);} .ds-cart{justify-self:end;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;transition:transform 160ms var(--ease-out);} .ds-cart:active{transform:scale(.97);} .ds-cart span{display:grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--pistachio);font-size:.75rem;font-weight:700;}"
+      "refersTo": "bag-pill",
+      "description": "Barra fija: logotipo, tres enlaces, píldora de la bolsa con contador ámbar.",
+      "html": "<nav class=\"ds-bar\"><strong class=\"ds-bar-mark\">due.</strong><span class=\"ds-bar-links\"><a href=\"#\">La edición</a><a href=\"#\">Regalar</a><a href=\"#\">Empresas</a></span><button class=\"ds-bag\">Bolsa <span>2</span></button></nav>",
+      "css": ".ds-bar { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:24px; padding:18px 24px; background:#0E0E0C; color:#F3EEE4; font:500 1rem Montserrat, system-ui, sans-serif; } .ds-bar-mark { font:700 1.6rem/1 'League Spartan', sans-serif; color:#799733; letter-spacing:-0.03em; } .ds-bar-links { display:flex; gap:32px; } .ds-bar-links a { color:inherit; text-decoration:underline; text-decoration-color:transparent; text-underline-offset:0.2em; transition:text-decoration-color 180ms ease; } .ds-bar-links a:hover { text-decoration-color:currentColor; } .ds-bag { justify-self:end; display:inline-flex; align-items:center; gap:10px; min-height:44px; padding:0 6px 0 18px; border:0; border-radius:999px; background:#161D10; color:inherit; font:inherit; cursor:pointer; } .ds-bag:active { transform:scale(0.97); } .ds-bag:focus-visible { outline:2px solid #C08A3E; outline-offset:3px; } .ds-bag span { min-width:32px; height:32px; border-radius:999px; display:grid; place-items:center; background:#C08A3E; color:#0E0E0C; font-weight:600; font-variant-numeric:tabular-nums; }"
     },
     {
-      "name": "Ficha del lote",
+      "name": "Case Choice",
+      "kind": "chip",
+      "refersTo": "choice-row",
+      "description": "Opción de estuche: fila píldora; la elegida toma fondo papel.",
+      "html": "<div class=\"ds-boxes\"><label class=\"ds-box\"><input type=\"radio\" name=\"ds-b\" checked><span><b>Esencial</b> una pieza</span><em>$68.000</em></label><label class=\"ds-box\"><input type=\"radio\" name=\"ds-b\"><span><b>Dúo</b> dos ediciones</span><em>$139.000</em></label></div>",
+      "css": ".ds-boxes { display:grid; gap:4px; padding:16px; background:#E6DAC3; color:#0E0E0C; font:400 1rem/1.55 Montserrat, system-ui, sans-serif; } .ds-box { display:grid; grid-template-columns:22px 1fr auto; align-items:center; gap:14px; padding:16px 18px; border-radius:999px; cursor:pointer; transition:background-color 180ms ease; } .ds-box:has(input:checked) { background:#ECE8E1; } .ds-box input { appearance:none; width:18px; height:18px; margin:0; border-radius:50%; border:1.5px solid #0E0E0C; display:grid; place-items:center; } .ds-box input::after { content:''; width:8px; height:8px; border-radius:50%; background:#0E0E0C; opacity:0; transform:scale(0.5); transition:transform 200ms cubic-bezier(0.22,1,0.36,1), opacity 200ms; } .ds-box input:checked::after { opacity:1; transform:none; } .ds-box input:focus-visible { outline:2px solid #C08A3E; outline-offset:3px; } .ds-box b { font-weight:600; margin-right:6px; } .ds-box em { font:500 1.1875rem/1 'League Spartan', sans-serif; font-style:normal; font-variant-numeric:tabular-nums; }"
+    },
+    {
+      "name": "Letter Slip",
       "kind": "card",
-      "refersTo": "lot-card",
-      "description": "Objeto posado sobre la foto del hero con origen, precio y acción.",
-      "html": "<div class=\"ds-stage-photo\"><aside class=\"ds-lotcard\"><p class=\"ds-o\">Pitalito, Huila</p><p class=\"ds-n\">Lote Nº 07 · Pink Bourbon lavado. Frambuesa, panela y jazmín.</p><div class=\"ds-r\"><p class=\"ds-p\">$72.000 <small>250 g</small></p><button class=\"ds-b\">Añadir</button></div></aside></div>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-stage-photo{padding:32px;background:linear-gradient(20deg,var(--forest),#2c4a33);} .ds-lotcard{max-width:340px;padding:26px 26px 22px;background:var(--mint);color:var(--ink);border-radius:6px;box-shadow:0 30px 60px -20px rgba(14,34,25,.45);font-family:var(--sans);} .ds-o{margin:0;font-family:var(--display);font-size:2rem;line-height:1.05;color:var(--forest);} .ds-n{margin:10px 0 18px;font-size:.95rem;color:var(--ink-soft);} .ds-r{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;border-top:1px solid var(--line);} .ds-p{margin:0;font-family:var(--display);font-size:1.6rem;color:var(--forest);font-variant-numeric:tabular-nums;} .ds-p small{font-family:var(--sans);font-size:.85rem;color:var(--ink-soft);} .ds-b{min-height:44px;padding:0 20px;border:0;border-radius:999px;background:var(--forest);color:var(--on-dark);font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;transition:background-color 200ms ease,transform 160ms var(--ease-out);} .ds-b:hover{background:var(--emerald);} .ds-b:active{transform:scale(.97);} .ds-b:focus-visible{outline:2px solid var(--moss);outline-offset:3px;}"
+      "refersTo": "letter-slip",
+      "description": "La tarjeta escrita a mano: papel, esquina viva, mensaje en Bodoni cursiva.",
+      "html": "<article class=\"ds-slip\"><strong>Para Lucía</strong><p>¿Nos tomamos esta, y todas las que vienen?</p><p class=\"ds-slip-from\">De Andrés</p></article>",
+      "css": ".ds-slip { width:220px; min-height:260px; background:#ECE8E1; color:#0E0E0C; padding:22px 20px 40px; display:flex; flex-direction:column; gap:10px; rotate:-1.5deg; } .ds-slip strong { font:600 1rem/1.2 Montserrat, system-ui, sans-serif; } .ds-slip p { margin:0; font:italic 400 1.1875rem/1.4 'Bodoni Moda', Didot, Georgia, serif; } .ds-slip .ds-slip-from { margin-top:auto; font:500 1rem/1.2 Montserrat, system-ui, sans-serif; color:#4F4A40; }"
     },
     {
-      "name": "Placa del archivo",
+      "name": "Moments Index",
       "kind": "custom",
-      "refersTo": "plate",
-      "description": "Lote agotado en el carril del archivo: un verde por placa, numeral gigante en Gloock.",
-      "html": "<article class=\"ds-plate\"><span class=\"ds-tag\">Agotado</span><p class=\"ds-num\">Nº 06</p><h3>Sidama, Etiopía</h3><p class=\"ds-d\">Natural, heirloom. Arándano, bergamota, cacao.</p></article>",
-      "css": ":host{--forest:#0E2219;--emerald:#1F5641;--olive:#3F4720;--moss:#75863A;--sage:#B9C6A6;--pistachio:#DCE4B4;--mint:#EFF2E8;--mint-2:#E3E9DA;--ink:#14231B;--ink-soft:#4A5A4D;--on-dark:#F1F4EA;--on-dark-soft:#BFCBB6;--line:rgba(20,35,27,.14);--line-dark:rgba(241,244,234,.2);--display:\"Gloock\",\"Bodoni 72\",\"Didot\",Georgia,serif;--sans:\"Hanken Grotesk\",system-ui,-apple-system,\"Segoe UI\",sans-serif;--ease-out:cubic-bezier(0.23,1,0.32,1);} .ds-plate{display:flex;flex-direction:column;width:300px;min-height:400px;padding:28px;border-radius:6px;background:var(--emerald);color:var(--on-dark);font-family:var(--sans);} .ds-tag{align-self:flex-start;margin-bottom:18px;padding:4px 12px;border:1px solid currentColor;border-radius:999px;font-size:.78rem;font-weight:600;} .ds-num{margin:0 0 auto;font-family:var(--display);font-size:5rem;line-height:.9;letter-spacing:-.03em;} .ds-plate h3{margin:0 0 6px;font-family:var(--display);font-weight:400;font-size:1.75rem;line-height:1.1;} .ds-d{margin:0;font-size:.95rem;color:rgba(241,244,234,.82);}"
+      "refersTo": null,
+      "description": "Tabla tipográfica sin líneas; la fila activa sube a hueso.",
+      "html": "<table class=\"ds-moments\"><tbody><tr class=\"is-active\" tabindex=\"0\"><th>La propuesta</th><td>Dúo</td><td>$139.000</td></tr><tr tabindex=\"0\"><th>El acuerdo</th><td>Esencial ×10</td><td>$680.000</td></tr><tr tabindex=\"0\"><th>La conquista</th><td>Esencial</td><td>$68.000</td></tr></tbody></table>",
+      "css": ".ds-moments { background:#161D10; padding:24px; border-collapse:collapse; font:400 1.75rem/1.5 'League Spartan', sans-serif; letter-spacing:-0.01em; } .ds-moments th, .ds-moments td { padding:0.25em 1em 0.25em 0; text-align:left; font-weight:400; white-space:nowrap; } .ds-moments td:last-child { text-align:right; padding-right:0; font-variant-numeric:tabular-nums; } .ds-moments tr { color:#B8AE9C; cursor:pointer; transition:color 180ms ease; } .ds-moments tr.is-active, .ds-moments tr:hover { color:#F3EEE4; } .ds-moments tr:focus-visible { outline:2px solid #C08A3E; }"
+    },
+    {
+      "name": "Contact Row",
+      "kind": "custom",
+      "refersTo": "contact-row",
+      "description": "Filas de display alternando verdes en lugar de divisores; la última con círculo ámbar.",
+      "html": "<div class=\"ds-contact\"><p class=\"ds-row\">Desde 10 estuches</p><p class=\"ds-row\">Hablemos <a class=\"ds-round\" href=\"#\" aria-label=\"Escribir\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></p></div>",
+      "css": ".ds-contact { background:#161D10; color:#F3EEE4; } .ds-row { margin:0; min-height:110px; display:flex; align-items:flex-end; gap:24px; padding:0 20px 22px; font:700 3rem/1 'League Spartan', sans-serif; letter-spacing:-0.02em; } .ds-row:nth-child(even) { background:#1D2715; } .ds-round { flex:none; width:0.9em; height:0.9em; border-radius:50%; background:#C08A3E; display:grid; place-items:center; transition:background-color 180ms ease; } .ds-round svg { width:42%; fill:none; stroke:#0E0E0C; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; transition:transform 240ms cubic-bezier(0.22,1,0.36,1); } .ds-round:hover { background:#D49B4A; } .ds-round:hover svg { transform:translateX(3px); } .ds-round:focus-visible { outline:2px solid #C08A3E; outline-offset:3px; }"
     }
   ],
   "narrative": {
-    "northStar": "La Casa Verde",
-    "overview": "due. es lujo clásico sin ironía: una casa de café que viste cada estancia de un verde distinto, cuelga fotografía grande en sus paredes y firma con una serif display imponente. La página no es una tienda con secciones, es un recorrido por campos de color a página completa (bosque, pistacho, menta, esmeralda, oliva) donde cada región pertenece a un solo verde. El listón es el de Hermès y Blue Bottle Coffee: pocas piezas, mucho aire, materiales precisos.\n\nLa densidad es baja y generosa: márgenes de sección de hasta 184px, columnas separadas por hasta 112px, titulares que ocupan cuatro o cinco palabras por línea. La estructura la dan filetes de 1px, no cajas; la profundidad aparece solo cuando un objeto flota sobre otro plano (la ficha del lote sobre la foto, la tarjeta de regalo sobre la caja, el carrito sobre la página). Las acciones son píldoras; lo seleccionable y lo que contiene datos tiene esquinas de 6px.\n\nLa fotografía es real y pasa siempre por una misma gradación verde, de modo que una cereza roja o una caja de cartón conviven con la paleta en lugar de pelear con ella. Se rechaza explícitamente la plantilla de cafetería: fondo crema, serif cursiva y rejilla de tarjetas.",
+    "northStar": "La casa relojera",
+    "overview": "due. se presenta como una casa relojera presenta una pieza: el objeto al centro sobre negro, cifras grandes, muy pocas palabras. La página no es una tienda de café; es una secuencia de capítulos, y cada capítulo es un campo de color plano (negro, beige, verde bosque, blanco) que cambia de golpe, sin degradado ni línea que lo anuncie. El nombre, «dos» en italiano, ordena la composición en pares: dos caminos a los lados del objeto, «Para» y «De» en la carta, dos acciones con el mismo peso al cierre.\n\nLa densidad es baja y el ritmo es lento: secciones altas, márgenes generosos, titulares enormes y apretados en League Spartan, texto corto en Montserrat. El ámbar es el único color que se mueve: marca lo que se puede pulsar y lo que cuesta. La fotografía es de archivo y llega en duotono negro–hueso, nunca a color; la única pieza a todo color es el objeto mismo.\n\nLo que esta casa rechaza, por compromiso de marca: la plantilla de cafetería (lienzo crema de punta a punta, serif cursiva en titulares, granos, fincas, plantas, postales de cosecha) y las tarjetas con borde y sombra.",
     "keyCharacteristics": [
-      "Campos de color verdes a página completa; cada sección posee un solo verde.",
-      "Gloock en peso 400 con tracking negativo para todo lo que se lee como titular, precio o número.",
-      "Hanken Grotesk para texto e interfaz, en minúsculas de frase, sin versalitas espaciadas.",
-      "Filetes de 1px como estructura; sombras solo para objetos flotantes.",
-      "Fotografía grande con gradación verde común y velos en bosque.",
-      "Movimiento sobrio: curvas de salida largas, presión con escala 0.97, hover solo en punteros finos."
+      "Campos planos de color por capítulo; sin degradados, sin sombras en reposo.",
+      "Titulares y cifras en League Spartan 700, interlineado por debajo de 1 y tracking negativo.",
+      "Ámbar solo para acciones, precios y las piezas de la edición.",
+      "Una sola forma interactiva: la píldora completa.",
+      "Fotografía de archivo en duotono negro–hueso; el objeto es la única imagen a color.",
+      "Composición en pares, siguiendo el nombre."
     ],
     "rules": [
       {
-        "name": "La Regla del Campo Entero",
-        "body": "Cada sección pinta su fondo de borde a borde con un solo verde (o con una foto velada en bosque) y la siguiente cambia de campo. Nunca dos secciones contiguas comparten campo, y nunca se pinta una tarjeta de color dentro de un campo para simular una sección.",
+        "name": "The Chapter Field Rule",
+        "body": "Cada sección es un solo campo plano de black, beige, green o white. El cambio de capítulo es el cambio de color; no hay degradados, bordes ni divisores entre secciones.",
         "section": "colors"
       },
       {
-        "name": "La Regla Sin Negro",
-        "body": "No existe el negro ni el gris neutro. El texto oscuro es tinta verde (ink o forest), los velos y sombras se construyen sobre rgba(14, 34, 25, …), y los blancos son menta o papel.",
+        "name": "The Amber Is Money Rule",
+        "body": "El ámbar marca solo lo que se pulsa, lo que cuesta y las piezas de la edición. Si un ámbar no se puede pulsar ni contar, sobra (la única excepción es el punto del wordmark construido).",
         "section": "colors"
       },
       {
-        "name": "La Regla del Musgo Funcional",
-        "body": "El musgo marca estado (foco, hover, progreso) y suaviza una palabra de un titular; no rellena superficies grandes.",
+        "name": "The Olive In The Mark Rule",
+        "body": "El oliva pertenece al logotipo y al objeto. No se usa en fondos, botones ni texto de interfaz.",
         "section": "colors"
       },
       {
-        "name": "La Regla del Peso Único",
-        "body": "Gloock se usa solo en 400, nunca en negrita ni cursiva (la cursiva del navegador en `em` se anula). La jerarquía la da el tamaño, no el peso.",
+        "name": "The Three Voices Rule",
+        "body": "League Spartan habla en titulares y cifras, Montserrat explica, Bodoni Moda cursiva solo dice el nombre y escribe las cartas. La serif nunca titula.",
         "section": "typography"
       },
       {
-        "name": "La Regla del Precio en Serif",
-        "body": "Precios, totales, cuentas atrás y números de lote van en Gloock con cifras tabulares; la unidad (250 g, por lote) baja a Hanken pequeña en tono suave.",
+        "name": "The Tight Display Rule",
+        "body": "Todo texto en League Spartan 700 a tamaño de titular lleva interlineado por debajo de 1 (0.88 a 0.95) y tracking negativo (-0.02em a -0.04em).",
         "section": "typography"
       },
       {
-        "name": "La Regla de la Minúscula de Frase",
-        "body": "Ningún texto va en mayúsculas con tracking abierto; etiquetas, leyendas y estados se escriben en minúscula de frase con peso 600.",
-        "section": "typography"
+        "name": "The Pairs Rule",
+        "body": "Cuando una decisión admite dos caminos, se presentan juntos y con el mismo peso: dos lados del objeto, «Para» y «De», «Regalar due.» y «Comprar para mí».",
+        "section": "layout"
       },
       {
-        "name": "La Regla del Objeto Posado",
-        "body": "Solo flota lo que se puede tomar: una ficha, una tarjeta, un panel. Secciones, listas y placas son planas.",
+        "name": "The Flat At Rest Rule",
+        "body": "Nada proyecta sombra en reposo. La sombra pertenece solo a lo que flota sobre la página.",
         "section": "elevation"
       },
       {
-        "name": "La Regla del Velo Bosque",
-        "body": "Toda foto que lleva texto encima se vela con degradados de rgba(14, 34, 25, …), nunca con negro.",
-        "section": "elevation"
+        "name": "The Pill Or Square Rule",
+        "body": "Si se pulsa, es píldora (o círculo); si se mira, es rectángulo. No hay radios intermedios.",
+        "section": "shapes"
       }
     ],
     "dos": [
-      "Do dar a cada sección un campo verde entero o una foto velada en bosque, alternando campos entre secciones contiguas.",
-      "Do pasar toda fotografía nueva por la gradación verde común (azules y turquesas hacia esmeralda, naranjas desaturados, sombras hacia bosque) y registrar su origen y retoque en el comentario `impeccable:prompt` del JPEG.",
-      "Do escribir titulares, precios y números en Gloock 400 con tracking negativo, y todo lo demás en Hanken Grotesk.",
-      "Do estructurar listas y fichas con filetes de 1px (line sobre claro, line-dark sobre oscuro).",
-      "Do usar píldoras para acciones y 6px para lo seleccionable o lo que contiene datos.",
-      "Do limitar el hover a `(hover: hover) and (pointer: fine)` y dar a cada control pulsable una presión de escala 0.97."
+      "**Do** cambiar de capítulo cambiando de campo de color plano (black, beige, green, white).",
+      "**Do** reservar el ámbar para botones, precios, el contador y las piezas de la edición.",
+      "**Do** componer los titulares en League Spartan 700 con interlineado entre 0.88 y 0.95 y tracking negativo.",
+      "**Do** usar Bodoni Moda cursiva solo para la línea del nombre y el texto de las cartas.",
+      "**Do** hacer píldora (999px) todo lo pulsable y de esquina viva todo lo demás.",
+      "**Do** tratar la fotografía de archivo en duotono negro–hueso y acreditarla en el pie.",
+      "**Do** presentar las dos acciones (regalar y comprar) juntas y con el mismo peso.",
+      "**Do** escribir precios con cifras tabulares y la moneda «COP» en tamaño menor."
     ],
     "donts": [
-      "Don't construir la plantilla de cafetería: fondo crema, serif cursiva y rejilla de tarjetas.",
-      "Don't usar negro puro, gris neutro ni sombras negras; todo oscuro es verde bosque.",
-      "Don't poner Gloock en negrita o cursiva.",
-      "Don't escribir etiquetas en mayúsculas con tracking abierto ni añadir antetítulos sobre los titulares.",
-      "Don't dar sombra a secciones, filas o placas; solo flota lo que se posa sobre otro plano.",
-      "Don't usar fotografía sin gradar ni velar foto con texto encima con negro."
+      "**Don't** usar imágenes de naturaleza: granos, plantas, cafetales, fincas ni cosechas.",
+      "**Don't** usar la plantilla de cafetería: titulares en serif cursiva, tarjetas con borde y sombra, o el beige como lienzo de toda la página (el beige es un capítulo entre campos oscuros).",
+      "**Don't** poner sombras, degradados ni divisores en elementos en reposo.",
+      "**Don't** usar el oliva como color de interfaz; pertenece al logotipo.",
+      "**Don't** usar radios intermedios (8px, 12px, 16px); solo píldora, círculo o esquina viva.",
+      "**Don't** usar blanco puro para texto sobre oscuro; el texto claro es hueso."
     ]
   }
 }
