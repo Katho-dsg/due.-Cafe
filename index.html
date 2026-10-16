@@ -1,194 +1,328 @@
-<!doctype html>
-<html lang="es-CO">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>due. — Café que se susurra</title>
-  <meta name="description" content="due. es un club de café de especialidad. Lotes únicos que se descubren entre pocos y se comparten en voz baja.">
-  <meta name="theme-color" content="#202909">
-  <link rel="icon" type="image/png" href="assets/logo-due-olive.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>due. — Café de especialidad colombiano en lotes limitados</title>
+  <meta name="description" content="due. es una experiencia de café de especialidad colombiano: lotes únicos y de edición limitada para descubrir, degustar y compartir antes de que se agoten.">
+  <meta name="theme-color" content="#161D10">
+  <link rel="icon" href="assets/logo-due-olive.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/club/bolsa-hero.jpg">
-  <link rel="stylesheet" href="css/lace.css">
-  <link rel="stylesheet" href="css/a.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=League+Spartan:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/due.css">
 </head>
 <body>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="floron" viewBox="0 0 120 40">
-      <path d="M60 8l9 12-9 12-9-12Z"/>
-      <path d="M51 20C39 20 33 9 23 9c-8 0-12 7-8 12 3 4 10 3 9-2M69 20c12 0 18 11 28 11 8 0 12-7 8-12-3-4-10-3-9 2"/>
-      <path d="M51 20c-8 0-12 6-18 6M69 20c8 0 12-6 18-6M3 20h9M108 20h9"/>
-      <circle cx="60" cy="20" r="2.2"/>
-    </symbol>
-  </svg>
 
-  <a class="skip" href="#principal">Saltar al contenido</a>
+<a class="skip" href="#main">Saltar al contenido</a>
 
-  <header class="top">
-    <nav class="top__bar" aria-label="Principal">
-      <a href="#origen">El origen</a>
-      <a href="#ritual">El ritual</a>
-      <a href="#sociedad">La sociedad</a>
-      <a href="#suscripcion">Suscripción</a>
-      <a href="#contacto">Contacto</a>
+<!-- ============ HEADER ============ -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a href="#inicio" class="nav__logo" aria-label="due. inicio">
+      <img src="assets/logo-due-lima.png" alt="due." width="96" height="41">
+    </a>
+    <nav class="nav__links" id="menu" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#esencia">Esencia</a>
+      <a href="#lotes">Lotes</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#club">Club</a>
     </nav>
-    <a href="#principal" class="top__logo" aria-label="due., inicio"><img src="assets/logo-due-lima.png" alt="" width="120" height="52"></a>
-  </header>
+    <div class="nav__actions">
+      <a href="#lotes" class="nav__cta">Comprar lote</a>
+      <button class="nav__bag" type="button" aria-label="Bolsa de compra, 0 productos" id="bagBtn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="nav__count" id="bagCount">0</span>
+      </button>
+      <button class="nav__burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" id="burger"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
 
-  <main id="principal">
+<main id="main">
 
-    <section class="hero" aria-labelledby="hero-t">
-      <img class="hero__img" src="assets/club/bolsa-hero.jpg" alt="Bolsa de café due. sobre una bandeja con granos, en un salón oscuro" fetchpriority="high">
-      <div class="hero__veil" aria-hidden="true"></div>
-      <div class="wrap hero__inner">
-        <p class="kicker">Solo para quienes saben</p>
-        <h1 class="hero__t" id="hero-t">Café que <em>se susurra</em></h1>
-        <p class="hero__p">Lotes únicos que no se anuncian en vitrinas. Se descubren entre pocos, se comparten en voz baja y, cuando se acaban, no vuelven.</p>
-        <a href="#contacto" class="btn btn--line">Solicitar invitación</a>
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" aria-label="Lote actual">
+  <div class="hero__bg" aria-hidden="true"></div>
+
+  <div class="hero__copy">
+    <p class="eyebrow eyebrow--olive" data-lot="eyebrow">Lote N.º 07 · Edición limitada</p>
+    <h1 class="hero__title">
+      <span class="thin">Café que</span>
+      <span class="bold">no se</span>
+      <span class="thin">repite<em>.</em></span>
+    </h1>
+    <p class="hero__lead" data-lot="lead">Panela, mandarina y cacao dulce. Un lote del sur del Huila que llega una sola vez y, cuando se agota, deja paso al siguiente.</p>
+
+    <div class="hero__pills">
+      <div class="pill pill--price">
+        <strong data-lot="price">$68.000</strong>
+        <span>COP · bolsa 250 g</span>
       </div>
-    </section>
-
-    <section class="pact lace-bg" aria-labelledby="pact-t">
-      <p class="kicker kicker--center">Nuestro pacto</p>
-      <h2 class="pact__t" id="pact-t">Porque todo lo bueno se comparte… <em>con quien sabe guardarlo.</em></h2>
-      <div class="ornament" aria-hidden="true"><span></span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span></span></div>
-    </section>
-
-    <section class="lot lace-bg lace-bg--light lace-edge" id="origen" aria-labelledby="lot-t">
-      <div class="wrap lot__inner">
-        <div class="lot__copy">
-          <p class="kicker kicker--dark">El lote de esta temporada</p>
-          <h2 class="h2 h2--dark" id="lot-t">Descubre lo que <em>pocos probarán.</em></h2>
-          <p>Lote Nº 07, Pitalito (Huila). Pink Bourbon lavado con notas de frambuesa, panela y jazmín. Bolsas numeradas que se reservan primero para los miembros.</p>
-          <a href="#suscripcion" class="link">Ver el lote</a>
-        </div>
-        <div class="lot__arches">
-          <figure class="arch arch--a"><img src="assets/club/tres-tazas.jpg" alt="Tres personas brindan con tazas de café" loading="lazy"><i class="pill pill--top" aria-hidden="true"></i></figure>
-          <figure class="arch arch--b"><img src="assets/club/manos-granos.jpg" alt="Manos sosteniendo granos de café tostado sobre un costal" loading="lazy"><i class="pill pill--bottom" aria-hidden="true"></i></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="ritual" id="ritual" aria-labelledby="ritual-t">
-      <figure class="ritual__img"><img src="assets/club/vertido.jpg" alt="Café filtrado vertido en una taza negra" loading="lazy"></figure>
-      <div class="ritual__copy">
-        <p class="kicker">Experiencias</p>
-        <h2 class="h2" id="ritual-t">Rituales que se guardan <em>entre pocos</em></h2>
-        <p>Catas a puerta cerrada, recetas que no se publican y una contraseña nueva con cada lote. Lo que pasa en la mesa, se queda en la mesa.</p>
-        <a href="#sociedad" class="btn btn--line btn--sm">Explorar el ritual</a>
-      </div>
-    </section>
-
-    <div class="band" aria-hidden="true">
-      <div class="band__track">
-        <span>Solo por invitación</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lotes que no vuelven</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lo que pasa en la mesa, se queda en la mesa</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg>
-        <span>Solo por invitación</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lotes que no vuelven</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Lo que pasa en la mesa, se queda en la mesa</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg>
-      </div>
+      <a href="#lotes" class="pill pill--cta">
+        <span class="pill__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+        <span>Descubrir<br>el lote</span>
+      </a>
     </div>
 
-    <section class="origin" aria-labelledby="origin-t">
-      <img class="origin__bg" src="assets/club/montana.jpg" alt="" loading="lazy">
-      <div class="wrap origin__inner">
-        <div class="glass lace-corners">
-          <p class="kicker">De dónde viene</p>
-          <h2 class="h2" id="origin-t">Historias que comienzan en <em>origen.</em></h2>
-          <p>Trabajamos de la mano con productores que cuidan la tierra. Su nombre está en cada bolsa; el resto lo cuentan en la mesa.</p>
-          <a href="#sociedad" class="btn btn--line btn--sm">Conocer más</a>
-        </div>
-      </div>
-    </section>
+    <div class="hero__thumbs" role="tablist" aria-label="Elegir lote">
+      <button class="thumb is-active" role="tab" aria-selected="true" data-index="0">
+        <img src="assets/landing/due-bag.png" alt="" width="56" height="97">
+        <span><b>07</b>Huila</span>
+      </button>
+      <button class="thumb" role="tab" aria-selected="false" data-index="1">
+        <img src="assets/landing/due-bag.png" alt="" width="56" height="97">
+        <span><b>08</b>Nariño</span>
+      </button>
+      <button class="thumb" role="tab" aria-selected="false" data-index="2">
+        <img src="assets/landing/due-bag.png" alt="" width="56" height="97">
+        <span><b>09</b>Sierra</span>
+      </button>
+      <p class="hero__caption">C a f é &nbsp; d e &nbsp; e s p e c i a l i d a d &nbsp; c o l o m b i a n o</p>
+    </div>
+  </div>
 
-    <section class="archive lace-bg lace-edge" id="archivo" aria-labelledby="archive-t">
-      <div class="wrap archive__head">
-        <div>
-          <p class="kicker">Archivo de lotes</p>
-          <h2 class="h2" id="archive-t">Lo que ya <em>no vuelve.</em></h2>
+  <div class="hero__stage">
+    <div class="hero__panel" aria-hidden="true">
+      <p class="hero__vertical"><span data-lot="region">HUILA</span><span class="outline" data-lot="region2">HUILA</span></p>
+    </div>
+    <figure class="hero__bag">
+      <img src="assets/landing/due-bag.png" alt="Bolsa de café due., lote actual" width="650" height="1130" fetchpriority="high">
+      <span class="hero__shadow" aria-hidden="true"></span>
+    </figure>
+    <div class="hero__badge">
+      <span class="hero__badge-num" data-lot="left">37</span>
+      <span>de 100 bolsas<br>disponibles</span>
+    </div>
+    <div class="hero__arrows">
+      <button type="button" aria-label="Lote anterior" id="prevLot"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button type="button" aria-label="Lote siguiente" id="nextLot" class="is-solid"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESENCIA ============ -->
+<section class="essence" id="esencia">
+  <div class="wrap essence__grid">
+    <p class="eyebrow">due. en una frase</p>
+    <h2 class="essence__quote reveal">
+      Una experiencia de café de especialidad colombiano para <em>descubrir</em>, <em>degustar</em> y <em>disfrutar</em> lotes que solo existen una vez.
+    </h2>
+    <div class="essence__cols reveal">
+      <p>Cada lote es una selección pequeña, elegida taza a taza. Representa una oportunidad para explorar un perfil de sabor nuevo, regalarte un momento de calma o compartir algo distinto con las personas que importan.</p>
+      <p>No hay catálogo eterno. Cuando un lote se agota, no vuelve: deja paso a la siguiente experiencia. Por eso cada lanzamiento se vive como lo que es, algo irrepetible.</p>
+    </div>
+    <ul class="essence__stats reveal" aria-label="La propuesta en números">
+      <li><strong>100</strong><span>bolsas numeradas<br>por lote</span></li>
+      <li><strong>1</strong><span>origen y un productor<br>en cada edición</span></li>
+      <li><strong>0</strong><span>reediciones:<br>agotado es agotado</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SENSORIAL ============ -->
+<section class="senses" aria-labelledby="senses-title">
+  <figure class="senses__media reveal">
+    <img src="assets/club/vertido.jpg" alt="Café recién filtrado cayendo sobre una taza negra" loading="lazy" width="1600" height="900">
+  </figure>
+  <div class="senses__copy">
+    <p class="eyebrow eyebrow--olive">Antes del primer sorbo</p>
+    <h2 id="senses-title" class="h2 h2--light">Se escucha,<br>se huele, <span class="serif-it">se siente</span>.</h2>
+    <ol class="senses__list">
+      <li class="reveal"><span>01</span><div><h3>El aroma</h3><p>Al abrir la bolsa, la válvula deja escapar notas de panela y fruta madura. Es la primera pista de lo que viene.</p></div></li>
+      <li class="reveal"><span>02</span><div><h3>El vertido</h3><p>Agua a 93 °C, un hilo lento sobre el café molido. La espuma sube, respira y se asienta.</p></div></li>
+      <li class="reveal"><span>03</span><div><h3>La taza</h3><p>Cuerpo sedoso, acidez brillante, un final largo que pide un segundo sorbo y, casi siempre, compañía.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ LOTES ============ -->
+<section class="lots" id="lotes" aria-labelledby="lots-title">
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <p class="eyebrow">Lotes disponibles</p>
+        <h2 id="lots-title" class="h2">Elige tu próxima<br><span class="serif-it">historia en taza</span>.</h2>
+      </div>
+      <p class="section-head__aside">Cada edición es limitada y numerada. Reserva la tuya antes de que el contador llegue a cero.</p>
+    </header>
+
+    <div class="lots__grid">
+      <!-- Lote 07 -->
+      <article class="lot lot--feature reveal">
+        <div class="lot__visual">
+          <span class="lot__tag">Disponible ahora</span>
+          <img src="assets/landing/due-bag.png" alt="Bolsa due. Lote 07" loading="lazy" width="650" height="1130">
+          <span class="lot__num" aria-hidden="true">07</span>
         </div>
-        <div class="archive__side">
-          <p>Cada lote agotado queda aquí como una noche que ya pasó. El siguiente está en camino. <span class="sample">Lotes de ejemplo.</span></p>
-          <div class="rail-ctrl">
-            <button type="button" class="rail-btn" data-rail="-1" aria-label="Lotes anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-            <button type="button" class="rail-btn" data-rail="1" aria-label="Lotes siguientes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        <div class="lot__body">
+          <p class="lot__origin">Pitalito, Huila · 1.750 m s. n. m.</p>
+          <h3 class="lot__name">Lote 07 — <span class="serif-it">Ocaso</span></h3>
+          <p class="lot__notes">Panela · Mandarina · Cacao dulce</p>
+          <dl class="lot__specs">
+            <div><dt>Proceso</dt><dd>Lavado</dd></div>
+            <div><dt>Variedad</dt><dd>Caturra</dd></div>
+            <div><dt>Puntaje</dt><dd>86,5</dd></div>
+          </dl>
+          <div class="lot__meter" aria-label="Perfil de taza">
+            <p><span>Acidez</span><i style="--v:.7"></i></p>
+            <p><span>Cuerpo</span><i style="--v:.6"></i></p>
+            <p><span>Dulzor</span><i style="--v:.85"></i></p>
+          </div>
+          <div class="lot__stock">
+            <div class="lot__bar"><i style="--v:.37"></i></div>
+            <p><strong>37</strong> de 100 bolsas</p>
+          </div>
+          <div class="lot__buy">
+            <p class="lot__price">$68.000 <small>COP</small></p>
+            <button class="btn btn--dark js-add" type="button" data-name="Lote 07 — Ocaso">Añadir a la bolsa</button>
           </div>
         </div>
-      </div>
-      <div class="rail" data-rail-track tabindex="0" aria-label="Próximo lote y lotes anteriores">
-        <article class="plate plate--next">
-          <span class="plate__tag">En camino</span>
-          <p class="plate__n">Nº 08</p>
-          <h3>Origen por revelar</h3>
-          <p>Un natural de altura. Fruta de hueso y flor de azahar.</p>
-          <div class="countdown" data-countdown="2026-11-20T10:00:00-05:00">
-            <div><b data-cd="d">00</b><span>días</span></div>
-            <div><b data-cd="h">00</b><span>horas</span></div>
-            <div><b data-cd="m">00</b><span>min</span></div>
-          </div>
-          <a href="#contacto" class="plate__link">Pedir la contraseña</a>
-        </article>
-        <article class="plate plate--g1"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 06</p><h3>Sidama, Etiopía</h3><p>Natural, heirloom. Arándano, bergamota, cacao.</p></article>
-        <article class="plate plate--g2"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 05</p><h3>Volcán Barú, Panamá</h3><p>Lavado, geisha. Jazmín, melocotón, miel.</p></article>
-        <article class="plate plate--g3"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 04</p><h3>Cajamarca, Perú</h3><p>Honey, caturra. Ciruela, caramelo, nuez.</p></article>
-        <article class="plate plate--g4"><span class="plate__tag">Agotado</span><p class="plate__n">Nº 03</p><h3>Nariño, Colombia</h3><p>Lavado, castillo. Naranja, panela, cacao.</p></article>
-      </div>
-    </section>
+      </article>
 
-    <section class="society lace-bg" id="sociedad" aria-labelledby="soc-t">
-      <div class="wrap society__inner">
-        <figure class="society__portrait"><img src="assets/club/brindis.jpg" alt="Varias manos juntan vasos de café en un brindis" loading="lazy"></figure>
-        <div class="society__copy">
-          <p class="kicker">La sociedad</p>
-          <h2 class="h2" id="soc-t">Una mesa para quienes <em>saben de café.</em></h2>
-          <p>Aquí nadie pregunta quién eres afuera. Te reconocemos por lo que sirves, por lo que compartes y por lo que guardas. Cada lote es una noche distinta; cada miembro, una silla en la mesa.</p>
-          <div class="society__pair">
-            <figure><img src="assets/club/ventana.jpg" alt="Dos personas comparten café junto a una ventana" loading="lazy"></figure>
-            <figure><img src="assets/club/conversacion.jpg" alt="Dos personas conversan con sus tazas de café sobre la mesa" loading="lazy"></figure>
+      <!-- Lote 08 -->
+      <article class="lot reveal">
+        <div class="lot__visual lot__visual--soft">
+          <span class="lot__tag lot__tag--light">Pocas unidades</span>
+          <img src="assets/landing/due-bag.png" alt="Bolsa due. Lote 08" loading="lazy" width="650" height="1130">
+          <span class="lot__num" aria-hidden="true">08</span>
+        </div>
+        <div class="lot__body">
+          <p class="lot__origin">La Unión, Nariño · 2.050 m s. n. m.</p>
+          <h3 class="lot__name">Lote 08 — <span class="serif-it">Bruma</span></h3>
+          <p class="lot__notes">Uva roja · Jazmín · Miel</p>
+          <div class="lot__stock">
+            <div class="lot__bar"><i style="--v:.12"></i></div>
+            <p><strong>12</strong> de 100 bolsas</p>
+          </div>
+          <div class="lot__buy">
+            <p class="lot__price">$74.000 <small>COP</small></p>
+            <button class="btn btn--line js-add" type="button" data-name="Lote 08 — Bruma">Añadir</button>
           </div>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <section class="sub" id="suscripcion" aria-labelledby="sub-t">
-      <div class="sub__copy">
-        <p class="kicker">Suscripción</p>
-        <h2 class="h2" id="sub-t">Café que te acompaña <em>mes tras mes</em></h2>
-        <p>Tu bolsa de cada lote reservada antes de que exista para los demás, con su ficha numerada y la contraseña de la próxima cata.</p>
-        <a href="#contacto" class="btn btn--line btn--sm">Conocer la suscripción</a>
-      </div>
-      <figure class="sub__img"><img src="assets/club/bolsa-taza.jpg" alt="Bolsa de café due. junto a una taza de café negro y granos" loading="lazy"></figure>
-    </section>
+      <!-- Lote 09 -->
+      <article class="lot lot--soon reveal">
+        <div class="lot__visual lot__visual--dark">
+          <span class="lot__tag lot__tag--olive">Próximo lanzamiento</span>
+          <img src="assets/landing/due-bag.png" alt="Bolsa due. Lote 09, próximamente" loading="lazy" width="650" height="1130">
+          <span class="lot__num" aria-hidden="true">09</span>
+        </div>
+        <div class="lot__body">
+          <p class="lot__origin">Sierra Nevada · 1.600 m s. n. m.</p>
+          <h3 class="lot__name">Lote 09 — <span class="serif-it">Secreto</span></h3>
+          <p class="lot__notes">Se revela al club 48 h antes</p>
+          <div class="countdown" id="countdown" aria-live="polite">
+            <p><strong data-cd="d">00</strong><span>días</span></p>
+            <p><strong data-cd="h">00</strong><span>horas</span></p>
+            <p><strong data-cd="m">00</strong><span>min</span></p>
+          </div>
+          <a href="#club" class="btn btn--olive">Avisarme primero</a>
+        </div>
+      </article>
+    </div>
 
-    <section class="news lace-bg" id="contacto" aria-labelledby="news-t">
-      <p class="kicker kicker--center">Mantente cerca</p>
-      <h2 class="h2 news__t" id="news-t">Recibe la contraseña</h2>
-      <p class="news__p">El próximo lote llega primero a quien está en la lista.</p>
-      <form class="news__form" data-join novalidate>
-        <label class="sr-only" for="mail-a">Tu correo electrónico</label>
-        <input id="mail-a" type="email" placeholder="Tu correo electrónico" autocomplete="email" required>
-        <button type="submit">Entrar a la lista</button>
+    <p class="lots__note">Datos de lotes de ejemplo: se reemplazarán por los lotes reales antes de publicar.</p>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCIA / COMPARTIR ============ -->
+<section class="share" id="experiencia" aria-labelledby="share-title">
+  <div class="wrap share__grid">
+    <div class="share__copy">
+      <p class="eyebrow eyebrow--olive">La experiencia</p>
+      <h2 id="share-title" class="h2 h2--light">Un buen café<br>se vuelve mejor<br><span class="serif-it">cuando se comparte</span>.</h2>
+      <p class="share__text">due. está hecho para la sobremesa larga, la visita que llega sin avisar y el regalo que se recuerda. Abre una bolsa, prepara tres tazas y deja que la conversación haga el resto.</p>
+      <div class="share__steps">
+        <p><b>Descubre</b> un origen nuevo en cada lanzamiento.</p>
+        <p><b>Degusta</b> con calma, guiado por la ficha de cata.</p>
+        <p><b>Disfruta</b> y comparte antes de que se agote.</p>
+      </div>
+      <a href="#lotes" class="btn btn--cream">Vivir el lote 07</a>
+    </div>
+    <div class="share__mosaic">
+      <figure class="m1 reveal"><img src="assets/club/brindis.jpg" alt="Amigos brindando con tazas de café" loading="lazy"></figure>
+      <figure class="m2 reveal"><img src="assets/club/conversacion.jpg" alt="Dos personas conversando con café junto a la ventana" loading="lazy"></figure>
+      <figure class="m3 reveal"><img src="assets/club/tres-tazas.jpg" alt="Manos sosteniendo tres tazas de café" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CICLO DEL LOTE ============ -->
+<section class="cycle" aria-labelledby="cycle-title">
+  <div class="wrap">
+    <header class="section-head section-head--center">
+      <p class="eyebrow">Así vive cada lote</p>
+      <h2 id="cycle-title" class="h2">Llega, se disfruta, <span class="serif-it">se despide</span>.</h2>
+    </header>
+    <ol class="cycle__track">
+      <li class="reveal"><span class="cycle__dot">I</span><h3>Selección</h3><p>Catamos decenas de muestras y elegimos un solo lote que nos detenga.</p></li>
+      <li class="reveal"><span class="cycle__dot">II</span><h3>Lanzamiento</h3><p>El club lo conoce primero. Luego se abre a todos, con 100 bolsas numeradas.</p></li>
+      <li class="reveal"><span class="cycle__dot">III</span><h3>Disfrute</h3><p>Llega a tu casa tostado en la semana, con su ficha de cata y su historia.</p></li>
+      <li class="reveal"><span class="cycle__dot is-last">IV</span><h3>Agotado</h3><p>No hay reedición. Pasa al archivo y otro lote ocupa su lugar.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ MOMENTO / CITA ============ -->
+<section class="moment" aria-label="Un momento due.">
+  <img src="assets/club/ventana.jpg" alt="" loading="lazy" class="moment__img">
+  <div class="moment__copy">
+    <p class="moment__quote">“El mejor café es el que todavía no has probado.”</p>
+    <p class="moment__sign">— due.</p>
+  </div>
+</section>
+
+<!-- ============ CLUB ============ -->
+<section class="club" id="club" aria-labelledby="club-title">
+  <div class="wrap club__grid">
+    <div class="club__visual" aria-hidden="true">
+      <span class="club__ring"></span>
+      <img src="assets/landing/due-bag.png" alt="" loading="lazy" width="650" height="1130">
+    </div>
+    <div class="club__copy">
+      <p class="eyebrow">Club due.</p>
+      <h2 id="club-title" class="h2">Entérate antes<br><span class="serif-it">de que se agote</span>.</h2>
+      <p>Los miembros reciben el aviso del próximo lote 48 horas antes que nadie y pueden reservar su bolsa. Sin cuotas, sin compromiso: solo curiosidad.</p>
+      <form class="club__form" id="clubForm" novalidate>
+        <label for="email" class="sr-only">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="tu@correo.com" autocomplete="email" required>
+        <button class="btn btn--dark" type="submit">Unirme</button>
       </form>
-      <p class="news__msg" role="status" data-join-msg></p>
-    </section>
-  </main>
-
-  <footer class="foot">
-    <div class="wrap foot__inner">
-      <div class="foot__brand">
-        <img src="assets/logo-due-lima.png" alt="due." width="130" height="56">
-        <p>Café de especialidad para quienes saben guardar un secreto.</p>
-      </div>
-      <div><h3>Café</h3><a href="#origen">El lote</a><a href="#suscripcion">Suscripción</a><a href="#ritual">Experiencias</a><a href="#archivo">Archivo</a></div>
-      <div><h3>Sobre due.</h3><a href="#sociedad">La sociedad</a><a href="#origen">Origen</a><a href="#ritual">Proceso</a></div>
-      <div><h3>Ayuda</h3><a href="#">Preguntas frecuentes</a><a href="#">Envíos en Colombia</a><a href="#contacto">Contacto</a></div>
-      <div><h3>Legal</h3><a href="#">Términos y condiciones</a><a href="#">Política de privacidad</a></div>
+      <p class="club__msg" id="clubMsg" role="status"></p>
     </div>
-    <div class="wrap foot__base">
-      <p>© 2026 due. Contenido de ejemplo.</p>
-      <p class="foot__sign"><svg class="floron" viewBox="0 0 120 40" aria-hidden="true"><use href="#floron"/></svg> Lo que pasa en la mesa, se queda en la mesa</p>
-    </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="js/club.js"></script>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <img src="assets/logo-due-cream.png" alt="due." width="120" height="52" loading="lazy">
+      <p>Café de especialidad colombiano en lotes únicos y de edición limitada.</p>
+    </div>
+    <nav aria-label="Pie de página">
+      <h4>Explora</h4>
+      <a href="#lotes">Lotes</a><a href="#experiencia">Experiencia</a><a href="#club">Club</a>
+    </nav>
+    <div>
+      <h4>Contacto</h4>
+      <a href="mailto:hola@duecafe.co">hola@duecafe.co</a>
+      <a href="#">Instagram</a>
+      <p>Envíos a toda Colombia</p>
+    </div>
+  </div>
+  <p class="foot__base wrap">© 2026 due. — Hecho en Colombia</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/due.js"></script>
 </body>
 </html>
