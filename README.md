@@ -9,6 +9,7 @@ Sitio estático sin dependencias: abre `index.html` en el navegador.
 - `js/due.js` — configurador con vista previa de la tarjeta, bolsa simulada, contador de pieza y animaciones
 - `assets/landing/` — empaque de due. recortado (PNG transparente)
 - `assets/editorial/` — aquí van las fotos editoriales de la cliente: `caballero.jpg`, `dama.jpg`, `pareja-noche.jpg`, `pareja-gala.jpg`. Mientras no existan, la página muestra fotos provisionales
+- `docs/notas-cliente.md` — resumen del brief y de los audios de la cliente
 - `version-a.html`, `version-b.html`, `version-anterior.html` — propuestas anteriores
 
 Los datos de lotes, precios y piezas son de ejemplo y deben sustituirse antes de publicar.
