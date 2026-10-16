@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>due. — Café de especialidad colombiano en lotes limitados</title>
-  <meta name="description" content="due. es una experiencia de café de especialidad colombiano: lotes únicos y de edición limitada para descubrir, degustar y compartir antes de que se agoten.">
+  <title>due. — El regalo que se sirve</title>
+  <meta name="description" content="due. es café de especialidad colombiano en ediciones numeradas de 100 piezas, presentado en estuche para regalar. Como un gran vino: origen, cosecha y una historia que se comparte.">
   <meta name="theme-color" content="#161D10">
   <link rel="icon" href="assets/logo-due-olive.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=League+Spartan:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=League+Spartan:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/due.css">
 </head>
 <body>
@@ -19,18 +19,18 @@
 <!-- ============ HEADER ============ -->
 <header class="nav" id="nav">
   <div class="nav__in">
-    <a href="#inicio" class="nav__logo" aria-label="due. inicio">
-      <img src="assets/logo-due-lima.png" alt="due." width="96" height="41">
-    </a>
-    <nav class="nav__links" id="menu" aria-label="Principal">
-      <a href="#inicio">Inicio</a>
-      <a href="#esencia">Esencia</a>
-      <a href="#lotes">Lotes</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#aviso">Próximo lote</a>
+    <nav class="nav__side" id="menu" aria-label="Principal">
+      <a href="#filosofia">Filosofía</a>
+      <a href="#edicion">La edición</a>
+      <a href="#estuche">El estuche</a>
+      <a href="#ocasiones">Ocasiones</a>
+      <a href="#empresas">Empresas</a>
     </nav>
+    <a href="#inicio" class="nav__logo" aria-label="due. inicio">
+      <img src="assets/logo-due-lima.png" alt="due." width="88" height="38">
+    </a>
     <div class="nav__actions">
-      <a href="#lotes" class="nav__cta">Comprar lote</a>
+      <a href="#regalar" class="nav__cta">Regalar due.</a>
       <button class="nav__bag" type="button" aria-label="Bolsa de compra, 0 productos" id="bagBtn">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
         <span class="nav__count" id="bagCount">0</span>
@@ -43,258 +43,282 @@
 <main id="main">
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="inicio" aria-label="Lote actual">
-  <div class="hero__bg" aria-hidden="true"></div>
-
+<section class="hero" id="inicio">
+  <div class="hero__media" aria-hidden="true">
+    <img src="assets/editorial/caballero.jpg" data-fallback="assets/club/vertido.jpg" alt="" width="1024" height="1536" fetchpriority="high">
+    <img src="assets/editorial/dama.jpg" data-fallback="assets/club/bolsa-hero.jpg" alt="" width="1024" height="1536">
+  </div>
   <div class="hero__copy">
-    <p class="eyebrow eyebrow--olive" data-lot="eyebrow">Lote N.º 07 · Edición limitada</p>
-    <h1 class="hero__title">
-      <span class="thin">Café que</span>
-      <span class="bold">no se</span>
-      <span class="thin">repite<em>.</em></span>
-    </h1>
-    <p class="hero__lead" data-lot="lead">Panela, mandarina y cacao dulce. Un lote del sur del Huila que llega una sola vez y, cuando se agota, deja paso al siguiente.</p>
-
-    <div class="hero__pills">
-      <div class="pill pill--price">
-        <strong data-lot="price">$68.000</strong>
-        <span>COP · bolsa 250 g</span>
-      </div>
-      <a href="#lotes" class="pill pill--cta">
-        <span class="pill__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-        <span>Descubrir<br>el lote</span>
-      </a>
-    </div>
-
-    <div class="hero__thumbs" role="tablist" aria-label="Elegir lote">
-      <button class="thumb is-active" role="tab" aria-selected="true" data-index="0">
-        <img src="assets/landing/due-bag.png" alt="" width="56" height="97">
-        <span><b>07</b>Huila</span>
-      </button>
-      <button class="thumb" role="tab" aria-selected="false" data-index="1">
-        <img src="assets/landing/due-bag.png" alt="" width="56" height="97">
-        <span><b>08</b>Nariño</span>
-      </button>
-      <button class="thumb" role="tab" aria-selected="false" data-index="2">
-        <img src="assets/landing/due-bag.png" alt="" width="56" height="97">
-        <span><b>09</b>Sierra</span>
-      </button>
-      <p class="hero__caption">C a f é &nbsp; d e &nbsp; e s p e c i a l i d a d &nbsp; c o l o m b i a n o</p>
+    <img class="hero__logo" src="assets/logo-due-lima.png" alt="" width="120" height="52">
+    <p class="kicker kicker--gold">Café de especialidad colombiano · Edición numerada</p>
+    <h1 class="hero__title">Hay regalos que se abren.<em>Este se sirve.</em></h1>
+    <div class="hero__ctas">
+      <a href="#regalar" class="btn btn--gold">Regalar due.</a>
+      <a href="#edicion" class="link-arrow">Descubrir la edición <span aria-hidden="true">→</span></a>
     </div>
   </div>
-
-  <div class="hero__stage">
-    <div class="hero__panel" aria-hidden="true">
-      <p class="hero__vertical"><span data-lot="region">HUILA</span><span class="outline" data-lot="region2">HUILA</span></p>
-    </div>
-    <figure class="hero__bag">
-      <img src="assets/landing/due-bag.png" alt="Bolsa de café due., lote actual" width="650" height="1130" fetchpriority="high">
-      <span class="hero__shadow" aria-hidden="true"></span>
-    </figure>
-    <div class="hero__badge">
-      <span class="hero__badge-num" data-lot="left">37</span>
-      <span>de 100 bolsas<br>disponibles</span>
-    </div>
-    <div class="hero__arrows">
-      <button type="button" aria-label="Lote anterior" id="prevLot"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
-      <button type="button" aria-label="Lote siguiente" id="nextLot" class="is-solid"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
-    </div>
+  <div class="hero__foot">
+    <span>Lote 07 — Pitalito, Huila</span>
+    <span class="hero__scroll" aria-hidden="true"></span>
+    <span>100 piezas numeradas</span>
   </div>
 </section>
 
-<!-- ============ ESENCIA ============ -->
-<section class="essence" id="esencia">
-  <div class="wrap essence__grid">
-    <p class="eyebrow">due. en una frase</p>
-    <h2 class="essence__quote reveal">
-      Una experiencia de café de especialidad colombiano para <em>descubrir</em>, <em>degustar</em> y <em>disfrutar</em> lotes que solo existen una vez.
+<!-- ============ FILOSOFÍA ============ -->
+<section class="philo" id="filosofia">
+  <div class="wrap philo__in">
+    <p class="kicker">Filosofía</p>
+    <h2 class="statement reveal">
+      Hay conexiones que valen<br>más que un diamante.
+      <em>Se sellan con una taza.</em>
     </h2>
-    <div class="essence__cols reveal">
-      <p>Cada lote es una selección pequeña, elegida taza a taza. Representa una oportunidad para explorar un perfil de sabor nuevo, regalarte un momento de calma o compartir algo distinto con las personas que importan.</p>
-      <p>No hay catálogo eterno. Cuando un lote se agota, no vuelve: deja paso a la siguiente experiencia. Por eso cada lanzamiento se vive como lo que es, algo irrepetible.</p>
-    </div>
-    <ul class="essence__stats reveal" aria-label="La propuesta en números">
-      <li><strong>100</strong><span>bolsas numeradas<br>por lote</span></li>
-      <li><strong>1</strong><span>origen y un productor<br>en cada edición</span></li>
-      <li><strong>0</strong><span>reediciones:<br>agotado es agotado</span></li>
+    <p class="philo__text reveal">Como un gran vino, un gran café tiene origen, cosecha y un final que permanece. due. lo presenta en estuche, numerado y con su mensaje, para los momentos en que un regalo debe decir algo más.</p>
+
+    <ul class="pillars">
+      <li class="reveal"><span class="pillars__n">I</span><h3>Origen</h3><p>Una sola finca, un solo productor. Nunca mezclas anónimas.</p></li>
+      <li class="reveal"><span class="pillars__n">II</span><h3>Cosecha</h3><p>Cada edición corresponde a una cosecha concreta, como una añada.</p></li>
+      <li class="reveal"><span class="pillars__n">III</span><h3>Edición</h3><p>100 piezas numeradas a mano. Cuando se entregan, la edición se cierra.</p></li>
+      <li class="reveal"><span class="pillars__n">IV</span><h3>Cata</h3><p>Ficha de cata impresa, firmada por quien la seleccionó.</p></li>
     </ul>
   </div>
 </section>
 
-<!-- ============ SENSORIAL ============ -->
-<section class="senses" aria-labelledby="senses-title">
-  <figure class="senses__media reveal">
-    <img src="assets/club/vertido.jpg" alt="Café recién filtrado cayendo sobre una taza negra" loading="lazy" width="1600" height="900">
+<!-- ============ LA EDICIÓN ============ -->
+<section class="edition" id="edicion" aria-labelledby="ed-title">
+  <figure class="edition__media">
+    <img src="assets/club/bolsa-hero.jpg" alt="Bolsa de café due. sobre un plato de granos tostados, con luz dorada al fondo" loading="lazy" width="1820" height="864">
+    <figcaption>Edición N.º 07</figcaption>
   </figure>
-  <div class="senses__copy">
-    <p class="eyebrow eyebrow--olive">Antes del primer sorbo</p>
-    <h2 id="senses-title" class="h2 h2--light">Se escucha,<br>se huele, <span class="serif-it">se siente</span>.</h2>
-    <ol class="senses__list">
-      <li class="reveal"><span>01</span><div><h3>El aroma</h3><p>Al abrir la bolsa, la válvula deja escapar notas de panela y fruta madura. Es la primera pista de lo que viene.</p></div></li>
-      <li class="reveal"><span>02</span><div><h3>El vertido</h3><p>Agua a 93 °C, un hilo lento sobre el café molido. La espuma sube, respira y se asienta.</p></div></li>
-      <li class="reveal"><span>03</span><div><h3>La taza</h3><p>Cuerpo sedoso, acidez brillante, un final largo que pide un segundo sorbo y, casi siempre, compañía.</p></div></li>
-    </ol>
+  <div class="edition__copy">
+    <p class="kicker">La edición actual</p>
+    <h2 id="ed-title" class="title">Lote 07<em>Ocaso</em></h2>
+    <p class="edition__notes">Panela · Mandarina · Cacao dulce</p>
+    <p class="edition__text">Un caturra lavado del sur del Huila, cultivado a 1.750 metros. Dulce, brillante y largo en boca.</p>
+
+    <dl class="specs">
+      <div><dt>Origen</dt><dd>Pitalito, Huila</dd></div>
+      <div><dt>Altitud</dt><dd>1.750 m s. n. m.</dd></div>
+      <div><dt>Variedad</dt><dd>Caturra</dd></div>
+      <div><dt>Proceso</dt><dd>Lavado</dd></div>
+      <div><dt>Puntaje SCA</dt><dd>86,5</dd></div>
+      <div><dt>Presentación</dt><dd>250 g · grano o molido</dd></div>
+    </dl>
+
+    <div class="edition__stock">
+      <div class="edition__bar" aria-hidden="true"><i style="--v:.63"></i></div>
+      <p><strong>63</strong> de 100 piezas ya tienen dueño</p>
+    </div>
+
+    <div class="edition__buy">
+      <p class="price">$68.000 <small>COP</small></p>
+      <a href="#regalar" class="btn btn--dark">Regalar esta edición</a>
+      <button type="button" class="link-arrow link-arrow--dark js-add" data-name="Lote 07 — Ocaso">Comprar para mí <span aria-hidden="true">→</span></button>
+    </div>
   </div>
 </section>
 
-<!-- ============ LOTES ============ -->
-<section class="lots" id="lotes" aria-labelledby="lots-title">
+<!-- ============ EL ESTUCHE ============ -->
+<section class="case" id="estuche" aria-labelledby="case-title">
   <div class="wrap">
-    <header class="section-head">
+    <header class="head head--center head--light">
+      <p class="kicker kicker--gold">El estuche</p>
+      <h2 id="case-title" class="title title--light">Todo lo que se abre<em>antes del primer sorbo.</em></h2>
+    </header>
+
+    <div class="case__grid">
+      <ol class="case__list case__list--left">
+        <li class="reveal"><span>01</span><h3>La pieza numerada</h3><p>Bolsa de 250 g con su número de edición, tostada la misma semana del envío.</p></li>
+        <li class="reveal"><span>02</span><h3>La ficha de cata</h3><p>Origen, productor, notas y cómo prepararlo, impresa en papel de algodón.</p></li>
+      </ol>
+
+      <div class="case__visual" aria-hidden="true">
+        <div class="gift gift--still">
+          <img class="gift__bag" src="assets/landing/due-bag.png" alt="" width="650" height="1130" loading="lazy">
+          <svg class="gift__tag" viewBox="0 0 170 250" aria-hidden="true">
+            <path class="gift__cord" d="M8 6 C 40 40, 70 50, 92 78"/>
+            <g transform="rotate(14 100 150)">
+              <rect x="45" y="80" width="110" height="160" rx="6" class="gift__card"/>
+              <rect x="52" y="87" width="96" height="146" rx="3" class="gift__frame"/>
+              <circle cx="100" cy="102" r="5" class="gift__hole"/>
+              <text x="100" y="146" class="gift__for">Para usted,</text>
+              <text x="100" y="172" class="gift__for gift__for--sm">con el mayor</text>
+              <text x="100" y="192" class="gift__for gift__for--sm">aprecio.</text>
+              <text x="100" y="222" class="gift__mark">due.</text>
+            </g>
+          </svg>
+          <span class="gift__back" aria-hidden="true"></span>
+          <div class="gift__box">
+            <span class="gift__ribbon"></span>
+            <span class="gift__logo">due.</span>
+            <span class="gift__ed">Hecho para regalar</span>
+          </div>
+          <span class="gift__floor"></span>
+        </div>
+      </div>
+
+      <ol class="case__list" start="3">
+        <li class="reveal"><span>03</span><h3>Su carta</h3><p>Su mensaje, escrito a mano con tinta en papel de algodón.</p></li>
+        <li class="reveal"><span>04</span><h3>El sello</h3><p>Estuche rígido verde bosque, cinta y sello dorado. Nadie lo abre antes que quien lo recibe.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGALAR (CONFIGURADOR) ============ -->
+<section class="gifting" id="regalar" aria-labelledby="gift-title">
+  <div class="wrap">
+    <header class="head">
       <div>
-        <p class="eyebrow">Lotes disponibles</p>
-        <h2 id="lots-title" class="h2">Elige tu próxima<br><span class="serif-it">historia en taza</span>.</h2>
+        <p class="kicker">Regalar due.</p>
+        <h2 id="gift-title" class="title">Su regalo,<em>en tres decisiones.</em></h2>
       </div>
-      <p class="section-head__aside">Cada edición es limitada y numerada. Reserva la tuya antes de que el contador llegue a cero.</p>
+      <p class="head__aside">Elija el estuche, escriba su mensaje y la fecha de entrega. Del resto nos encargamos nosotros, en toda Colombia.</p>
     </header>
 
-    <div class="lots__grid">
-      <!-- Lote 07 -->
-      <article class="lot lot--feature reveal">
-        <div class="lot__visual">
-          <span class="lot__tag">Disponible ahora</span>
-          <img src="assets/landing/due-bag.png" alt="Bolsa due. Lote 07" loading="lazy" width="650" height="1130">
-          <span class="lot__num" aria-hidden="true">07</span>
-        </div>
-        <div class="lot__body">
-          <p class="lot__origin">Pitalito, Huila · 1.750 m s. n. m.</p>
-          <h3 class="lot__name">Lote 07 — <span class="serif-it">Ocaso</span></h3>
-          <p class="lot__notes">Panela · Mandarina · Cacao dulce</p>
-          <dl class="lot__specs">
-            <div><dt>Proceso</dt><dd>Lavado</dd></div>
-            <div><dt>Variedad</dt><dd>Caturra</dd></div>
-            <div><dt>Puntaje</dt><dd>86,5</dd></div>
-          </dl>
-          <div class="lot__meter" aria-label="Perfil de taza">
-            <p><span>Acidez</span><i style="--v:.7"></i></p>
-            <p><span>Cuerpo</span><i style="--v:.6"></i></p>
-            <p><span>Dulzor</span><i style="--v:.85"></i></p>
+    <form class="gifting__grid" id="giftForm" novalidate>
+      <div class="gifting__steps">
+        <fieldset class="step">
+          <legend><span>1</span>El estuche</legend>
+          <div class="options">
+            <label class="option">
+              <input type="radio" name="box" value="esencial" data-price="68000" data-label="Estuche Esencial" checked>
+              <span class="option__in">
+                <b>Esencial</b>
+                <small>1 pieza de la edición actual</small>
+                <em>$68.000</em>
+              </span>
+            </label>
+            <label class="option">
+              <input type="radio" name="box" value="duo" data-price="139000" data-label="Estuche Dúo">
+              <span class="option__in">
+                <b>Dúo</b>
+                <small>2 piezas de ediciones distintas</small>
+                <em>$139.000</em>
+              </span>
+            </label>
+            <label class="option">
+              <input type="radio" name="box" value="coleccion" data-price="198000" data-label="Colección Trilogía">
+              <span class="option__in">
+                <b>Trilogía</b>
+                <small>3 ediciones + taza de porcelana</small>
+                <em>$198.000</em>
+              </span>
+            </label>
           </div>
-          <div class="lot__stock">
-            <div class="lot__bar"><i style="--v:.37"></i></div>
-            <p><strong>37</strong> de 100 bolsas</p>
-          </div>
-          <div class="lot__buy">
-            <p class="lot__price">$68.000 <small>COP</small></p>
-            <button class="btn btn--dark js-add" type="button" data-name="Lote 07 — Ocaso">Añadir a la bolsa</button>
-          </div>
-        </div>
-      </article>
+        </fieldset>
 
-      <!-- Lote 08 -->
-      <article class="lot reveal">
-        <div class="lot__visual lot__visual--soft">
-          <span class="lot__tag lot__tag--light">Pocas unidades</span>
-          <img src="assets/landing/due-bag.png" alt="Bolsa due. Lote 08" loading="lazy" width="650" height="1130">
-          <span class="lot__num" aria-hidden="true">08</span>
-        </div>
-        <div class="lot__body">
-          <p class="lot__origin">La Unión, Nariño · 2.050 m s. n. m.</p>
-          <h3 class="lot__name">Lote 08 — <span class="serif-it">Bruma</span></h3>
-          <p class="lot__notes">Uva roja · Jazmín · Miel</p>
-          <div class="lot__stock">
-            <div class="lot__bar"><i style="--v:.12"></i></div>
-            <p><strong>12</strong> de 100 bolsas</p>
+        <fieldset class="step">
+          <legend><span>2</span>El mensaje</legend>
+          <div class="fields">
+            <label class="field"><span>Para</span><input type="text" name="to" maxlength="28" placeholder="Nombre de quien lo recibe" autocomplete="off"></label>
+            <label class="field"><span>De</span><input type="text" name="from" maxlength="28" placeholder="Su nombre" autocomplete="name"></label>
+            <label class="field field--full"><span>Mensaje <i id="msgCount">0/160</i></span><textarea name="msg" rows="3" maxlength="160" placeholder="Lo escribiremos a mano, con tinta."></textarea></label>
           </div>
-          <div class="lot__buy">
-            <p class="lot__price">$74.000 <small>COP</small></p>
-            <button class="btn btn--line js-add" type="button" data-name="Lote 08 — Bruma">Añadir</button>
+        </fieldset>
+
+        <fieldset class="step">
+          <legend><span>3</span>La entrega</legend>
+          <div class="fields">
+            <label class="field"><span>Fecha de entrega</span><input type="date" name="date" id="giftDate"></label>
+            <label class="field"><span>Ciudad</span>
+              <select name="city">
+                <option>Bogotá</option><option>Medellín</option><option>Cali</option><option>Barranquilla</option><option>Bucaramanga</option><option>Otra ciudad</option>
+              </select>
+            </label>
           </div>
-        </div>
-      </article>
-
-      <!-- Lote 09 -->
-      <article class="lot lot--soon reveal">
-        <div class="lot__visual lot__visual--dark">
-          <span class="lot__tag lot__tag--olive">Próximo lanzamiento</span>
-          <img src="assets/landing/due-bag.png" alt="Bolsa due. Lote 09, próximamente" loading="lazy" width="650" height="1130">
-          <span class="lot__num" aria-hidden="true">09</span>
-        </div>
-        <div class="lot__body">
-          <p class="lot__origin">Sierra Nevada · 1.600 m s. n. m.</p>
-          <h3 class="lot__name">Lote 09 — <span class="serif-it">Secreto</span></h3>
-          <p class="lot__notes">Se revela el día del lanzamiento</p>
-          <div class="countdown" id="countdown" aria-live="polite">
-            <p><strong data-cd="d">00</strong><span>días</span></p>
-            <p><strong data-cd="h">00</strong><span>horas</span></p>
-            <p><strong data-cd="m">00</strong><span>min</span></p>
-          </div>
-          <a href="#aviso" class="btn btn--olive">Avísame del lanzamiento</a>
-        </div>
-      </article>
-    </div>
-
-    <p class="lots__note">Datos de lotes de ejemplo: se reemplazarán por los lotes reales antes de publicar.</p>
-  </div>
-</section>
-
-<!-- ============ EXPERIENCIA / COMPARTIR ============ -->
-<section class="share" id="experiencia" aria-labelledby="share-title">
-  <div class="wrap share__grid">
-    <div class="share__copy">
-      <p class="eyebrow eyebrow--olive">La experiencia</p>
-      <h2 id="share-title" class="h2 h2--light">Un buen café<br>se vuelve mejor<br><span class="serif-it">cuando se comparte</span>.</h2>
-      <p class="share__text">due. está hecho para la sobremesa larga, la visita que llega sin avisar y el regalo que se recuerda. Abre una bolsa, prepara tres tazas y deja que la conversación haga el resto.</p>
-      <div class="share__steps">
-        <p><b>Descubre</b> un origen nuevo en cada lanzamiento.</p>
-        <p><b>Degusta</b> con calma, guiado por la ficha de cata.</p>
-        <p><b>Disfruta</b> y comparte antes de que se agote.</p>
+        </fieldset>
       </div>
-      <a href="#lotes" class="btn btn--cream">Vivir el lote 07</a>
-    </div>
-    <div class="share__mosaic">
-      <figure class="m1 reveal"><img src="assets/club/brindis.jpg" alt="Amigos brindando con tazas de café" loading="lazy"></figure>
-      <figure class="m2 reveal"><img src="assets/club/conversacion.jpg" alt="Dos personas conversando con café junto a la ventana" loading="lazy"></figure>
-      <figure class="m3 reveal"><img src="assets/club/tres-tazas.jpg" alt="Manos sosteniendo tres tazas de café" loading="lazy"></figure>
-    </div>
+
+      <aside class="preview" aria-label="Vista previa de la tarjeta">
+        <div class="card">
+          <p class="card__ed">due. · Edición N.º 07</p>
+          <p class="card__to" id="pvTo">Para ti,</p>
+          <p class="card__msg" id="pvMsg">Hay momentos que merecen algo que no se repite.</p>
+          <p class="card__from" id="pvFrom">— Con aprecio</p>
+          <span class="card__seal" aria-hidden="true">d.</span>
+        </div>
+        <div class="summary">
+          <p><span id="pvBox">Estuche Esencial</span><strong id="pvPrice">$68.000</strong></p>
+          <p><span>Carta escrita a mano</span><span>Incluida</span></p>
+          <p><span>Envío asegurado</span><span>Incluido</span></p>
+          <button type="submit" class="btn btn--dark btn--block">Regalar ahora</button>
+          <p class="summary__note" id="giftMsg" role="status"></p>
+        </div>
+      </aside>
+    </form>
   </div>
 </section>
 
-<!-- ============ CICLO DEL LOTE ============ -->
-<section class="cycle" aria-labelledby="cycle-title">
+<!-- ============ CONEXIONES ============ -->
+<section class="occasions" id="ocasiones" aria-labelledby="occ-title">
   <div class="wrap">
-    <header class="section-head section-head--center">
-      <p class="eyebrow">Así vive cada lote</p>
-      <h2 id="cycle-title" class="h2">Llega, se disfruta, <span class="serif-it">se despide</span>.</h2>
+    <header class="head head--center">
+      <p class="kicker">Conexiones</p>
+      <h2 id="occ-title" class="title">Para los momentos<em>que no admiten algo común.</em></h2>
     </header>
-    <ol class="cycle__track">
-      <li class="reveal"><span class="cycle__dot">I</span><h3>Selección</h3><p>Catamos decenas de muestras y elegimos un solo lote que nos detenga.</p></li>
-      <li class="reveal"><span class="cycle__dot">II</span><h3>Lanzamiento</h3><p>Te avisamos por correo y se abre la venta de 100 bolsas numeradas.</p></li>
-      <li class="reveal"><span class="cycle__dot">III</span><h3>Disfrute</h3><p>Llega a tu casa tostado en la semana, con su ficha de cata y su historia.</p></li>
-      <li class="reveal"><span class="cycle__dot is-last">IV</span><h3>Agotado</h3><p>No hay reedición. Pasa al archivo y otro lote ocupa su lugar.</p></li>
-    </ol>
+  </div>
+  <div class="occasions__row">
+    <figure class="occ reveal">
+      <img src="assets/editorial/pareja-gala.jpg" data-fallback="assets/club/brindis.jpg" alt="Pareja en traje de gala tomando café due. con París de noche al fondo" loading="lazy">
+      <figcaption><span>01</span><h3>La propuesta</h3><p>Antes del anillo, una taza que nadie más tendrá.</p></figcaption>
+    </figure>
+    <figure class="occ reveal">
+      <img src="assets/editorial/pareja-noche.jpg" data-fallback="assets/club/conversacion.jpg" alt="Pareja de etiqueta compartiendo café due. en un salón clásico" loading="lazy">
+      <figcaption><span>02</span><h3>El acuerdo</h3><p>Las relaciones que importan se cierran en persona.</p></figcaption>
+    </figure>
+    <figure class="occ reveal">
+      <img src="assets/editorial/dama.jpg" data-fallback="assets/club/ventana.jpg" alt="Mujer con antifaz y vestido negro tomando café due." loading="lazy">
+      <figcaption><span>03</span><h3>La conquista</h3><p>Una primera impresión que no se repite.</p></figcaption>
+    </figure>
+    <figure class="occ reveal">
+      <img src="assets/editorial/caballero.jpg" data-fallback="assets/club/tres-tazas.jpg" alt="Hombre de esmoquin con antifaz sosteniendo una taza due." loading="lazy">
+      <figcaption><span>04</span><h3>El vínculo</h3><p>Para quien ya lo tiene todo, salvo esto.</p></figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ============ MOMENTO / CITA ============ -->
-<section class="moment" aria-label="Un momento due.">
-  <img src="assets/club/ventana.jpg" alt="" loading="lazy" class="moment__img">
-  <div class="moment__copy">
-    <p class="moment__quote">“El mejor café es el que todavía no has probado.”</p>
-    <p class="moment__sign">— due.</p>
+<!-- ============ NÚMERO DE PIEZA ============ -->
+<section class="serial" aria-labelledby="serial-title">
+  <div class="wrap serial__in">
+    <p class="kicker kicker--gold">Exclusividad</p>
+    <p class="serial__num" aria-hidden="true"><span id="serialNum">064</span><small>/100</small></p>
+    <h2 id="serial-title" class="title title--light">Cada pieza lleva su número.<em>Cuando se entrega la última, la edición se cierra para siempre.</em></h2>
+    <p class="serial__text">Sin reediciones ni reposiciones. Quien recibe un due. recibe algo que no se puede volver a comprar.</p>
+  </div>
+</section>
+
+<!-- ============ EMPRESAS ============ -->
+<section class="corp" id="empresas" aria-labelledby="corp-title">
+  <div class="wrap corp__grid">
+    <figure class="corp__media reveal">
+      <img src="assets/club/vertido.jpg" alt="Café filtrado cayendo sobre una taza negra" loading="lazy">
+    </figure>
+    <div class="corp__copy">
+      <p class="kicker">Regalos corporativos</p>
+      <h2 id="corp-title" class="title">Las relaciones importantes<em>se cultivan con gestos.</em></h2>
+      <p>Para clientes, aliados y equipos que merecen algo más que un detalle. Tarjeta con su marca y entrega coordinada en toda Colombia, desde 10 estuches.</p>
+      <ul class="corp__list">
+        <li>Mensaje de su marca en cada carta</li>
+        <li>Destinatarios y fechas a su medida</li>
+        <li>Un asesor dedicado de principio a fin</li>
+      </ul>
+      <a href="mailto:empresas@duecafe.co?subject=Regalos%20corporativos%20due." class="btn btn--dark">Solicitar propuesta</a>
+    </div>
   </div>
 </section>
 
 <!-- ============ AVISO PRÓXIMO LOTE ============ -->
 <section class="aviso" id="aviso" aria-labelledby="aviso-title">
-  <div class="wrap aviso__grid">
-    <div class="aviso__visual" aria-hidden="true">
-      <span class="aviso__ring"></span>
-      <img src="assets/landing/due-bag.png" alt="" loading="lazy" width="650" height="1130">
-    </div>
-    <div class="aviso__copy">
-      <p class="eyebrow">Lote N.º 09 en camino</p>
-      <h2 id="aviso-title" class="h2">Avísame del<br><span class="serif-it">próximo lote</span>.</h2>
-      <p>Cada lote llega una sola vez. Déjanos tu correo y te escribiremos el día que salga el siguiente, con su origen, sus notas y cuántas bolsas hay. Solo un correo por lanzamiento.</p>
-      <form class="aviso__form" id="avisoForm" novalidate>
-        <label for="email" class="sr-only">Correo electrónico</label>
-        <input id="email" name="email" type="email" placeholder="tu@correo.com" autocomplete="email" required>
-        <button class="btn btn--dark" type="submit">Avisarme</button>
-      </form>
-      <p class="aviso__msg" id="avisoMsg" role="status"></p>
-    </div>
+  <div class="wrap aviso__in">
+    <p class="kicker kicker--gold">Lote N.º 08 en camino</p>
+    <h2 id="aviso-title" class="title title--light">Avísenme del<em>próximo lote.</em></h2>
+    <p>Un solo correo por lanzamiento, el día que salga. Las ediciones se agotan antes de anunciarse dos veces.</p>
+    <form class="aviso__form" id="avisoForm" novalidate>
+      <label for="email" class="sr-only">Correo electrónico</label>
+      <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
+      <button class="btn btn--gold" type="submit">Avisarme</button>
+    </form>
+    <p class="aviso__msg" id="avisoMsg" role="status"></p>
   </div>
 </section>
 
@@ -304,12 +328,12 @@
 <footer class="foot">
   <div class="wrap foot__grid">
     <div class="foot__brand">
-      <img src="assets/logo-due-cream.png" alt="due." width="120" height="52" loading="lazy">
-      <p>Café de especialidad colombiano en lotes únicos y de edición limitada.</p>
+      <img src="assets/logo-due-lima.png" alt="due." width="110" height="47" loading="lazy">
+      <p>El regalo que se sirve. Café de especialidad colombiano en ediciones numeradas.</p>
     </div>
     <nav aria-label="Pie de página">
       <h4>Explora</h4>
-      <a href="#lotes">Lotes</a><a href="#experiencia">Experiencia</a><a href="#aviso">Próximo lote</a>
+      <a href="#edicion">La edición</a><a href="#estuche">El estuche</a><a href="#regalar">Regalar</a><a href="#empresas">Empresas</a>
     </nav>
     <div>
       <h4>Contacto</h4>
@@ -318,7 +342,7 @@
       <p>Envíos a toda Colombia</p>
     </div>
   </div>
-  <p class="foot__base wrap">© 2026 due. — Hecho en Colombia</p>
+  <p class="foot__base wrap"><span>© 2026 due. — Hecho en Colombia</span><span>Precios, lotes y piezas de ejemplo.</span></p>
 </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
