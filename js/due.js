@@ -28,7 +28,7 @@
     { eyebrow: "Lote N.º 08 · Últimas bolsas", region: "NARIÑO", price: "$74.000", left: "12",
       lead: "Uva roja, jazmín y miel. Cultivado a más de dos mil metros, entre montañas frías que hacen madurar el grano despacio." },
     { eyebrow: "Lote N.º 09 · Próximamente", region: "SIERRA", price: "Pronto", left: "100",
-      lead: "Un lote que aún guarda su secreto. Los miembros del club lo conocerán 48 horas antes que nadie." }
+      lead: "Un lote que aún guarda su secreto. Déjanos tu correo y te avisamos el día que salga." }
   ];
   var current = 0, busy = false;
   var hero = $(".hero"), bag = $(".hero__bag"), vertical = $(".hero__vertical");
@@ -108,14 +108,14 @@
   }
   tick(); setInterval(tick, 30000);
 
-  /* ---------- Club ---------- */
-  var form = $("#clubForm"), msg = $("#clubMsg");
+  /* ---------- Aviso del próximo lote ---------- */
+  var form = $("#avisoForm"), msg = $("#avisoMsg");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var v = form.email.value.trim();
     var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
     msg.classList.toggle("is-error", !ok);
-    msg.textContent = ok ? "Bienvenido al club. Te escribiremos antes del próximo lote." : "Revisa tu correo, parece incompleto.";
+    msg.textContent = ok ? "Listo. Te escribiremos el día que salga el próximo lote." : "Revisa tu correo, parece incompleto.";
     if (ok) form.reset();
   });
 

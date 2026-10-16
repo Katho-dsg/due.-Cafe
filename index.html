@@ -27,7 +27,7 @@
       <a href="#esencia">Esencia</a>
       <a href="#lotes">Lotes</a>
       <a href="#experiencia">Experiencia</a>
-      <a href="#club">Club</a>
+      <a href="#aviso">Próximo lote</a>
     </nav>
     <div class="nav__actions">
       <a href="#lotes" class="nav__cta">Comprar lote</a>
@@ -215,13 +215,13 @@
         <div class="lot__body">
           <p class="lot__origin">Sierra Nevada · 1.600 m s. n. m.</p>
           <h3 class="lot__name">Lote 09 — <span class="serif-it">Secreto</span></h3>
-          <p class="lot__notes">Se revela al club 48 h antes</p>
+          <p class="lot__notes">Se revela el día del lanzamiento</p>
           <div class="countdown" id="countdown" aria-live="polite">
             <p><strong data-cd="d">00</strong><span>días</span></p>
             <p><strong data-cd="h">00</strong><span>horas</span></p>
             <p><strong data-cd="m">00</strong><span>min</span></p>
           </div>
-          <a href="#club" class="btn btn--olive">Avisarme primero</a>
+          <a href="#aviso" class="btn btn--olive">Avísame del lanzamiento</a>
         </div>
       </article>
     </div>
@@ -261,7 +261,7 @@
     </header>
     <ol class="cycle__track">
       <li class="reveal"><span class="cycle__dot">I</span><h3>Selección</h3><p>Catamos decenas de muestras y elegimos un solo lote que nos detenga.</p></li>
-      <li class="reveal"><span class="cycle__dot">II</span><h3>Lanzamiento</h3><p>El club lo conoce primero. Luego se abre a todos, con 100 bolsas numeradas.</p></li>
+      <li class="reveal"><span class="cycle__dot">II</span><h3>Lanzamiento</h3><p>Te avisamos por correo y se abre la venta de 100 bolsas numeradas.</p></li>
       <li class="reveal"><span class="cycle__dot">III</span><h3>Disfrute</h3><p>Llega a tu casa tostado en la semana, con su ficha de cata y su historia.</p></li>
       <li class="reveal"><span class="cycle__dot is-last">IV</span><h3>Agotado</h3><p>No hay reedición. Pasa al archivo y otro lote ocupa su lugar.</p></li>
     </ol>
@@ -277,23 +277,23 @@
   </div>
 </section>
 
-<!-- ============ CLUB ============ -->
-<section class="club" id="club" aria-labelledby="club-title">
-  <div class="wrap club__grid">
-    <div class="club__visual" aria-hidden="true">
-      <span class="club__ring"></span>
+<!-- ============ AVISO PRÓXIMO LOTE ============ -->
+<section class="aviso" id="aviso" aria-labelledby="aviso-title">
+  <div class="wrap aviso__grid">
+    <div class="aviso__visual" aria-hidden="true">
+      <span class="aviso__ring"></span>
       <img src="assets/landing/due-bag.png" alt="" loading="lazy" width="650" height="1130">
     </div>
-    <div class="club__copy">
-      <p class="eyebrow">Club due.</p>
-      <h2 id="club-title" class="h2">Entérate antes<br><span class="serif-it">de que se agote</span>.</h2>
-      <p>Los miembros reciben el aviso del próximo lote 48 horas antes que nadie y pueden reservar su bolsa. Sin cuotas, sin compromiso: solo curiosidad.</p>
-      <form class="club__form" id="clubForm" novalidate>
+    <div class="aviso__copy">
+      <p class="eyebrow">Lote N.º 09 en camino</p>
+      <h2 id="aviso-title" class="h2">Avísame del<br><span class="serif-it">próximo lote</span>.</h2>
+      <p>Cada lote llega una sola vez. Déjanos tu correo y te escribiremos el día que salga el siguiente, con su origen, sus notas y cuántas bolsas hay. Solo un correo por lanzamiento.</p>
+      <form class="aviso__form" id="avisoForm" novalidate>
         <label for="email" class="sr-only">Correo electrónico</label>
         <input id="email" name="email" type="email" placeholder="tu@correo.com" autocomplete="email" required>
-        <button class="btn btn--dark" type="submit">Unirme</button>
+        <button class="btn btn--dark" type="submit">Avisarme</button>
       </form>
-      <p class="club__msg" id="clubMsg" role="status"></p>
+      <p class="aviso__msg" id="avisoMsg" role="status"></p>
     </div>
   </div>
 </section>
@@ -309,7 +309,7 @@
     </div>
     <nav aria-label="Pie de página">
       <h4>Explora</h4>
-      <a href="#lotes">Lotes</a><a href="#experiencia">Experiencia</a><a href="#club">Club</a>
+      <a href="#lotes">Lotes</a><a href="#experiencia">Experiencia</a><a href="#aviso">Próximo lote</a>
     </nav>
     <div>
       <h4>Contacto</h4>

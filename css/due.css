@@ -328,22 +328,22 @@ h1, h2, h3, h4, p { margin: 0; }
 .moment__quote { font: 400 clamp(2rem, 5vw, 4.4rem)/1.1 var(--serif); font-style: italic; color: var(--cream); max-width: 20ch; margin-inline: auto; }
 .moment__sign { margin-top: 22px; font: 700 .8rem/1 var(--display); letter-spacing: .3em; color: var(--lime); text-transform: uppercase; }
 
-/* ---------- Club ---------- */
-.club { background: var(--paper); padding: clamp(90px, 12vw, 150px) 0; }
-.club__grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(40px, 6vw, 96px); align-items: center; background: var(--white); border-radius: 40px; padding: clamp(40px, 6vw, 80px); box-shadow: 0 40px 80px -60px rgba(22,29,16,.4); }
-.club__visual { position: relative; display: grid; place-items: center; aspect-ratio: 1; }
-.club__ring { position: absolute; inset: 6%; border-radius: 50%; background: radial-gradient(circle at 35% 35%, var(--olive), var(--olive-d) 70%); }
-.club__ring::after { content: ""; position: absolute; inset: -18px; border-radius: 50%; border: 1px dashed rgba(121,151,51,.5); animation: spin 40s linear infinite; }
+/* ---------- Aviso próximo lote ---------- */
+.aviso { background: var(--paper); padding: clamp(90px, 12vw, 150px) 0; }
+.aviso__grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(40px, 6vw, 96px); align-items: center; background: var(--white); border-radius: 40px; padding: clamp(40px, 6vw, 80px); box-shadow: 0 40px 80px -60px rgba(22,29,16,.4); }
+.aviso__visual { position: relative; display: grid; place-items: center; aspect-ratio: 1; }
+.aviso__ring { position: absolute; inset: 6%; border-radius: 50%; background: radial-gradient(circle at 35% 35%, var(--olive), var(--olive-d) 70%); }
+.aviso__ring::after { content: ""; position: absolute; inset: -18px; border-radius: 50%; border: 1px dashed rgba(121,151,51,.5); animation: spin 40s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
-.club__visual img { position: relative; width: 42%; transform: rotate(8deg); filter: drop-shadow(18px 28px 30px rgba(9,14,5,.45)); animation: float2 7s ease-in-out infinite; }
+.aviso__visual img { position: relative; width: 42%; transform: rotate(8deg); filter: drop-shadow(18px 28px 30px rgba(9,14,5,.45)); animation: float2 7s ease-in-out infinite; }
 @keyframes float2 { 50% { transform: rotate(5deg) translateY(-14px); } }
-.club__copy > p:not(.eyebrow):not(.club__msg) { margin-top: 22px; color: var(--ink-2); max-width: 46ch; }
-.club__form { margin-top: 32px; display: flex; gap: 8px; background: var(--paper); border-radius: 99px; padding: 6px; border: 1px solid var(--line-d); max-width: 480px; }
-.club__form input { flex: 1; min-width: 0; border: 0; background: transparent; padding: 0 20px; font: 500 .95rem var(--sans); color: var(--ink); }
-.club__form input:focus { outline: none; }
-.club__form:focus-within { border-color: var(--olive); }
-.club__msg { margin-top: 14px; font-size: .88rem; color: var(--olive-d); min-height: 1.4em; }
-.club__msg.is-error { color: #A0412D; }
+.aviso__copy > p:not(.eyebrow):not(.aviso__msg) { margin-top: 22px; color: var(--ink-2); max-width: 46ch; }
+.aviso__form { margin-top: 32px; display: flex; gap: 8px; background: var(--paper); border-radius: 99px; padding: 6px; border: 1px solid var(--line-d); max-width: 480px; }
+.aviso__form input { flex: 1; min-width: 0; border: 0; background: transparent; padding: 0 20px; font: 500 .95rem var(--sans); color: var(--ink); }
+.aviso__form input:focus { outline: none; }
+.aviso__form:focus-within { border-color: var(--olive); }
+.aviso__msg { margin-top: 14px; font-size: .88rem; color: var(--olive-d); min-height: 1.4em; }
+.aviso__msg.is-error { color: #A0412D; }
 
 /* ---------- Footer ---------- */
 .foot { background: var(--night); color: rgba(236,230,210,.7); padding: 80px 0 30px; }
@@ -393,12 +393,12 @@ h1, h2, h3, h4, p { margin: 0; }
   .hero__copy { padding-top: 24px; }
 
   .essence__cols, .essence__stats { grid-template-columns: 1fr; }
-  .senses, .share__grid, .club__grid { grid-template-columns: 1fr; }
+  .senses, .share__grid, .aviso__grid { grid-template-columns: 1fr; }
   .senses__media { min-height: 380px; }
   .section-head { flex-direction: column; align-items: flex-start; }
   .cycle__track { grid-template-columns: 1fr 1fr; row-gap: 48px; }
   .cycle__track::before { display: none; }
-  .club__visual { max-width: 340px; margin-inline: auto; width: 100%; }
+  .aviso__visual { max-width: 340px; margin-inline: auto; width: 100%; }
   .foot__grid { grid-template-columns: 1fr 1fr; }
   .foot__brand { grid-column: 1 / -1; }
 }
@@ -413,8 +413,8 @@ h1, h2, h3, h4, p { margin: 0; }
   .pill { padding: 12px 22px; }
   .lot__buy { flex-direction: column; align-items: stretch; }
   .lot__buy .btn { width: 100%; }
-  .club__form { flex-direction: column; border-radius: 24px; }
-  .club__form input { padding: 14px 16px; }
+  .aviso__form { flex-direction: column; border-radius: 24px; }
+  .aviso__form input { padding: 14px 16px; }
   .share__mosaic { height: 420px; }
   .cycle__track { grid-template-columns: 1fr; }
 }
