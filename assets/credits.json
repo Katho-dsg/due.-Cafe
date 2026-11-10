@@ -146,5 +146,30 @@
    "Recortado a 13 s (del segundo 5 al 18), sin audio, 960 px."
   ],
   "saved": "2026-10-16T22:45:14.703Z"
+ },
+ {
+  "file": "assets/origen/mapa-huila.svg",
+  "media": "image",
+  "ref": "openverse:9b1172b6-c8ef-452d-81fe-217ee3aaa22f",
+  "title": "Colombia Huila location map.svg",
+  "creator": "Milenioscuro",
+  "creatorUrl": "https://commons.wikimedia.org/wiki/User:Milenioscuro",
+  "date": null,
+  "license": "CC BY-SA 3.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=18953752",
+  "via": "Wikimedia Commons",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Colombia_Huila_location_map.svg",
+  "width": 1415,
+  "height": 1458,
+  "bytes": 188473,
+  "credit": "\"Colombia Huila location map.svg\" by Milenioscuro, CC BY-SA 3.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence.",
+   "Recoloreado con la paleta de due. (obra derivada, se comparte bajo CC BY-SA 3.0)."
+  ],
+  "saved": "2026-11-10T16:49:20.417Z"
  }
 ]

@@ -4,12 +4,11 @@ Landing page / tienda para **due.**, una marca de café de especialidad que trab
 
 Sitio estático sin dependencias: abre `index.html` en el navegador.
 
-- `index.html` — landing actual: due. como regalo de lujo (referencia Rolex). Díptico editorial, filosofía, edición numerada, estuche, configurador de regalo, conexiones, número de pieza, empresas y aviso del próximo lote
-- `css/due.css` — diseño: #161D10, #799733, dorado y blanco/crema; Cormorant Garamond, League Spartan y Montserrat
-- `js/due.js` — configurador con vista previa de la tarjeta, bolsa simulada, contador de pieza y animaciones
-- `assets/landing/` — empaque de due. recortado (PNG transparente)
-- `assets/editorial/` — aquí van las fotos editoriales de la cliente: `caballero.jpg`, `dama.jpg`, `pareja-noche.jpg`, `pareja-gala.jpg`. Mientras no existan, la página muestra fotos provisionales
-- `docs/notas-cliente.md` — resumen del brief y de los audios de la cliente
+- `index.html` — landing actual: Versión A ajustada al brief del 10 de noviembre (`docs/Brief-landing-due-2026-11-10.pdf`). Lote actual con ficha y contador de bolsas, cómo funciona, para regalar, comunidad, lotes anteriores, preguntas frecuentes, WhatsApp siempre visible y bolsa de compra
+- `css/lote.css`, `js/lote.js` — estilos e interacciones de la landing actual
+- `assets/origen/` — foto del lote y mapa del Huila recoloreado
+- `version-c.html` (con `css/due.css` y `js/due.js`) — propuesta «casa relojera» de octubre
 - `version-a.html`, `version-b.html`, `version-anterior.html` — propuestas anteriores
+- `docs/notas-cliente.md` — resumen de los audios de la clienta
 
-Los datos de lotes, precios y piezas son de ejemplo y deben sustituirse antes de publicar.
+Lote, finca, precios, número de WhatsApp y redes son de ejemplo. El pago con ePayco y el correo de suscripción aún no están conectados.

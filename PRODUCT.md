@@ -12,50 +12,50 @@ static HTML/CSS (sin dependencias), publicable en GitHub Pages.
 
 ## Users
 
-- Personas en Colombia que buscan un regalo a la altura de un momento importante: una propuesta, un acuerdo de negocios, una conquista, un vínculo que quieren cuidar.
-- Empresas que regalan a clientes, aliados y equipos (desde 10 estuches).
-- Quien compra la edición para sí: amantes del café de especialidad que valoran lo exclusivo.
+Adultos de 28 a 45 años en Colombia que regalan con criterio (brief del 10 de noviembre de 2026):
+- El que regala con criterio: un detalle con historia que no sea «otra botella de vino» (visitas, cumpleaños, cenas, agradecimientos).
+- El curioso del café: probar orígenes y notas nuevas, coleccionar lotes.
+- Regalos corporativos: detalles premium para clientes o equipos (fin de año, eventos, bienvenidas).
 
 ## Product Purpose
 
-due. vende café de especialidad colombiano como un objeto de lujo para regalar o para uno mismo. Cada edición es un lote único de 100 piezas numeradas, presentado en estuche con una carta escrita a mano. El éxito es que la gente regale due. en sus momentos importantes y vuelva por cada edición.
+due. vende café de especialidad pensado como regalo: el detalle que llevas a una casa especial, como quien llega con un buen vino. Compite por la experiencia de descubrir orígenes y notas distintas, no por ser «el café más rico». La landing tiene tres acciones: comprar en la página (carrito y pago con ePayco, la principal), comprar por WhatsApp (mensaje prellenado) y suscribirse al correo (la puerta a la comunidad).
 
 ## Positioning
 
-due. significa «dos» en italiano: un café que nunca se toma a solas. Se comunica como una casa de lujo (referente de la cliente: Rolex), no como una tienda de café: nada de fincas, granos, plantas ni postales de cosecha. Ediciones limitadas y numeradas; agotado es agotado.
+Lotes limitados de unas 100 bolsas, cada uno de una región, finca y vereda concretas, con notas propias. Cuando se agota, no vuelve. Exclusividad sin pose y comunidad, no élite: «los que estamos esperando el próximo lote». Marca 100 % online.
 
 ## Operating Context
 
-- Dos acciones con el mismo peso: comprar la edición y regalar due.
-- Regalo: elegir estuche (Esencial, Dúo, Trilogía), escribir la carta (para, de, mensaje) y la fecha de entrega.
-- Regalos corporativos por correo.
-- Aviso por correo del próximo lote.
+- Compra en la página: carrito sencillo y pago con ePayco (pasarela aún no conectada).
+- Compra por WhatsApp: botón siempre visible con mensaje prellenado («Hola, quiero el lote Huila»).
+- Suscripción por correo: aviso del próximo lote e historia de cada origen.
+- Lotes anteriores con sello de «agotado» y preguntas frecuentes (envíos, molienda, pagos, regalos corporativos).
 
 ## Capabilities and Constraints
 
-- Mercado: Colombia. Precios en pesos colombianos (COP).
-- Pago, inventario real y registro de correos aún no están conectados (simulados en la web).
-- Datos de lotes, precios y tarjetas: **todavía no existen datos reales**. Se usan ejemplos marcados como tales; deben sustituirse antes de publicar.
+- Mercado: Colombia. Precios en COP, hasta $140.000 por bolsa (nivel medio-alto).
+- Bolsa de café en grano; tamaño (250 g o 500 g), precio exacto, envíos, número de WhatsApp, redes, dominio y herramienta de correo están por confirmar con la clienta.
+- Datos del lote (región, finca, notas, unidades): todavía de ejemplo, marcados como tales.
 
 ## Brand Commitments
 
-- Nombre: **due.** (minúsculas, con punto). Significa «dos» en italiano y es la idea central de la marca (confirmado).
-- Logotipo: wordmark sans-serif bold en verde oliva (`assets/logo-due-olive.png`, versión lima `assets/logo-due-lima.png`).
-- Comunicación (brief de la cliente): elegante, sofisticada, contemporánea, exclusiva, costosa, segura, persuasiva y no condescendiente. Trato de «usted».
-- Paleta fijada por la cliente: negro, blanco, verde #161D10 y #799733, beige y ámbar, sobrios.
-- Tipografía fijada: League Spartan y Montserrat, más una serif elegante (Bodoni Moda).
-- Personas reales y elegantes, sin antifaz (confirmado). Nada de naturaleza.
-- Referente visual: rolex.com.
+- Nombre: **due.** (minúsculas, con punto). El punto es el sello: viñetas, contador de bolsas y cierre de titulares («Huila.», «Miel y canela.»).
+- Logotipo: wordmark sans geométrica muy pesada en verde oliva (`assets/logo-due-olive.png`, versión lima `assets/logo-due-lima.png`).
+- Tono: cálido, cuidado y cercano, tuteando. Mensaje central: «No es solo café, es el detalle que llevas». Escasez honesta (cuántas bolsas quedan, sin alarmas de venta). Historia del origen. Evitar lujo frío, «club VIP» y tecnicismos de barista sin explicar.
+- Paleta del brief: negro verdoso #131812 / #161B11 / #1F2316, blanco #FFFFFF, verde bosque #324D34, verde hoja #3B5E40, oliva #5E5F20 (logo, títulos, sellos), verde musgo #7A9735 (botones). Minimalista, natural y sobria: premium por la contención.
+- Tipografía: League Spartan (confirmado por el usuario) para títulos y textos; Bodoni Moda solo para nombres de lote y notas de sabor.
+- Fotografía: granos y mapa de la región sí; nada de selva, hojas ni paisajes de montaña (punto medio confirmado por el usuario). Personas reales, sin antifaz.
 
 ## Evidence on Hand
 
-- Logo y fotografía de producto de la bolsa (assets/landing/due-bag.png, recortada de la foto de la marca).
-- Fotografía de archivo de dominio público o con licencia libre, acreditada en la página (assets/archivo/, assets/credits.json).
+- Logo, foto de producto de la bolsa y fotografía de café de la marca (assets/club, assets/origen, assets/landing).
+- Mapa del Huila recoloreado (CC BY-SA 3.0, acreditado en el pie).
 - No hay testimonios, prensa ni datos de lotes reales. No inventar clientes ni cifras presentándolas como reales.
 
 ## Product Principles
 
-1. Todo empieza entre dos: cada decisión de la página se organiza en pares.
-2. Cada edición es un acontecimiento: exclusividad visible, sin agobiar.
-3. Regalar due. es regalar algo que no se puede volver a comprar.
-4. Comprar debe ser claro: la elegancia no puede estorbar la compra.
+1. No es solo café, es el detalle que llevas.
+2. Cada lote es único y escaso: contarlo con honestidad.
+3. Comunidad, no élite.
+4. Comprar debe ser simple: en la página o por WhatsApp.
