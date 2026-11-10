@@ -38,6 +38,24 @@
         ],
         "createdAt": "2026-11-10T16:59:49.840Z",
         "reason": "false positive: the only looping animation is a slow vertical float of the gift bag (translateX(-50%) only centres it); no marquee exists on the page"
+      },
+      {
+        "rule": "italic-serif-display",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-10T17:50:12.279Z",
+        "reason": "user confirmed: keep the club-secreto look (serif italic headlines, tracked kickers) while applying the brief"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-10T17:50:12.289Z",
+        "reason": "user confirmed: keep the club-secreto look (serif italic headlines, tracked kickers) while applying the brief"
       }
     ]
   }
