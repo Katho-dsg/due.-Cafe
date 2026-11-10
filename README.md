@@ -4,8 +4,8 @@ Landing page / tienda para **due.**, una marca de café de especialidad que trab
 
 Sitio estático sin dependencias: abre `index.html` en el navegador.
 
-- `index.html` — landing actual: Versión A ajustada al brief del 10 de noviembre (`docs/Brief-landing-due-2026-11-10.pdf`). Lote actual con ficha y contador de bolsas, cómo funciona, para regalar, comunidad, lotes anteriores, preguntas frecuentes, WhatsApp siempre visible y bolsa de compra
-- `css/lote.css`, `js/lote.js` — estilos e interacciones de la landing actual
+- `index.html` — landing actual: versión club secreto («Café que se susurra») con el archivo de lotes debajo del inicio. Estilos en `css/a.css` y `css/lace.css`, interacciones en `js/club.js`
+- `version-d.html` (con `css/lote.css` y `js/lote.js`) — versión ajustada al brief del 10 de noviembre (`docs/Brief-landing-due-2026-11-10.pdf`)
 - `assets/origen/` — foto del lote y mapa del Huila recoloreado
 - `version-c.html` (con `css/due.css` y `js/due.js`) — propuesta «casa relojera» de octubre
 - `version-a.html`, `version-b.html`, `version-anterior.html` — propuestas anteriores
