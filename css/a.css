@@ -228,6 +228,3 @@ button, input { font: inherit; color: inherit; }
 
 .lot { --edge: var(--paper); }
 .ritual__copy { padding-top: calc(clamp(56px, 7vw, 96px) + 20px); }
-
-/* Archivo de lotes justo debajo del inicio: el pacto sigue sin doble espacio */
-.archive + .pact { padding-top: clamp(24px, 3vw, 40px); }
