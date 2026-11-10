@@ -222,7 +222,7 @@ p { text-wrap: pretty; }
 .plate .plate__n { margin: 0 0 auto; font: 400 var(--s3)/1 var(--serif); }
 .plate h3 { margin: 20px 0 8px; font: 800 clamp(2.25rem, 3.4vw, 3rem)/0.95 var(--sans); letter-spacing: -0.03em; }
 .plate p { font-size: 1rem; }
-.plate .plate__meta { margin-top: 10px; font-size: 1rem; color: var(--muted-dark); }
+.plate .plate__meta { margin-top: 10px; font-size: 1rem; color: var(--bone); }
 .plate--g1 { background: var(--forest); }
 .plate--g2 { background: var(--leaf); }
 .plate--g3 { background: var(--olive); }
@@ -279,6 +279,7 @@ p { text-wrap: pretty; }
 .cart__meta { font-size: 1rem; color: var(--muted-light); margin: 2px 0 10px; }
 .qty--sm { min-height: 40px; background: var(--mist); }
 .qty--sm button { height: 40px; width: 40px; color: var(--ink-0); font-size: 1.125rem; }
+@media (hover: hover) and (pointer: fine) { .qty--sm button:hover { background: #DDE1D2; } }
 .cart__line { font-weight: 700; font-variant-numeric: tabular-nums; }
 .cart__foot { margin-top: auto; display: grid; gap: 12px; }
 .cart__total { display: flex; justify-content: space-between; font: 700 var(--s3)/1 var(--sans); font-variant-numeric: tabular-nums; }
