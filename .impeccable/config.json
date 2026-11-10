@@ -29,6 +29,15 @@
         ],
         "createdAt": "2026-10-16T22:56:12.614Z",
         "reason": "static detector cannot resolve clamp() section padding; 1440/768/390 renders show 16–32px insets on every section (taste inspector, finish-review screenshots)"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-10T16:59:49.840Z",
+        "reason": "false positive: the only looping animation is a slow vertical float of the gift bag (translateX(-50%) only centres it); no marquee exists on the page"
       }
     ]
   }
