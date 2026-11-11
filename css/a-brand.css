@@ -1,0 +1,143 @@
+/* due. — Propuesta visual del brief del 10 de noviembre sobre la landing actual.
+   Mismos bloques y contenido; cambian color, tipografía y adorno:
+   verdes naturales sobre casi negro, blanco como respiro, sans geométrica pesada,
+   serif fina solo para nombres de lote y notas, y el punto del logo como sello. */
+
+:root {
+  /* Paleta del brief (hex aproximados del documento) */
+  --brand-black-0: #131812;
+  --brand-black-1: #161B11;
+  --brand-black-2: #1F2316;
+  --brand-white:   #FFFFFF;
+  --brand-mist:    #F3F5EE;
+  --brand-forest:  #324D34;
+  --brand-leaf:    #3B5E40;
+  --brand-olive:   #5E5F20;
+  --brand-moss:    #7A9735;
+  --brand-moss-2:  #8DAA44;
+
+  /* Variables de la versión A redirigidas a la paleta del brief */
+  --night:  var(--brand-black-0);
+  --forest: var(--brand-black-1);
+  --moss:   var(--brand-black-2);
+  --bar:    var(--brand-black-2);
+  --bottle: var(--brand-forest);
+  --olive:  var(--brand-moss);
+  --lime:   var(--brand-moss);
+  --cream:  #F4F6EE;
+  --cream-2: rgba(244, 246, 238, .84);
+  --paper:  var(--brand-white);
+  --ink:    var(--brand-black-0);
+  --ink-2:  #4A5240;
+  --line:   rgba(244, 246, 238, .24);
+  --olive-ink: var(--brand-olive);
+
+  --sans: "League Spartan", "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --display: "League Spartan", "Montserrat", system-ui, sans-serif;
+}
+
+body { font-size: 1.0625rem; line-height: 1.55; }
+::selection { background: var(--brand-moss); color: var(--brand-black-0); }
+.dot { color: var(--brand-moss); }
+.h2--dark .dot, .lot .dot, .faq .dot, .float-card .dot { color: var(--brand-olive); }
+
+/* ---------- Sin adornos: premium por contención ---------- */
+.lace-bg::before, .lace-edge::after, .lace-corners::before, .lace-corners::after { display: none; }
+.ornament { display: none; }
+.pill { display: none; }
+
+/* ---------- Tipografía: sans geométrica pesada para títulos ---------- */
+.hero__t, .h2, .pact__t, .float-card__t, .news__t, .cart__head h2 {
+  font-family: var(--display); font-weight: 800; letter-spacing: -0.03em; line-height: .98;
+}
+.hero__t { font-size: clamp(3rem, 6.4vw, 5.4rem); max-width: 10em; }
+.hero__t em, .h2 em, .pact__t em { font-style: normal; font-weight: 800; color: var(--brand-moss); }
+.h2--dark em { color: var(--brand-olive); }
+.h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); }
+.pact__t { font-size: clamp(2rem, 3.8vw, 3.2rem); max-width: 17em; }
+.kicker, .float-card__kicker, .ficha dt, .countdown--float span, .tile__name, .tile__state, .float-card__link, .hero__notify, .plate__link, .link {
+  font-family: var(--sans); letter-spacing: .08em; font-weight: 600;
+}
+.kicker { font-size: .85rem; color: var(--brand-moss); }
+.kicker--dark { color: var(--brand-olive); }
+.btn { font-family: var(--sans); font-weight: 700; letter-spacing: .06em; border-radius: 999px; }
+.steps h3, .faq summary, .occasions b { font-family: var(--sans); font-weight: 700; letter-spacing: -0.01em; }
+.steps h3 { font-size: 1.35rem; }
+.faq summary { font-size: 1.15rem; }
+
+/* Serif fina solo para nombres de lote y notas de sabor */
+.lot .lot__copy p.lot__notes, .tile__n, .plate__n { font-family: var(--serif); font-style: normal; font-weight: 500; }
+.lot .lot__copy p.lot__notes { font-size: 1.6rem; color: var(--brand-olive); }
+.tile__n { font-size: 2.5rem; }
+.countdown b, .countdown--float b { font-family: var(--display); font-weight: 800; letter-spacing: -0.02em; }
+.lot .lot__copy p.buy__price, .cart__total { font-family: var(--display); font-weight: 800; letter-spacing: -0.02em; }
+
+/* ---------- Color por sección: casi negro, blanco de respiro, bosque para marca y comunidad ---------- */
+.top__bar { background: var(--brand-black-2); }
+.top__bar a + a::before { background: var(--brand-moss); }
+.hero { background: var(--brand-black-0); }
+.hero__veil { background: linear-gradient(90deg, rgba(19, 24, 18, .95) 0%, rgba(19, 24, 18, .82) 32%, rgba(19, 24, 18, .1) 62%), linear-gradient(0deg, rgba(19, 24, 18, .7), transparent 30%); }
+
+.float-card { background: var(--brand-white); }
+.tile--a { background: #EEF2E5; }
+.tile--b { background: #E1E9D0; }
+.tile--c { background: #D0DCB5; }
+.tile--now { background: var(--brand-olive); color: var(--brand-white); }
+.tile--now .tile__state { color: #E4EBCB; }
+
+.pact { background: var(--brand-forest); }
+.pact__p { color: rgba(244, 246, 238, .9); }
+
+.lot { background: var(--brand-white); }
+.ficha { border-color: rgba(19, 24, 18, .12); }
+.count__dots i { background: rgba(19, 24, 18, .12); }
+.count__dots i.is-free { background: var(--brand-forest); }
+.arch--map img { background: var(--brand-black-2); }
+.map-pin { background: var(--brand-moss); outline-color: rgba(122, 151, 53, .35); }
+
+.ritual { background: var(--brand-black-1); }
+.steps span { border-color: var(--brand-moss); color: var(--brand-moss); font-family: var(--display); font-style: normal; font-weight: 700; }
+
+.band { background: var(--brand-moss); color: var(--brand-black-0); border: 0; }
+.band__track svg { display: none; }
+.band__track span::after { content: "."; margin-left: 28px; font-size: 1.6em; line-height: 0; color: var(--brand-black-0); }
+
+.origin { background: var(--brand-black-0); }
+.glass { background: var(--brand-leaf); border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.occasions li::before { background: var(--brand-moss); }
+
+.society { background: var(--brand-forest); }
+.society__copy p:not(.kicker) { color: rgba(244, 246, 238, .9); }
+
+.faq { background: var(--brand-white); }
+.faq details { background: var(--brand-mist); border: 0; }
+.faq summary::after { background: var(--brand-olive); }
+
+.news { background: var(--brand-black-1); }
+.news__form input { border-color: rgba(244, 246, 238, .5); }
+.news__form button { background: var(--brand-moss); color: var(--brand-black-0); }
+@media (hover: hover) and (pointer: fine) { .news__form button:hover { background: var(--brand-moss-2); } }
+
+.foot { background: var(--brand-black-0); }
+.foot h3 { color: var(--brand-moss); font-family: var(--sans); letter-spacing: .1em; }
+.foot__sign svg { display: none; }
+.foot__sign::before { content: "."; color: var(--brand-moss); font-size: 2em; line-height: 0; margin-right: 6px; }
+
+.cart__panel { background: var(--brand-white); }
+.wa-float { background: var(--brand-moss); color: var(--brand-black-0); font-family: var(--sans); }
+@media (hover: hover) and (pointer: fine) { .wa-float:hover { background: var(--brand-moss-2); } .btn--fill:hover { background: var(--brand-moss-2); border-color: var(--brand-moss-2); } }
+
+/* ---------- Impresión / PDF ---------- */
+@media print {
+  .wa-float, .cart, .toast, .skip { display: none !important; }
+  .band__track { animation: none !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ---------- Ajustes de la propuesta ---------- */
+.steps h3 .dot { display: inline; width: auto; height: auto; border: 0; border-radius: 0; font: inherit; color: var(--brand-moss); }
+.float-card__bar p { font-family: var(--display); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; }
+.float-card__bar em { font-style: normal; color: var(--brand-olive); }
+.hero__img { object-position: 82% 55%; }
+.society__pair { grid-template-columns: 1fr; }

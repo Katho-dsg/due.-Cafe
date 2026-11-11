@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>due. — Propuesta visual del brief</title>
+  <meta name="description" content="due. es café de especialidad pensado para regalar: lotes de una sola finca, de unas 100 bolsas, que cuando se acaban no vuelven.">
+  <meta name="theme-color" content="#161B11">
+  <link rel="icon" type="image/png" href="assets/logo-due-olive.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=League+Spartan:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/origen/bolsa-mesa.jpg">
+  <link rel="stylesheet" href="css/lace.css">
+  <link rel="stylesheet" href="css/a.css">
+  <link rel="stylesheet" href="css/a-brief.css">
+  <link rel="stylesheet" href="css/a-brand.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="floron" viewBox="0 0 120 40">
+      <path d="M60 8l9 12-9 12-9-12Z"/>
+      <path d="M51 20C39 20 33 9 23 9c-8 0-12 7-8 12 3 4 10 3 9-2M69 20c12 0 18 11 28 11 8 0 12-7 8-12-3-4-10-3-9 2"/>
+      <path d="M51 20c-8 0-12 6-18 6M69 20c8 0 12-6 18-6M3 20h9M108 20h9"/>
+      <circle cx="60" cy="20" r="2.2"/>
+    </symbol>
+  </svg>
+
+  <a class="skip" href="#principal">Saltar al contenido</a>
+
+  <header class="top">
+    <nav class="top__bar" aria-label="Principal">
+      <a href="#lote">El lote</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#regalar">Para regalar</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a href="#principal" class="top__logo" aria-label="due., inicio"><img src="assets/logo-due-lima.png" alt="" width="120" height="52"></a>
+    <button class="cart-btn" type="button" data-cart-open aria-label="Abrir tu bolsa, 0 productos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1.2 12H6.7L5.5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+      <span data-cart-count>0</span>
+    </button>
+  </header>
+
+  <main id="principal">
+
+    <!-- 1. Hero: el lote actual como protagonista -->
+    <section class="hero" aria-labelledby="hero-t">
+      <img class="hero__img" src="assets/origen/bolsa-mesa.jpg" alt="Bolsa de café due. del lote 07 sobre una bandeja con granos" fetchpriority="high">
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <p class="kicker">Lote 07 · Huila · Miel y canela</p>
+        <h1 class="hero__t" id="hero-t">No es solo café, <em>es el detalle<br>que llevas<span class="dot">.</span></em></h1>
+        <p class="hero__p">Café de especialidad de una sola finca del sur del Huila, en una edición de unas 100 bolsas. Cuando se acaba, no vuelve.</p>
+        <p class="stock"><span class="stock__dot" aria-hidden="true"></span><b data-left>37</b> de 100 bolsas disponibles</p>
+        <div class="hero__actions">
+          <button type="button" class="btn btn--fill" data-add>Comprar este lote</button>
+          <a class="btn btn--line" data-wa="Hola, quiero el lote 07 de Huila" href="https://wa.me/573000000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        </div>
+        <a class="hero__notify" href="#comunidad">Avísame del próximo lote</a>
+      </div>
+    </section>
+
+    <!-- 2. Archivo de lotes: recuadro flotante entre el inicio y el concepto -->
+    <section class="lots-float" id="archivo" aria-labelledby="archive-t">
+      <div class="wrap">
+        <div class="float-card">
+          <div class="float-card__next">
+            <p class="float-card__kicker">Lote 08 · En camino</p>
+            <h2 class="float-card__t" id="archive-t">Faltan <span data-days-text>17 días</span> para el próximo lote<span class="dot">.</span></h2>
+            <div class="countdown countdown--float" data-countdown="2026-11-28T10:00:00-05:00" aria-label="Cuenta atrás para el lote 08">
+              <div><b data-cd="d">00</b><span>días</span></div>
+              <div><b data-cd="h">00</b><span>horas</span></div>
+              <div><b data-cd="m">00</b><span>min</span></div>
+              <div><b data-cd="s">00</b><span>seg</span></div>
+            </div>
+            <a href="#comunidad" class="float-card__link">Avísame cuando salga</a>
+          </div>
+          <div class="float-card__lots">
+            <div class="float-card__bar">
+              <p>Lo que ya <em>no vuelve.</em></p>
+              <div class="rail-ctrl">
+                <button type="button" class="rail-btn" data-rail="-1" aria-label="Lotes anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+                <button type="button" class="rail-btn" data-rail="1" aria-label="Más lotes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+              </div>
+            </div>
+            <div class="tiles" data-rail-track tabindex="0" aria-label="Lote actual y lotes anteriores">
+              <a class="tile tile--now" href="#lote"><span class="tile__n">07</span><span class="tile__name">Huila</span><span class="tile__state">Disponible</span></a>
+              <article class="tile tile--a"><span class="tile__n">06</span><span class="tile__name">Nariño</span><span class="tile__state">Agotado</span></article>
+              <article class="tile tile--b"><span class="tile__n">05</span><span class="tile__name">Cauca</span><span class="tile__state">Agotado</span></article>
+              <article class="tile tile--c"><span class="tile__n">04</span><span class="tile__name">Tolima</span><span class="tile__state">Agotado</span></article>
+              <article class="tile tile--a"><span class="tile__n">03</span><span class="tile__name">Sierra Nevada</span><span class="tile__state">Agotado</span></article>
+              <article class="tile tile--b"><span class="tile__n">02</span><span class="tile__name">Santander</span><span class="tile__state">Agotado</span></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Concepto -->
+    <section class="pact lace-bg" aria-labelledby="pact-t">
+      <p class="kicker kicker--center">Qué es due.</p>
+      <h2 class="pact__t" id="pact-t">Como llegar a una casa con un buen vino… <em>pero distinto<span class="dot">.</span></em></h2>
+      <p class="pact__p">Café de especialidad pensado para regalar. No buscamos el café más famoso: buscamos orígenes que vale la pena descubrir, de una sola finca y en pocas bolsas.</p>
+      <div class="ornament" aria-hidden="true"><span></span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span></span></div>
+    </section>
+
+    <!-- 4. Lote actual: la ficha -->
+    <section class="lot lace-bg lace-bg--light lace-edge" id="lote" aria-labelledby="lot-t">
+      <div class="wrap lot__inner">
+        <div class="lot__copy">
+          <p class="kicker kicker--dark">El lote de esta temporada</p>
+          <h2 class="h2 h2--dark" id="lot-t">Lote 07, <em>Huila<span class="dot">.</span></em></h2>
+          <p class="lot__notes">Miel y canela<span class="dot">.</span></p>
+          <dl class="ficha">
+            <div><dt>Finca</dt><dd>Los Naranjos, vereda La Palma, Pitalito</dd></div>
+            <div><dt>Altura</dt><dd>1.750 metros sobre el mar</dd></div>
+            <div><dt>Variedad</dt><dd>Caturra</dd></div>
+            <div><dt>Proceso</dt><dd>Lavado: el grano se despulpa y se lava antes de secarse. Da una taza limpia y dulce.</dd></div>
+            <div><dt>Formato</dt><dd>Bolsa de 250 g, en grano</dd></div>
+          </dl>
+          <p class="lot__story">Lo cultiva la familia Rojas, a la sombra y desde hace tres generaciones. Lo recogen a mano, grano maduro por grano maduro.</p>
+          <div class="count">
+            <p>Quedan <b data-left>37</b> de 100 bolsas. Tu bolsa sería la <b>64</b>.</p>
+            <div class="count__dots" data-dots aria-hidden="true"></div>
+          </div>
+          <div class="buy">
+            <p class="buy__price">$120.000 <span>COP</span></p>
+            <div class="qty" role="group" aria-label="Cantidad">
+              <button type="button" data-qty="-1" aria-label="Quitar una bolsa">−</button>
+              <output data-qty-val aria-live="polite">1</output>
+              <button type="button" data-qty="1" aria-label="Agregar una bolsa">+</button>
+            </div>
+            <button type="button" class="btn btn--dark" data-add>Comprar este lote</button>
+          </div>
+          <a class="link" data-wa="Hola, quiero el lote 07 de Huila" href="https://wa.me/573000000000" target="_blank" rel="noopener">O pídelo por WhatsApp</a>
+        </div>
+        <div class="lot__arches">
+          <figure class="arch arch--a arch--map"><img src="assets/origen/mapa-huila.svg" alt="Mapa del Huila con la ubicación aproximada de Pitalito" loading="lazy"><span class="map-pin" aria-hidden="true"></span><i class="pill pill--top" aria-hidden="true"></i></figure>
+          <figure class="arch arch--b"><img src="assets/club/manos-granos.jpg" alt="Manos sosteniendo granos de café tostado" loading="lazy"><i class="pill pill--bottom" aria-hidden="true"></i></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Cómo funciona -->
+    <section class="ritual" id="como" aria-labelledby="ritual-t">
+      <figure class="ritual__img"><img src="assets/club/vertido.jpg" alt="Café filtrado vertido en una taza negra" loading="lazy"></figure>
+      <div class="ritual__copy">
+        <p class="kicker">Cómo funciona</p>
+        <h2 class="h2" id="ritual-t">Así de <em>simple<span class="dot">.</span></em></h2>
+        <ol class="steps">
+          <li><span>I</span><div><h3>Eliges el lote<span class="dot">.</span></h3><p>Lees su ficha, su origen y sus notas.</p></div></li>
+          <li><span>II</span><div><h3>Lo pagas aquí o por WhatsApp<span class="dot">.</span></h3><p>En la página con ePayco, o nos escribes y te ayudamos.</p></div></li>
+          <li><span>III</span><div><h3>Lo recibes listo para regalar<span class="dot">.</span></h3><p>En su caja, con la ficha del lote y el número de tu bolsa.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="band" aria-hidden="true">
+      <div class="band__track">
+        <span>Lotes que no vuelven</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Un origen nuevo cada vez</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Listo para regalar</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg>
+        <span>Lotes que no vuelven</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Un origen nuevo cada vez</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span>Listo para regalar</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg>
+      </div>
+    </div>
+
+    <!-- 6. Para regalar -->
+    <section class="origin" id="regalar" aria-labelledby="origin-t">
+      <img class="origin__bg" src="assets/club/ventana.jpg" alt="" loading="lazy">
+      <div class="wrap origin__inner">
+        <div class="glass lace-corners">
+          <p class="kicker">Para regalar</p>
+          <h2 class="h2" id="origin-t">Para cuando quieres <em>quedar bien<span class="dot">.</span></em></h2>
+          <ul class="occasions">
+            <li><b>Una visita:</b> lo que llevas en vez de otra botella de vino.</li>
+            <li><b>Un cumpleaños o una cena:</b> un detalle con historia, para abrir y compartir.</li>
+            <li><b>Un gracias:</b> para quien te ayudó y merece algo pensado.</li>
+            <li><b>Tu equipo o tus clientes:</b> fin de año, eventos o bienvenidas.</li>
+          </ul>
+          <p>Llega en una caja minimalista, con la ficha del lote y el número de tu bolsa.</p>
+          <a class="btn btn--line btn--sm" data-wa="Hola, quiero cotizar regalos corporativos de due." href="https://wa.me/573000000000" target="_blank" rel="noopener">Cotizar regalos corporativos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Comunidad -->
+    <section class="society lace-bg" id="comunidad" aria-labelledby="soc-t">
+      <div class="wrap society__inner">
+        <figure class="society__portrait"><img src="assets/club/brindis.jpg" alt="Varias manos juntan vasos de café en un brindis" loading="lazy"></figure>
+        <div class="society__copy">
+          <p class="kicker">Comunidad</p>
+          <h2 class="h2" id="soc-t">Los que estamos esperando <em>el próximo lote<span class="dot">.</span></em></h2>
+          <p>Te escribimos antes que a nadie cuando sale un lote nuevo y te contamos la historia de su origen: la finca, la región y las personas detrás. Un correo por lote, nada más.</p>
+          <form class="news__form news__form--left" data-join novalidate>
+            <label class="sr-only" for="mail-c">Tu correo electrónico</label>
+            <input id="mail-c" type="email" placeholder="Tu correo electrónico" autocomplete="email" required>
+            <button type="submit">Avísame</button>
+          </form>
+          <p class="news__msg news__msg--left" role="status" data-join-msg></p>
+          <div class="society__pair">
+            <figure><img src="assets/club/conversacion.jpg" alt="Dos personas conversan con sus tazas de café sobre la mesa" loading="lazy"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Preguntas frecuentes -->
+    <section class="faq lace-bg lace-bg--light" id="preguntas" aria-labelledby="faq-t">
+      <div class="wrap faq__inner">
+        <div>
+          <p class="kicker kicker--dark">Preguntas frecuentes</p>
+          <h2 class="h2 h2--dark" id="faq-t">Lo que nos <em>suelen preguntar<span class="dot">.</span></em></h2>
+        </div>
+        <div class="faq__list">
+          <details><summary>¿A dónde hacen envíos y cuánto se demoran?</summary><p>Estamos definiendo la cobertura, los costos y los tiempos. Mientras tanto, escríbenos por WhatsApp y te contamos si llegamos a tu ciudad.</p></details>
+          <details><summary>¿El café viene en grano o molido?</summary><p>En grano, para que conserve mejor su aroma. Si lo necesitas molido, pregúntanos por WhatsApp antes de pedirlo.</p></details>
+          <details><summary>¿Cómo puedo pagar?</summary><p>En la página pagas con ePayco, que acepta tarjetas y otros medios de pago en Colombia. Si prefieres, pide por WhatsApp y te enviamos las opciones.</p></details>
+          <details><summary>¿Hacen regalos corporativos?</summary><p>Sí: fin de año, eventos o bienvenidas de tu equipo. Escríbenos por WhatsApp con la cantidad y la fecha.</p></details>
+          <details><summary>¿Qué pasa cuando se agota un lote?</summary><p>No vuelve. Pasa al archivo y preparamos el siguiente, de otro origen. Si te suscribes, te avisamos antes que a nadie.</p></details>
+          <details><summary>¿Qué significa «lavado» o «natural»?</summary><p>Es cómo se seca el grano después de cosecharlo. Lavado: se le quita la pulpa con agua y la taza es limpia y brillante. Natural: se seca con la fruta y la taza es más dulce y frutal.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suscripción de cierre -->
+    <section class="news lace-bg" id="contacto" aria-labelledby="news-t">
+      <p class="kicker kicker--center">Mantente cerca</p>
+      <h2 class="h2 news__t" id="news-t">Avísame del próximo lote<span class="dot">.</span></h2>
+      <p class="news__p">Un correo por lote, con su historia. Nada más.</p>
+      <form class="news__form" data-join novalidate>
+        <label class="sr-only" for="mail-a">Tu correo electrónico</label>
+        <input id="mail-a" type="email" placeholder="Tu correo electrónico" autocomplete="email" required>
+        <button type="submit">Avísame</button>
+      </form>
+      <p class="news__msg" role="status" data-join-msg></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <div class="foot__brand">
+        <img src="assets/logo-due-lima.png" alt="due." width="130" height="56">
+        <p>Café de especialidad pensado para regalar.</p>
+      </div>
+      <div><h3>Café</h3><a href="#lote">El lote</a><a href="#archivo">Lotes anteriores</a><a href="#como">Cómo funciona</a><a href="#regalar">Para regalar</a></div>
+      <div><h3>Comunidad</h3><a href="#comunidad">Suscríbete</a><a data-wa="Hola, tengo una pregunta sobre due." href="https://wa.me/573000000000" target="_blank" rel="noopener">WhatsApp</a><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a></div>
+      <div><h3>Ayuda</h3><a href="#preguntas">Preguntas frecuentes</a><a href="#preguntas">Envíos</a><a href="#regalar">Regalos corporativos</a></div>
+      <div><h3>Legal</h3><a href="#">Términos y condiciones</a><a href="#">Política de privacidad</a></div>
+    </div>
+    <div class="wrap foot__base">
+      <p>© 2026 due. Contenido de ejemplo: lote, finca, precios, WhatsApp y redes por confirmar. Mapa: «Colombia Huila location map», Milenioscuro, CC BY-SA 3.0, recoloreado.</p>
+      <p class="foot__sign"><svg class="floron" viewBox="0 0 120 40" aria-hidden="true"><use href="#floron"/></svg> No es solo café, es el detalle que llevas</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp siempre visible -->
+  <a class="wa-float" data-wa="Hola, quiero el lote 07 de Huila" href="https://wa.me/573000000000" target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.3 14.3 14.3 0 0 0 5.6 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3Z"/></svg>
+    <span>Pedir por WhatsApp</span>
+  </a>
+
+  <!-- La bolsa de compra -->
+  <div class="cart" data-cart hidden>
+    <div class="cart__scrim" data-cart-close></div>
+    <aside class="cart__panel" role="dialog" aria-modal="true" aria-labelledby="cart-t">
+      <div class="cart__head">
+        <h2 id="cart-t">Tu bolsa</h2>
+        <button type="button" class="cart__x" data-cart-close aria-label="Cerrar tu bolsa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="cart__empty" data-cart-empty>
+        <p>Tu bolsa está vacía.</p>
+        <button type="button" class="btn btn--dark" data-add>Agregar el lote 07</button>
+      </div>
+      <div class="cart__item" data-cart-item hidden>
+        <img src="assets/landing/due-bag.png" alt="" width="650" height="1130">
+        <div>
+          <p class="cart__name">Lote 07, Huila</p>
+          <p class="cart__meta">Miel y canela · 250 g en grano</p>
+          <div class="qty qty--sm" role="group" aria-label="Cantidad en tu bolsa">
+            <button type="button" data-cart-qty="-1" aria-label="Quitar una bolsa">−</button>
+            <output data-cart-qty-val>1</output>
+            <button type="button" data-cart-qty="1" aria-label="Agregar una bolsa">+</button>
+          </div>
+        </div>
+        <p class="cart__line" data-cart-line>$120.000</p>
+      </div>
+      <div class="cart__foot" data-cart-foot hidden>
+        <p class="cart__total"><span>Total</span><b data-cart-total>$120.000</b></p>
+        <p class="cart__note">El envío se calcula al pagar.</p>
+        <button type="button" class="btn btn--dark btn--block" data-checkout>Pagar con ePayco</button>
+        <a class="btn btn--outline-dark btn--block" data-cart-wa href="https://wa.me/573000000000" target="_blank" rel="noopener">Prefiero pedir por WhatsApp</a>
+        <p class="cart__msg" role="status" data-checkout-msg></p>
+      </div>
+    </aside>
+  </div>
+
+  <script src="js/a-brief.js"></script>
+</body>
+</html>
