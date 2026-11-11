@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brief due. Café</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Brief de la landing con la identidad de la página: verdes de noche, serif con cursiva oliva,
+   encaje tenue, florón como ornamento y fichas con esquinas asimétricas. Hojas A4. */
+:root {
+  --night:  #12170D;
+  --forest: #161D10;
+  --moss:   #1E2415;
+  --bar:    #202909;
+  --bottle: #304B31;
+  --olive:  #799733;
+  --olive-ink: #4A6224;
+  --lime:   #C3C770;
+  --cream:  #ECE6D2;
+  --cream-2: rgba(236, 230, 210, .8);
+  --paper:  #F3F1E9;
+  --card:   #FBFAF5;
+  --ink:    #161D10;
+  --ink-2:  #4B5340;
+  --rule:   rgba(22, 29, 16, .14);
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --lace-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23C3C770' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M80 22c-13 15-13 34 0 48 13-14 13-33 0-48Z'/%3E%3Cpath d='M80 138c-13-15-13-34 0-48 13 14 13 33 0 48Z'/%3E%3Cpath d='M22 80c15-13 34-13 48 0-14 13-33 13-48 0Z'/%3E%3Cpath d='M138 80c-15-13-34-13-48 0 14 13 33 13 48 0Z'/%3E%3Ccircle cx='80' cy='80' r='5'/%3E%3Ccircle cx='80' cy='80' r='12'/%3E%3Cpath d='M0 26c12 0 22-8 22-20M26 0c0 12-8 22-20 22M160 26c-12 0-22-8-22-20M134 0c0 12 8 22 20 22M0 134c12 0 22 8 22 20M26 160c0-12-8-22-20-22M160 134c-12 0-22 8-22 20M134 160c0-12 8-22 20-22'/%3E%3C/g%3E%3C/svg%3E");
+  --lace-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23304B31' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M80 22c-13 15-13 34 0 48 13-14 13-33 0-48Z'/%3E%3Cpath d='M80 138c-13-15-13-34 0-48 13 14 13 33 0 48Z'/%3E%3Cpath d='M22 80c15-13 34-13 48 0-14 13-33 13-48 0Z'/%3E%3Cpath d='M138 80c-15-13-34-13-48 0 14 13 33 13 48 0Z'/%3E%3Ccircle cx='80' cy='80' r='5'/%3E%3Ccircle cx='80' cy='80' r='12'/%3E%3C/g%3E%3C/svg%3E");
+}
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html { background: #2A2F24; }
+body { margin: 0; font: 400 10pt/1.55 var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+
+/* ---------- Hoja ---------- */
+.page { position: relative; width: 210mm; height: 297mm; margin: 0 auto 10mm; overflow: hidden; background: var(--paper); padding: 22mm 20mm 24mm; display: flex; flex-direction: column; gap: 7mm; isolation: isolate; break-after: page; }
+.page::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: var(--lace-light); background-size: 46mm 46mm; opacity: .06; }
+@media print { html { background: none; } .page { margin: 0; } }
+.page__head { position: absolute; top: 9mm; left: 20mm; right: 20mm; display: flex; justify-content: space-between; align-items: center; font-size: 7.5pt; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-2); }
+.page__head img { width: 16mm; }
+.page__foot { position: absolute; bottom: 9mm; left: 20mm; right: 20mm; display: flex; justify-content: space-between; align-items: center; font-size: 7.5pt; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
+.page__foot svg { width: 16mm; height: 5mm; color: var(--olive); }
+.floron { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; }
+
+/* ---------- Tipografía ---------- */
+.kicker { font-size: 7.5pt; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: var(--olive-ink); }
+.h2 { font-family: var(--serif); font-weight: 500; font-size: 27pt; line-height: 1.02; color: var(--ink); }
+.h2 em { font-style: italic; color: var(--bottle); }
+.h3 { font-family: var(--serif); font-weight: 600; font-size: 15pt; line-height: 1.1; color: var(--ink); }
+.lead { font-size: 11pt; line-height: 1.55; color: var(--ink); max-width: 150mm; }
+p { color: var(--ink-2); }
+b, strong { color: var(--ink); font-weight: 700; }
+.block { display: grid; gap: 3.2mm; }
+.note { padding: 4mm 5mm; border-radius: 4mm 1mm 4mm 1mm; background: var(--card); border-left: 0; color: var(--ink-2); font-size: 9.5pt; }
+.note b { color: var(--olive-ink); }
+
+/* ---------- Portada ---------- */
+.cover { background: var(--forest); color: var(--cream); padding: 0; }
+.cover::before { background-image: var(--lace-dark); opacity: .07; }
+.cover__photo { position: absolute; right: 0; top: 0; bottom: 0; width: 46%; overflow: hidden; border-radius: 0 0 0 60mm; }
+.cover__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; filter: saturate(.9); }
+.cover__photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(22, 29, 16, .55), rgba(22, 29, 16, 0) 40%); }
+.cover__inner { position: relative; height: 100%; padding: 26mm 20mm 22mm; width: 62%; display: flex; flex-direction: column; }
+.cover__logo { width: 34mm; }
+.cover__body { margin-top: auto; display: grid; gap: 6mm; }
+.cover .kicker { color: var(--lime); }
+.cover h1 { font-family: var(--serif); font-weight: 500; font-size: 46pt; line-height: .95; color: var(--cream); }
+.cover h1 em { display: block; font-style: italic; color: var(--olive); }
+.cover__lead { font-size: 11.5pt; line-height: 1.5; color: var(--cream-2); max-width: 96mm; }
+.cover__meta { display: flex; gap: 3mm; flex-wrap: wrap; margin-top: 2mm; }
+.chip { display: inline-flex; align-items: center; padding: 1.4mm 3.6mm; border: 1px solid rgba(236, 230, 210, .35); border-radius: 99px; font-size: 8pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--cream); }
+.cover__orn { display: flex; align-items: center; gap: 3mm; margin-top: 10mm; color: var(--lime); }
+.cover__orn span { width: 14mm; height: 1px; background: currentColor; }
+.cover__orn svg { width: 22mm; height: 7mm; }
+
+/* ---------- Fichas (como las tarjetas de lotes) ---------- */
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.card { padding: 5mm; border-radius: 6mm 1.2mm 6mm 1.2mm; background: var(--card); display: grid; gap: 1.8mm; align-content: start; }
+.card .h3 { font-size: 13pt; }
+.card p { font-size: 9.3pt; }
+.card--dark { background: var(--bottle); }
+.card--dark .h3, .card--dark b { color: var(--cream); }
+.card--dark p { color: var(--cream-2); }
+.card--olive { background: #4A5C22; }
+.card--olive .h3 { color: var(--cream); }
+.card--olive p { color: var(--cream-2); }
+.card--night { background: var(--forest); }
+.card--night .h3 { color: var(--cream); }
+.card--night p { color: var(--cream-2); }
+.card__n { font-family: var(--serif); font-weight: 500; font-size: 24pt; line-height: 1; color: var(--lime); }
+.card .tag { justify-self: start; padding: .8mm 2.8mm; border: 1px solid currentColor; border-radius: 99px; font-size: 7pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--lime); }
+.actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+
+/* ---------- Tablas ---------- */
+.table { width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; border-radius: 5mm 1mm 5mm 1mm; background: var(--card); font-size: 9pt; }
+.table th { background: var(--bottle); color: var(--cream); text-align: left; font-weight: 600; font-size: 7.5pt; letter-spacing: .14em; text-transform: uppercase; padding: 3mm 4mm; }
+.table td { padding: 3mm 4mm; vertical-align: top; color: var(--ink-2); border-top: 1px solid var(--rule); }
+.table td:first-child { color: var(--ink); font-weight: 700; }
+.table tr:first-child td { border-top: 0; }
+
+/* ---------- Ficha de lote (mock) ---------- */
+.lotmock { display: grid; grid-template-columns: 1fr auto; gap: 5mm; align-items: center; padding: 6mm; border-radius: 7mm 1.5mm 7mm 1.5mm; background: var(--forest); color: var(--cream); }
+.lotmock .kicker { color: var(--lime); }
+.lotmock h3 { font-family: var(--serif); font-weight: 500; font-size: 24pt; line-height: 1; color: var(--cream); margin-top: 1.5mm; }
+.lotmock h3 em { font-style: italic; color: var(--olive); }
+.lotmock dl { display: grid; grid-template-columns: auto 1fr; gap: 1.2mm 4mm; margin-top: 3mm; font-size: 8.8pt; }
+.lotmock dt { color: var(--lime); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: 7pt; padding-top: .6mm; }
+.lotmock dd { color: var(--cream-2); }
+.seal { width: 30mm; height: 30mm; border-radius: 50%; border: 1px solid var(--lime); display: grid; place-content: center; text-align: center; color: var(--cream); rotate: -8deg; }
+.seal b { display: block; font-family: var(--serif); font-weight: 500; font-size: 26pt; line-height: .9; color: var(--lime); }
+.seal span { font-size: 7.5pt; letter-spacing: .14em; text-transform: uppercase; }
+
+/* ---------- Listas ---------- */
+.dots { display: grid; gap: 2.6mm; }
+.dots li { position: relative; padding-left: 6mm; color: var(--ink-2); }
+.dots li::before { content: ""; position: absolute; left: .6mm; top: 2.1mm; width: 2mm; height: 2mm; border-radius: 50%; background: var(--olive); }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; }
+
+/* ---------- Paleta ---------- */
+.swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5mm; }
+.sw { display: grid; grid-template-columns: 12mm 1fr; gap: 3mm; align-items: center; padding: 3mm; border-radius: 4mm 1mm 4mm 1mm; background: var(--card); }
+.sw i { width: 12mm; height: 12mm; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(22, 29, 16, .12); }
+.sw b { display: block; font-size: 9pt; }
+.sw span { display: block; font-size: 7.6pt; color: var(--ink-2); line-height: 1.35; }
+.sw code { font: 600 7.6pt var(--sans); letter-spacing: .06em; color: var(--olive-ink); }
+
+/* ---------- Estructura ---------- */
+.steps { display: grid; gap: 0; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 14mm 1fr; gap: 4mm; padding: 3.4mm 0; border-top: 1px solid var(--rule); align-items: baseline; }
+.steps li:first-child { border-top: 0; }
+.steps__n { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 18pt; line-height: 1; color: var(--olive-ink); }
+.steps h3 { font-family: var(--serif); font-weight: 600; font-size: 13.5pt; line-height: 1.15; color: var(--ink); }
+.steps p { margin-top: .8mm; font-size: 9.3pt; }
+.wa { display: flex; gap: 4mm; align-items: center; padding: 4mm 5mm; border-radius: 5mm 1mm 5mm 1mm; background: var(--bottle); color: var(--cream); font-size: 9.5pt; }
+.wa svg { width: 9mm; height: 9mm; fill: var(--lime); flex: none; }
+
+/* ---------- Checklist ---------- */
+.checks { display: grid; gap: 2.6mm; }
+.checks li { display: grid; grid-template-columns: 7mm 1fr; gap: 3mm; align-items: start; padding: 3.2mm 4mm; border-radius: 4mm 1mm 4mm 1mm; background: var(--card); color: var(--ink); font-size: 9.6pt; }
+.checks li::before { content: ""; width: 4.6mm; height: 4.6mm; margin-top: .4mm; border: 1.3px solid var(--olive-ink); border-radius: 50%; }
+.closing { margin-top: auto; padding: 8mm; border-radius: 8mm 1.5mm 8mm 1.5mm; background: var(--forest); color: var(--cream); display: grid; gap: 3mm; position: relative; overflow: hidden; isolation: isolate; }
+.closing::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: var(--lace-dark); background-size: 46mm 46mm; opacity: .07; }
+.closing .kicker { color: var(--lime); }
+.closing p { color: var(--cream-2); font-size: 10.5pt; }
+.closing .h2 { color: var(--cream); font-size: 22pt; }
+.closing .h2 em { color: var(--olive); }
+/* ---------- Fotos con arcos (como la página) ---------- */
+.photos { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: auto; }
+.photos img { width: 100%; height: 62mm; object-fit: cover; display: block; }
+.photos figure:first-child img { border-radius: 30mm 5mm 30mm 5mm; }
+.photos figure:last-child img { border-radius: 5mm 30mm 5mm 30mm; }
+.banner { margin-top: 2mm; }
+.banner img { width: 100%; height: 52mm; object-fit: cover; object-position: 50% 60%; border-radius: 8mm 1.5mm 8mm 1.5mm; display: block; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="floron" viewBox="0 0 120 40">
+    <path d="M60 8l9 12-9 12-9-12Z"/>
+    <path d="M51 20C39 20 33 9 23 9c-8 0-12 7-8 12 3 4 10 3 9-2M69 20c12 0 18 11 28 11 8 0 12-7 8-12-3-4-10-3-9 2"/>
+    <path d="M51 20c-8 0-12 6-18 6M69 20c8 0 12-6 18-6M3 20h9M108 20h9"/>
+    <circle cx="60" cy="20" r="2.2"/>
+  </symbol>
+</svg>
+
+<!-- 1. Portada -->
+<section class="page cover">
+  <figure class="cover__photo"><img src="../../assets/club/bolsa-hero.jpg" alt=""></figure>
+  <div class="cover__inner">
+    <img class="cover__logo" src="../../assets/logo-due-lima.png" alt="due.">
+    <div class="cover__body">
+      <p class="kicker">Brief de proyecto</p>
+      <h1>Landing <em>due. Café</em></h1>
+      <p class="cover__lead">Café de especialidad pensado como regalo: el detalle que llevas a una casa especial, como quien llega con un buen vino.</p>
+      <div class="cover__meta"><span class="chip">10 nov 2026</span><span class="chip">Angelo Bello</span></div>
+      <div class="cover__orn" aria-hidden="true"><span></span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg><span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Resumen y objetivos -->
+<section class="page">
+  <div class="page__head"><img src="../../assets/logo-due-olive.png" alt=""><span>Brief · Landing due. Café</span></div>
+
+  <div class="block">
+    <p class="kicker">01 · Resumen y concepto</p>
+    <h2 class="h2">No compite por ser el más rico: <em>se descubre.</em></h2>
+    <p class="lead">Due Café vende café de especialidad pensado como regalo: el detalle que llevas a una casa especial, como quien llega con un buen vino. No compite por ser «el café más rico», sino por la experiencia de descubrir orígenes y notas distintas.</p>
+  </div>
+
+  <div class="cards">
+    <article class="card"><h3 class="h3">Lotes limitados</h3><p>Cada lote viene de un origen específico (región, finca, vereda), tiene notas propias y se produce en pocas unidades. Cuando se agota, no vuelve.</p></article>
+    <article class="card"><h3 class="h3">Exclusividad sin pose</h3><p>La marca transmite que lo que hay es escaso y especial, pero sin hablar de «club VIP».</p></article>
+    <article class="card"><h3 class="h3">Comunidad</h3><p>La gente se une para no perderse el siguiente lote y probar, en un solo lugar, cafés de distintas regiones.</p></article>
+    <article class="card"><h3 class="h3">Canal</h3><p>Por ahora es una marca 100 % online, sin espacio físico.</p></article>
+  </div>
+
+  <div class="block">
+    <p class="kicker">02 · Objetivos de la landing</p>
+    <h2 class="h2">Tres acciones <em>principales.</em></h2>
+    <p>La página tiene tres acciones principales: comprar directo en la página, comprar por WhatsApp y suscribirse al correo.</p>
+  </div>
+  <div class="actions">
+    <article class="card card--night"><span class="card__n">I</span><h3 class="h3">Compra en la página</h3><p>Carrito sencillo y pago con la pasarela ePayco. Es la acción principal.</p></article>
+    <article class="card card--dark"><span class="card__n">II</span><h3 class="h3">Compra por WhatsApp</h3><p>Alternativa para quien prefiere hablar con alguien o comprar para regalo corporativo. Botón con mensaje prellenado (por ejemplo: «Hola, quiero el lote Huila»).</p></article>
+    <article class="card card--olive"><span class="card__n">III</span><h3 class="h3">Suscripción por correo</h3><p>Es la puerta a la comunidad. Sirve para avisar del próximo lote antes que nadie y contar la historia de cada origen.</p></article>
+  </div>
+  <p class="note"><b>Por definir:</b> si además se crea un grupo o canal de WhatsApp para la comunidad, que le daría más vida a la marca entre lotes.</p>
+
+  <div class="page__foot"><span>Página 2 de 7</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg></div>
+</section>
+
+<!-- 3. Público y producto -->
+<section class="page">
+  <div class="page__head"><img src="../../assets/logo-due-olive.png" alt=""><span>Brief · Landing due. Café</span></div>
+
+  <div class="block">
+    <p class="kicker">03 · Público objetivo</p>
+    <h2 class="h2">Quien regala <em>con criterio.</em></h2>
+    <p class="lead">Adultos de 28 a 45 años en Colombia que regalan con criterio y quieren quedar bien con un detalle diferente.</p>
+  </div>
+
+  <table class="table">
+    <thead><tr><th>Perfil</th><th>Qué busca</th><th>Cuándo compra</th></tr></thead>
+    <tbody>
+      <tr><td>El que regala con criterio</td><td>Un detalle con historia, que no sea «otra botella de vino»</td><td>Visitas, cumpleaños, cenas, agradecimientos</td></tr>
+      <tr><td>El curioso del café</td><td>Probar orígenes y notas nuevas, coleccionar lotes</td><td>Cada vez que sale un lote</td></tr>
+      <tr><td>Regalos corporativos</td><td>Detalles premium para clientes o equipos</td><td>Fin de año, eventos, onboarding</td></tr>
+    </tbody>
+  </table>
+
+  <p class="note"><b>Nivel de compra:</b> medio-alto, coherente con un precio de hasta $140.000 COP por bolsa.</p>
+
+  <div class="block">
+    <p class="kicker">04 · Producto y modelo de lotes</p>
+    <h2 class="h2">Cada lote, una edición <em>que no se repite.</em></h2>
+    <p class="lead">Cada lote es una edición única de pocas unidades (alrededor de 100 bolsas) que no se repite.</p>
+  </div>
+
+  <table class="table">
+    <thead><tr><th>Dato</th><th>Definido</th><th>Ejemplo / por confirmar</th></tr></thead>
+    <tbody>
+      <tr><td>Formato</td><td>Bolsa de café en grano</td><td>Tamaño (250 g o 500 g) por confirmar</td></tr>
+      <tr><td>Precio</td><td>Hasta $140.000 COP</td><td>Precio exacto por lote</td></tr>
+      <tr><td>Unidades por lote</td><td>Alrededor de 100</td><td>Puede variar por lote</td></tr>
+      <tr><td>Origen</td><td>Región y finca específicas</td><td>Ej.: Huila, finca de una vereda</td></tr>
+      <tr><td>Notas de sabor</td><td>Propias de cada lote</td><td>Ej.: miel y canela</td></tr>
+      <tr><td>Empaque de regalo</td><td>Caja minimalista</td><td>Diseño final según referencia de la clienta</td></tr>
+      <tr><td>Envíos</td><td>Por definir</td><td>Cobertura, costos y tiempos</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page__foot"><span>Página 3 de 7</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg></div>
+</section>
+
+<!-- 4. Ficha de lote y tono -->
+<section class="page">
+  <div class="page__head"><img src="../../assets/logo-due-olive.png" alt=""><span>Brief · Landing due. Café</span></div>
+
+  <div class="block">
+    <p><b>Idea:</b> cada lote puede llevar una ficha (origen, altura, proceso, notas, número de bolsa «23 de 100») que refuerce la exclusividad.</p>
+  </div>
+  <div class="lotmock">
+    <div>
+      <p class="kicker">Ficha de lote · ejemplo</p>
+      <h3>Lote Nº 07, <em>Huila.</em></h3>
+      <dl>
+        <dt>Origen</dt><dd>Huila, finca de una vereda</dd>
+        <dt>Altura</dt><dd>Por confirmar</dd>
+        <dt>Proceso</dt><dd>Por confirmar</dd>
+        <dt>Notas</dt><dd>Miel y canela</dd>
+      </dl>
+    </div>
+    <div class="seal"><b>23</b><span>de 100</span></div>
+  </div>
+
+
+  <div class="block">
+    <p class="kicker">05 · Tono y mensaje</p>
+    <h2 class="h2">«No es solo café, <em>es el detalle que llevas.»</em></h2>
+    <p class="lead">Cálido, cuidado y cercano: como alguien que te recomienda un café con la emoción de quien encontró algo especial.</p>
+  </div>
+  <div class="two">
+    <ul class="dots">
+      <li><b>Mensaje central:</b> «No es solo café, es el detalle que llevas» (propuesta de copy).</li>
+      <li><b>Escasez honesta:</b> contar cuántas bolsas quedan y que el lote no vuelve, sin presionar con alarmas de venta.</li>
+      <li><b>Historia del origen:</b> la finca, la región y las personas detrás de cada lote.</li>
+    </ul>
+    <ul class="dots">
+      <li><b>Comunidad, no élite:</b> hablar de «los que estamos esperando el próximo lote», no de «miembros exclusivos».</li>
+      <li><b>Evitar:</b> lenguaje de lujo frío, «club VIP», tecnicismos de barista sin explicar.</li>
+    </ul>
+  </div>
+
+  <div class="photos">
+    <figure><img src="../../assets/club/brindis.jpg" alt="Manos juntan vasos de café en un brindis"></figure>
+    <figure><img src="../../assets/club/conversacion.jpg" alt="Dos personas conversan con café"></figure>
+  </div>
+
+  <div class="page__foot"><span>Página 4 de 7</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg></div>
+</section>
+
+<!-- 5. Dirección visual -->
+<section class="page">
+  <div class="page__head"><img src="../../assets/logo-due-olive.png" alt=""><span>Brief · Landing due. Café</span></div>
+
+  <div class="block">
+    <p class="kicker">06 · Dirección visual</p>
+    <h2 class="h2">Premium por la contención, <em>no por los adornos.</em></h2>
+    <p><b>Identidad existente:</b> logo «due.» en minúscula, sans geométrica muy pesada, en verde oliva, con un punto final como firma. La paleta es de verdes naturales sobre casi negro y blanco. Estética minimalista, natural y sobria: mucho aire, verdes profundos y el blanco como respiro. Los hex son aproximados, tomados de la imagen; confirmar con el archivo original.</p>
+  </div>
+  <div class="swatches">
+    <div class="sw"><i style="background:#161B11"></i><div><b>Negro verdoso</b><code>#131812 · #161B11 · #1F2316</code><span>Fondos oscuros, textos principales</span></div></div>
+    <div class="sw"><i style="background:#FFFFFF"></i><div><b>Blanco</b><code>#FFFFFF</code><span>Fondo de secciones de lectura, respiro</span></div></div>
+    <div class="sw"><i style="background:#324D34"></i><div><b>Verde bosque</b><code>#324D34</code><span>Secciones de marca y comunidad</span></div></div>
+    <div class="sw"><i style="background:#3B5E40"></i><div><b>Verde hoja</b><code>#3B5E40</code><span>Fondos secundarios, tarjetas</span></div></div>
+    <div class="sw"><i style="background:#5E5F20"></i><div><b>Oliva</b><code>#5E5F20</code><span>Color del logo, títulos, sellos de lote</span></div></div>
+    <div class="sw"><i style="background:#7A9735"></i><div><b>Verde musgo</b><code>#7A9735</code><span>Botones y llamados a la acción (el más vivo)</span></div></div>
+  </div>
+
+  <div class="cards">
+    <article class="card"><h3 class="h3">Tipografía</h3><p>Sans geométrica pesada para títulos, en línea con el logo (ej.: Outfit, Plus Jakarta Sans o Gilroy), y la misma familia en peso regular para textos. Opcional: una serif fina solo para nombres de lote y notas de sabor, como toque de etiqueta.</p></article>
+    <article class="card"><h3 class="h3">El punto como recurso</h3><p>El «.» del logo puede ser el sello de la marca: viñetas, indicador de bolsas disponibles, cierre de titulares («Huila.» «Miel y canela.»).</p></article>
+    <article class="card"><h3 class="h3">Fotografía</h3><p>Luz natural, fondos limpios, la caja minimalista en manos o sobre una mesa de visita, texturas de grano y de finca.</p></article>
+    <article class="card"><h3 class="h3">Recursos gráficos</h3><p>Ficha de lote tipo etiqueta, sello con número de bolsa, mapa simple de la región.</p></article>
+  </div>
+
+  <div class="page__foot"><span>Página 5 de 7</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg></div>
+</section>
+
+<!-- 6. Estructura -->
+<section class="page">
+  <div class="page__head"><img src="../../assets/logo-due-olive.png" alt=""><span>Brief · Landing due. Café</span></div>
+
+  <div class="cards">
+    <article class="card card--dark"><h3 class="h3">Variante por lote</h3><p>Cada lote puede tomar un acento de la paleta para sentirse como una edición nueva.</p></article>
+    <article class="card card--night"><h3 class="h3">Una sola página</h3><p>De arriba hacia abajo, con el botón de WhatsApp siempre visible.</p></article>
+  </div>
+
+  <div class="block">
+    <p class="kicker">07 · Estructura propuesta de la landing</p>
+    <h2 class="h2">De arriba <em>hacia abajo.</em></h2>
+  </div>
+  <ol class="steps">
+    <li><span class="steps__n">1</span><div><h3>Hero</h3><p>El lote actual como protagonista (foto de la bolsa, origen, notas) con el botón «Comprar este lote» y, como secundarios, «Pedir por WhatsApp» y «Avísame del próximo lote».</p></div></li>
+    <li><span class="steps__n">2</span><div><h3>Concepto</h3><p>Qué es Due y por qué es el detalle perfecto para llevar.</p></div></li>
+    <li><span class="steps__n">3</span><div><h3>Lote actual</h3><p>Ficha completa (región, finca, notas, proceso, precio) y contador de bolsas disponibles.</p></div></li>
+      <li><span class="steps__n">4</span><div><h3>Cómo funciona</h3><p>Tres pasos (eliges el lote, lo pagas en la página o lo pides por WhatsApp, lo recibes listo para regalar).</p></div></li>
+    <li><span class="steps__n">5</span><div><h3>Para regalar</h3><p>Ocasiones de uso y presentación del empaque.</p></div></li>
+    <li><span class="steps__n">6</span><div><h3>Comunidad</h3><p>Formulario de suscripción al correo y beneficio de unirse (enterarse primero del próximo lote).</p></div></li>
+    <li><span class="steps__n">7</span><div><h3>Lotes anteriores</h3><p>Galería de lotes agotados con su sello de «agotado», para mostrar historia y escasez.</p></div></li>
+    <li><span class="steps__n">8</span><div><h3>Preguntas frecuentes</h3><p>Envíos, molienda, pagos, regalos corporativos.</p></div></li>
+    <li><span class="steps__n">9</span><div><h3>Footer</h3><p>Redes, WhatsApp y suscripción de nuevo.</p></div></li>
+  </ol>
+
+  <div class="page__foot"><span>Página 6 de 7</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg></div>
+</section>
+
+<!-- 7. Por confirmar y próximo paso -->
+<section class="page">
+  <div class="page__head"><img src="../../assets/logo-due-olive.png" alt=""><span>Brief · Landing due. Café</span></div>
+
+  <div class="block">
+    <p class="kicker">08 · Por confirmar con la clienta</p>
+    <p>Estos puntos se resuelven en una sola revisión para arrancar el diseño.</p>
+  </div>
+  <div class="two">
+    <ul class="checks">
+      <li>¿Se crea un grupo o canal de WhatsApp para la comunidad, además del correo?</li>
+      <li>Envíos: cobertura (Bogotá o todo el país), costos, tiempos y transportadora</li>
+      <li>Tamaño de la bolsa y precio exacto del primer lote</li>
+      <li>Datos del primer lote: región, finca, notas y número de bolsas</li>
+    </ul>
+    <ul class="checks">
+      <li>Recibir logo, colores, fotos y referencia del empaque</li>
+      <li>ePayco: confirmar cuenta activa y comisiones; definir cómo se cobra por WhatsApp (link de pago de la pasarela, Nequi o transferencia)</li>
+      <li>Herramienta de correo para la suscripción (Mailchimp, Brevo u otra)</li>
+      <li>Dominio y redes sociales de la marca · Validar tono y estructura propuestos</li>
+    </ul>
+  </div>
+
+  <figure class="banner"><img src="../../assets/club/vertido.jpg" alt="Café filtrado vertido en una taza negra"></figure>
+
+  <div class="closing">
+    <p class="kicker">Próximo paso</p>
+    <h2 class="h2">Del brief <em>a la primera propuesta.</em></h2>
+    <p>Enviar este brief a la clienta, recibir sus respuestas y presentar la primera propuesta de diseño de la landing.</p>
+  </div>
+
+  <div class="page__foot"><span>Página 7 de 7</span><svg class="floron" viewBox="0 0 120 40"><use href="#floron"/></svg></div>
+</section>
+</body>
+</html>

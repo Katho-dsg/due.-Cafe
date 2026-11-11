@@ -56,6 +56,18 @@
         ],
         "createdAt": "2026-11-10T17:50:12.289Z",
         "reason": "user confirmed: keep the club-secreto look (serif italic headlines, tracked kickers) while applying the brief"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cormorant garamond",
+        "createdAt": "2026-11-11T17:04:23.428Z",
+        "reason": "user confirmed: keep the club-secreto identity (Cormorant + Manrope) on the page and the brief"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "manrope",
+        "createdAt": "2026-11-11T17:04:23.438Z",
+        "reason": "user confirmed: keep the club-secreto identity (Cormorant + Manrope) on the page and the brief"
       }
     ]
   }
