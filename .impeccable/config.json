@@ -68,6 +68,24 @@
         "value": "manrope",
         "createdAt": "2026-11-11T17:04:23.438Z",
         "reason": "user confirmed: keep the club-secreto identity (Cormorant + Manrope) on the page and the brief"
+      },
+      {
+        "rule": "italic-serif-display",
+        "value": "*",
+        "files": [
+          "docs/brief-diseno/brief-due.html"
+        ],
+        "createdAt": "2026-11-11T17:06:54.740Z",
+        "reason": "user confirmed: the brief must match the page's club-secreto identity (serif italic headlines)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "docs/brief-diseno/brief-due.html"
+        ],
+        "createdAt": "2026-11-11T17:07:03.212Z",
+        "reason": "false positive: the 30mm round seal centres its two short lines with ample room (checked in the rendered PDF)"
       }
     ]
   }
